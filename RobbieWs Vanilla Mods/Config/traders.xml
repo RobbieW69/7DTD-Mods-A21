@@ -1,0 +1,17 @@
+<!--Xpath code for traders.xml for AlwaysOpenTraders--> 
+
+<configs>
+	<!-- ids: 1 = trader Joel, 4 = vending -->
+	<setattribute xpath="//trader_info[@open_time='6:05']" name="open_time">4:00</setattribute>
+	<setattribute xpath="//trader_info[@close_time='21:50']" name="open_time">22:00</setattribute>
+	<!-- This will change it for ALL traders (inclusing your own vending machines) hmmmm FIX THIS
+	<setattribute xpath="//trader_info[@reset_interval='3']" name="reset_interval">5</setattribute>
+	<setattribute xpath="//trader_info[@id='4']/reset_interval/@value">3</setattribute>
+	-->
+	<setattribute xpath="//trader_info[@min_inventory='30']" name="min_inventory">120</setattribute>
+	<setattribute xpath="//trader_info[@max_inventory='70']" name="max_inventory">240</setattribute>
+	<setattribute xpath="//trader_info[@min_items_swapped='20']" name="min_items_swapped">120</setattribute>
+	<setattribute xpath="//trader_info[@max_items_swapped='20']" name="max_items_swapped">120</setattribute>
+	<!--<trader_info id="1" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
+	reset_interval="3" open_time="6:05" close_time="21:50"> -->	
+</configs>

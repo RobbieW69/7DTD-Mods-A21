@@ -1,0 +1,47 @@
+<configs>
+
+<!-- Default Living off The Land perk values are 1,1,2 -->
+<!-- Set new values to increase harvest yields -->
+<set xpath="//perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='HarvestCount' and @tags='cropHarvest,wildCropsHarvest']/@value">2,3,4</set>
+
+<!-- Make seeds cost less per living off the land level 
+<append xpath="//perk[@name='perkLivingOffTheLand']/effect_group">
+    <requirement name="ItemHasTags" tags="perkLivingOffTheLand"/>
+        <passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-0.20,-0.40,-0.60"/>
+</append>-->
+
+<!--Set skill points per level up to: 5, and turn off level gate for skills -->
+<setattribute xpath="//level[@skill_points_per_level='1']" name="skill_points_per_level">5</setattribute>
+<set xpath="/progression/attributes/@cost_multiplier_per_level">1</set>
+<set xpath="/progression/perks/perk/level_requirements/requirement/@value">1</set>
+<set xpath="/progression/perks/perk/level_requirements/requirement/@desc_key">reqGenericPoints01</set>
+<set xpath="/progression/attributes/attribute/level_requirements/requirement/@desc_key">reqGenericPoints01</set>
+
+<!-- Add faster walking and less stamina with Rule One Cardio -->
+<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group[1]" >
+<passive_effect name="WalkSpeed" operation="perc_add" level="1,3" value=".05,.15" />
+<passive_effect name="RunSpeed" operation="perc_add" level="1,3" value=".05,.15" /></append>
+<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@long_desc_key='perkRuleOneCardioNameRank1LongDesc']/@long_desc_key">Just put one foot in front of the other. You are now a hiker. Increase stamina regen by 10% when sprinting and 5% walk/run movement speed.</set>
+<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@long_desc_key='perkRuleOneCardioNameRank2LongDesc']/@long_desc_key">All the scrubs are in your rear view mirror now as you are a running man with excellent cardio. Increase stamina regen by 20% when sprinting and 10% walk/run movement speed.</set>
+<set xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group/effect_description[@long_desc_key='perkRuleOneCardioNameRank3LongDesc']/@long_desc_key">Increase stamina regen by 30% when sprinting and 15% walk/run movement speed.</set>
+
+<!--#region reeeee-->
+<!-- Craft level 6 weapons and tools, thanks to  AlGo88-->
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
+<!---->
+<!--#endregion-->
+</configs>

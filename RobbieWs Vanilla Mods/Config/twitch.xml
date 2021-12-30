@@ -1,0 +1,13 @@
+<configs>
+
+<set xpath="/twitch/@nonsub_pp_cap">5000</set>
+<set xpath="/twitch/@sub_pp_cap">25000</set>
+
+<remove xpath="//action[@name='twitch_Degrade']"></remove>
+<remove xpath="//action[@name='twitch_Spoil']"></remove>
+<remove xpath="//action[@name='twitch_buffNoMelee']"></remove>
+<remove xpath="//action[@name='twitch_buffNoVehicle']"></remove>
+<remove xpath="//action[@name='twitch_buffNoRanged']"></remove>
+<remove xpath="//action[@name='twitch_buffNoRobo']"></remove>
+
+</configs>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+	<!--
+	Sam's AutoShotgun Unnerfing
+	v20.0.0
+	by saminal
+	-->
+	
+	<!--
+	<append xpath="//item[contains(@name, 'melee')]/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">values here</append>-->
+
+	<!-- 255, 0, 79 -->
+	<set xpath="//item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
+    <insertAfter xpath="//item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
+		<property name="AltItemTypeIconColor" value="0,194,12" />
+    </insertAfter>
+
+
+	<!--repair amount by default is: 32000 so we'll see-->
+	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>
+
+
+    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
+    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
+    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">5.5</set>
+    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">2.2</set>
+
+	<!-- Disabling spread on any weapon/tool that has it by RobbieW-->
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierCrouching']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
+
+	<!-- Turn off the constant moving the crosshair shaking my screen for augy
+	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
+	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
+	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
+	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
+	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>-->
+
+	<!--FF8621-->
+
+	<!-- Turn off the constant moving the crosshair shaking my screen for chainsaw
+	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
+	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
+	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
+	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
+	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>-->
+
+	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan']">
+		<passive_effect name="DamageModifier" operation="perc_add" value="30" tags="head"/>
+	</append>
+
+	<!-- Forge limit set to 1 million -->
+	<!-- DOUGH: It appears the other stacks extend from unit_iron -->
+	<!--DOES THIS BREAK THE GAME???
+	<set xpath="//item[@name='unit_iron']/property[@name='Stacknumber']/@value">49999</set>-->
+
+	<!-- <set xpath=""></set> -->
+	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='MaxRange']/@value">3.5</set>
+	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='BlockRange']/@value">5</set>
+
+	<!--Working Sink Mod -->
+		<remove xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
+		<append xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']">
+			<property value="cntGraniteSink" name="Focused_blockname_6"/>
+			<property value="faucet02" name="Focused_blockname_7"/>
+			<property value="faucet04" name="Focused_blockname_8"/>
+			<property value="faucetBrass02" name="Focused_blockname_9"/>
+			<property value="faucetBrass04" name="Focused_blockname_10"/>
+			<property value="cntToilet01" name="Focused_blockname_11"/>
+			<property value="cntCabinetOldSink" name="Focused_blockname_13"/>
+			<property value="utilitySink" name="Focused_blockname_14"/>
+			<property value="wallHungSink" name="Focused_blockname_15"/>
+			<property value="cntToilet02" name="Focused_blockname_16"/>
+			<property value="cntToilet03" name="Focused_blockname_17"/>
+		</append>
+		<append xpath="//item[@name='bucketEmpty']/property[@class='Action1']">
+			<property value="cntGraniteSink" name="Focused_blockname_6"/>
+			<property value="faucet02" name="Focused_blockname_7"/>
+			<property value="faucet04" name="Focused_blockname_8"/>
+			<property value="faucetBrass02" name="Focused_blockname_9"/>
+			<property value="faucetBrass04" name="Focused_blockname_10"/>
+			<property value="cntToilet01" name="Focused_blockname_11"/>
+			<property value="cntCabinetOldSink" name="Focused_blockname_13"/>
+			<property value="utilitySink" name="Focused_blockname_14"/>
+			<property value="wallHungSink" name="Focused_blockname_15"/>
+			<property value="cntToilet02" name="Focused_blockname_16"/>
+			<property value="cntToilet03" name="Focused_blockname_17"/>
+		</append>
+	
+
+	<!--Begin Item Stack size changes and change shooting for the players benefit -->
+	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.1</set>
+	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Repair_amount']/@value">20000</set>
+
+	<set xpath="//item/property[@name='Stacknumber']/@value">50000</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='-.15,.15')]/@value">.15</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='.1,.5')]/@value">.5</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='BlockDamage') and (@value='-.15,.15')]/@value">.15</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='StaminaLoss') and (@value='-.05,.05')]/@value">.05</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='RoundsPerMinute') and (@value='-.05,.05')]/@value">.05</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='RoundsPerMinute') and (@value='-.1,.1')]/@value">.1</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='AttacksPerMinute') and (@value='-.05,.05')]/@value">.05</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='WeaponHandling') and (@value='-.08,.08')]/@value">.08</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='MagazineSize') and (@value='-.122,.122')]/@value">.122</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set>
+	<!--End Item Stack Changes -->
+	
+	<!-- Turn off crosshair when ADS on a weapon that supports it and exclude bows by RobbieW -->
+	<set xpath="//item[contains(@name,'gun') and not(contains(@name,'Bow'))]/property[@name='CrosshairOnAim']/@value">false</set>
+	
+	<!-- Add: "better auger mod" idk if this actually works but here it is -->
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">62.1</set>
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">62.1</set>
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
+	
+	<!-- Faster scrap for all items -->		
+
+	<set xpath="//item/property[@name='CraftingIngredientTime']/@value">0</set>		
+	
+	</configs>

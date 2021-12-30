@@ -1,0 +1,14 @@
+<configs>
+	<set xpath="/controls/players_entry/rect/rect[@name='steamId']/grid/sprite[@name='admin']/@color">[transparent]</set>
+
+	<append xpath="/controls">
+		<my_entry>
+			<rect height="33">
+				<sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="${backgroundcolor}" type="sliced" />
+				<label depth="3" pos="15,-5" width="198" font_size="26" text="${textcontent}" justify="left" color="[white]" />
+				<label depth="3" pos="305,-5" width="88" font_size="26" text="${valuecontent}" justify="right" color="[selectedColor]" pivot="topright" />
+			</rect>
+	</my_entry>
+	</append>
+</configs>

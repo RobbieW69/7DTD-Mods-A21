@@ -1,0 +1,38 @@
+<windows>
+
+    <append xpath="/windows">
+        <window name="serverinfowindow" anchor="CenterTop" pos="-450,-100" width="900" height="800" cursor_area="true">
+            <panel name="header" pos="0,0" height="43" depth="1" disableautobackground="true" >
+                <sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />
+                <label style="header.name" pos="6,-6" text="Server Information" />
+            </panel>
+            <panel name="content" pos="0,-46" height="750" depth="1" pivot="center" disableautobackground="true" >
+                <sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="750" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+                <sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="746" width="896" color="[darkGrey]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.65" />
+
+                <label pos="10,-10" depth="2" text="Mod Features:" />
+                <grid pos="20,-42" rows="0" cell_width="890" cell_height="32" repeat_content="false" arrangement="vertical" globalopacity="true" globalopacitymod="0">
+                    <label text="Important: Crops can now be picked up with E again, but punching them will give way more yeild." />
+                    <label text="- Trees now turn into Stumps when destroyed." />
+                    <label text="- Lots of colored text." />
+                    <label text="- Zombies now turn into the gore block on death." />
+                    <label text="- No more spread on guns, where you shoot is where it fires." />
+                    <label text="- Auger/Chainsaw noises lowered." />
+                    <label text="- All headshots should be an instant kill except maybe on very tough zombies." />
+                    <label text="- Body backpacks/loot bags now do not despawn for 6 days IRL." />
+                    <label text="- Crosshair turns off when aiming down sights on all weapons except bows." />
+                    <label text="- Crops do not get destroyed when harvested." />
+                    <label text="- Cars now have chances to drop Wheels when harvesting." />
+                    <label text="- Re-added terrain based movement speed." />
+                    <label text="- Hay Bales are 0 fall damage again." />
+                    <label text="- Gain 5 skill points per level, all skills cost 1 points, level gates removed for skills." />
+                    <label text="- Tons of recipes added and tons of recipes changed." />
+                    <label text="- You should be able to make a schematic of a weapon you find at a workbench." />
+                    <label text="- You gain 3x the amount of ammo when crafting it." />
+                    <label text="- Traders now open basically 24/7, don't abuse it." />
+                </grid>
+            </panel>
+        </window>
+    </append>
+
+</windows>

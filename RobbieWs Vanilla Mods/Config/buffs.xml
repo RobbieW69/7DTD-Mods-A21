@@ -1,0 +1,16 @@
+<configs>
+<append xpath="buffs">
+	<buff icon="ui_game_symbol_map_bed" tooltip_key="You're resting in your bed" description_key="Sleeping in bed slowly regenerates health and keeps you warm" name_key="Sleeping" name="Sleeping2">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<passive_effect name="HypothermalResist" value="30" operation="base_add"/>
+			<passive_effect name="HyperthermalResist" value="30" operation="base_add"/>
+			<passive_effect name="HealthChangeOT" value="0.025" operation="base_add"/>
+			<passive_effect name="HealthMax" value="@maxHealthIncrease" operation="base_add"/>
+			<requirement name="CVarCompare" value="0" operation="LTE" cvar="maxHealthAmount" target="self"/>
+			<triggered_effect value="0.010" operation="set" cvar="maxHealthIncrease" action="ModifyCVar" trigger="onSelfBuffFinish"/>
+		</effect_group>
+	</buff>
+</append>
+</configs>

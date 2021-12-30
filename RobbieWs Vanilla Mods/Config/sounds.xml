@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<!-- Make everything quieter -->
+	<set xpath="//SoundDataNode/MaxVoices/@value">1</set>
+
+	<set xpath="//SoundDataNode[contains(@name, 'chainsaw')]/MaxVoices/@value">0</set>
+
+	<set xpath="//SoundDataNode[contains(@name, 'Auger') or contains(@name, 'auger')]/MaxVoices/@value">0</set>
+
+	<set xpath="//SoundDataNode[contains(@name, 'Repair') or contains(@name, 'repair')]/MaxVoices/@value">0</set>
+	
+</configs>

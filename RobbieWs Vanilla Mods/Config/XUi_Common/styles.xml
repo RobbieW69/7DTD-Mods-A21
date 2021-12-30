@@ -1,0 +1,7 @@
+<styles>
+
+    <append xpath="/styles/global">
+        <style_entry name="nice" 	value="255,171,25"/>
+    </append>
+
+</styles>

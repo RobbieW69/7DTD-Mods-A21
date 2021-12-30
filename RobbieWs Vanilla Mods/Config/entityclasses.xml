@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+	<set xpath="//entity_class[@name='junkTurretSledge']/property[@name='MaxDistance']/@value">5</set>
+
+	<!-- <property name="YawRange" value="170"/> horizontal swivel range. Keep under 180. 
+	<property name="PitchRange" value="75"/>
+	<property name="TurnSpeed" value="27"/>
+	<property name="MaxDistance" value="2.2"/>-->
+
+	<!-- Zombie changes -->
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedAggro']/@value">0.08, 0.08</set>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='SwimSpeed']/@value">0.5</set>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='CanClimbLadders']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='DismemberMultiplierHead']/@value">1.25</set>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
+	<append xpath="//entity_class[@name='zombieTemplateMale']">
+		<property name="CorpseBlock" value="goreBlockHumanBones"/>
+		<property name="CorpseBlockChance" value="1"/>
+	</append>
+	
+	<!-- Walk/Run/Swimming speed increases by Gouki -->
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed']/@value">2.2</set>
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='RunSpeed']/@value">1.2</set>
+    <set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed'][@tags='swimming']/@value">2.2</set>
+    <set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='RunSpeed'][@tags='swimming']/@value">1.2</set>
+
+	<!-- More player edits-->
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and @tags='head']/@value">1.65</set>
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='HarvestCount' and @tags='allHarvest,oreWoodHarvest,cropHarvest,wildCropsHarvest']/@value">1</set>
+
+	<!-- Chicken eggs -->
+	<append xpath="//entity_class[@name='animalChicken']">
+		<drop count="1,12" prob="0.5" tag="butcherHarvest" name="foodEgg" event="Harvest"/>
+	</append>
+	<!-- End Tree Eggs -->
+	
+	<!-- Grace changes-->
+	<set xpath="//entity_class[@name='animalBossGrace']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">2500</set>
+	<set xpath="//entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">2500</set>
+	<!-- Bears changes-->
+	<set xpath="//entity_class[@name='animalBear']/property[@name='ExperienceGain']/@value">1850</set>
+	<!-- Dog changes-->
+	<set xpath="//entity_class[@name='animalZombieDog']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">85</set>
+	<!-- Pig changes-->
+	<set xpath="//entity_class[@name='animalBoar']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">150</set>
+	<!-- MountainLion changes-->
+	<set xpath="//entity_class[@name='animalMountainLion']/property[@name='PainResistPerHit']/@value">0.4</set>
+	<!-- Dire Wolf changes-->
+	<set xpath="//entity_class[@name='animalDireWolf']/property[@name='ExperienceGain']/@value">1250</set>
+	<!-- Coyote changes-->
+	<set xpath="//entity_class[@name='animalCoyote']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">70</set>
+
+	<!-- Begin Change sizes of animals -->
+	<append xpath="//entity_class[@name='animalStag']">
+		<property value="1.35" name="SizeScale"/>
+	</append>
+
+	<append xpath="//entity_class[@name='animalDoe']">
+		<property value="1.50" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalBear']">
+		<property value="1.50" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalZombieBear']">
+		<property value="1.80" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalWolf']">
+		<property value="1.25" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalDireWolf']">
+		<property value="1.80" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalMountainLion']">
+		<property value="1.50" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalChicken' or @name='animalRabbit']">
+		<property value="1.75" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalZombieVultureRadiated']">
+		<property value="1.50" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalMountainLion']">
+		<property value="1.50" name="SizeScale"/>
+	</append>
+	
+	<append xpath="//entity_class[@name='animalBossGrace']">
+		<property value="1.80" name="SizeScale"/>
+	</append>
+	<!-- End Change sizes of animals -->
+	
+	<!-- sheeeesh <setattribute xpath="//entity_class[@name='playerMale'/effect_group/requirement[@name='PlayerLevel']/passive_effect[@name='ExpDeficitPerDeathPercentage]" name="value">0</setattribute>
+	<setattribute xpath="//entity_class[@name='playerMale'/effect_group/requirement[@name='PlayerLevel']/passive_effect[@name='ExpDeficitMaxPercentage]" name="value">0</setattribute> -->
+	
+	<!-- Set zombies to target animals as well -->
+	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='AITarget-4']" name="data">class=EntityPlayer,0,0,EntityNPC,0,0,EntityEnemyAnimal,0,0</setattribute>
+	
+	<!-- Set Yellow Boss loot bags spawn more often -->
+	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']" name="value">0.25</setattribute>
+	
+	<!-- Set all loot bags to not despawn for 6 IRL days -->
+	<setattribute xpath="//entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	<setattribute xpath="//entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	<setattribute xpath="//entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	<setattribute xpath="//entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	<setattribute xpath="//entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	
+	<!-- Make jumpoing not use stamina -->
+	<setattribute xpath="//entity_class[@name='playerMale']//passive_effect[@name='StaminaLoss' and @tags='jumping']" name="value">0</setattribute>
+	<setattribute xpath="//entity_class[@name='playerMale']//passive_effect[@name='StaminaLoss' and @tags='swimming']" name="value">0</setattribute>
+	
+	<!-- Set the Zombie HasDeathAnim to false - Off. -->
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieBoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieFemaleFat']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieJoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieMoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieArlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieScreamer']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieDarlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieMarlene']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieYo']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieSpider']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieNurse']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieFatHawaiian']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieFatCop']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieUtilityWorker']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='zombieSoldier']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<!--Animals -->
+	<set xpath="//entity_class[@name='animalBear']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<set xpath="//entity_class[@name='animalWolf']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	
+	<!-- Add: Jessica's animal blood bags -->
+	<append xpath="//entity_class[@name='animalStag']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+	<append xpath="//entity_class[@name='animalRabbit']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="1"/>
+	</append>
+	<append xpath="//entity_class[@name='animalChicken']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="1"/>
+	</append>
+	<append xpath="//entity_class[@name='animalBear']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="3"/>
+	</append>
+	<append xpath="//entity_class[@name='animalWolf']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+	<append xpath="//entity_class[@name='animalDireWolf']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+	<append xpath="//entity_class[@name='animalSnake']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+	<append xpath="//entity_class[@name='animalBoar']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+	<append xpath="//entity_class[@name='animalBossGrace']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="3"/>
+	</append>
+	<append xpath="//entity_class[@name='animalMountainLion']">
+		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
+	</append>
+</configs>
