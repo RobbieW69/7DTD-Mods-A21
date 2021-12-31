@@ -8,6 +8,10 @@
 	<property name="TurnSpeed" value="27"/>
 	<property name="MaxDistance" value="2.2"/>-->
 
+	<!-- nerf the stupid xp deficit  -->
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value='.25']/@value">0</set>
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>
+
 	<!-- Zombie changes -->
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedAggro']/@value">0.08, 0.08</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='SwimSpeed']/@value">0.5</set>
@@ -16,11 +20,11 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
-	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS
+	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
 		<property name="CorpseBlock" value="goreBlockHumanBones"/>
 		<property name="CorpseBlockChance" value="0.2"/>
-	</append>-->
+	</append>
 	
 	<!-- Walk/Run/Swimming speed increases by Gouki -->
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed']/@value">2.2</set>

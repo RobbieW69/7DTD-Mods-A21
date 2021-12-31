@@ -1,4 +1,14 @@
 <configs>
+
+
+<!-- Want this right after they pull impactSpeed from _fallSpeed 
+<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@value='@_fallSpeed']">
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".impactSpeed" operation="add" value=".05656"/>  DOUGH add 4m! 
+</insertAfter>-->
+
+<!-- <set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group/triggered_effect[@action='RemoveBuff']/requirement[@name='PlayerLevel']/@value">0</set> -->
+
+
 <append xpath="buffs">
 	<buff icon="ui_game_symbol_map_bed" tooltip_key="You're resting in your bed" description_key="Sleeping in bed slowly regenerates health and keeps you warm" name_key="Sleeping" name="Sleeping2">
 		<stack_type value="ignore"/>

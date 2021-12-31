@@ -1,4 +1,6 @@
 <configs>
+
+	<!-- Hidden admins updated for a20 -->
 	<set xpath="/controls/players_entry/rect/rect[@name='steamId']/grid/sprite[@name='admin']/@color">[transparent]</set>
 
 	<append xpath="/controls">

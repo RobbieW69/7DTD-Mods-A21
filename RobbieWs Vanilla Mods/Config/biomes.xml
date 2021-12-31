@@ -1,11 +1,18 @@
 <configs>
 
+	<!-- War3zuk's remove some biome debris -->
+	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='scrapMetalPile']"/>
+	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks01']"/>
+	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks02']"/>
+	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks03']"/>
+	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='hubcapNoMine']"/>
+
 	<!-- Increase birdnest spawn chance 10 times. -->
 	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='cntBirdnest']/@prob">0.008</set>
 	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='cntBirdnest']/@prob">0.008</set>
 	
 	<!--
-	########## Mod vanilla items ##########
+	########## Mod vanilla items  DOUGHS WEATHER MOD ##########
 	NOTE: Setting ChunkMargin="1" is rally cool and dense effect, but hits FPS a little too much. Default game is ChunkMargin="7"
 	Set ChunkMargin="1" anyway as this is the lowest it can go and can add overriding mods to lessen it
 

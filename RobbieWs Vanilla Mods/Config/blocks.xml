@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 	
+	<!-- Sell any block to trader -->
+	<append xpath="//block">
+       <property name="SellableToTrader" value="true"/>
+	</append> 
+
 	<!-- Make trees turn into Stumps instead of going away --> 
 	<remove xpath="//block[contains(@name, 'tree')]/drop[@event='Fall']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/property[@value='ModelTree']"/>
@@ -14,6 +19,7 @@
 	<remove xpath="//block[contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'Shrub')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'Cactus')]/property[@name='DowngradeBlock']"/>
+	<remove xpath="//block[contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
 
 	<!-- Add icons for books already read <block name="goreBlockHumanBones">-->
 
