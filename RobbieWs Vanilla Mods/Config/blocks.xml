@@ -11,7 +11,7 @@
 		<property name="Class" value="PlantGrowing"/>
 	</append>
 	<remove xpath="//block[contains(@name, 'Grass')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'treeDead')]/property[@name='DowngradeBlock']"/>
+	<remove xpath="//block[contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'Shrub')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'Cactus')]/property[@name='DowngradeBlock']"/>
 

@@ -1,7 +1,7 @@
 <styles>
 
     <append xpath="/styles/global">
-        <style_entry name="nice" 	value="255,171,25"/>
+        <style_entry name="me" 	value="59,188,0"/>
     </append>
 
 </styles>

@@ -75,7 +75,7 @@ tooltipInviteEveryone,UI,Tooltip,,[0579FE]Shared marker {0} to everyone.[-],
 tooltipInviteFriends,UI,Tooltip,,[05FE9F]Shared marker {0} with allies.[-],
 tooltipInviteMarker,UI,Tooltip,,[B36BFF]Player {0} shared marker {1} with you.[-],
 
-ttLevelUp,UI,Tooltip,,[E10CFD]Level Up! You are now level {0} and have {1} skill points to spend.[-],
+ttLevelUp,UI,Tooltip,,[00F6FF]Level Up! You are now level {0} and have {1} skill points to spend.[-],
 ttPartyDisconnectedFromParty,UI,Tooltip,,[0CFD99]{0} has been disconnected from the party.[-],
 ttPartyInviteReceived,UI,Tooltip,,[0C99FD]You received a party invite from {0}.[-],
 ttPartyInviteSent,UI,Tooltip,,[FD0C8D]Party invite sent to {0}.[-],
