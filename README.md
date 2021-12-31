@@ -25,6 +25,7 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Swim speed drastically reduced.
 + Zombies now also target animals.
 + Zombie loot bags drop more often.
++ Zombies can no turn into a Gore Block on death 20% of the time, not 100 for FPS.
 ##### Player
 + Reach extended a little.
 + Jumping no longer requires stamina.
@@ -39,6 +40,7 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Rule One Cardio now increased values even more.
 + Can now craft level 6 items.
 + Living off the land now significantly increases crop yeilds.
++ ExpPenalty for dying set to 0.
 ##### Items
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
 + With any wepaon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
@@ -52,6 +54,9 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Auger now does more block and entity damage and uses a little less gas.
 + Almost all crafting times have been reduced to basically instant as well as scrap times.
 + All ammo crafted actually produces 3x times the amount.
++ All items now sellable to traders.[Have not configured pricing yet].
++ Empty jars no longer take water source on use.
++ T0(Stone tools) have been removed from finding in loot, instead there is a slightly higher chance to find T1(Iron tools) at low levels.
 ##### Sounds
 + All sounds lowered, though the auger and chainsaw can still be pretty loud when using.
 + The 'ching' sound when trying to repair something but not having the required materials is now muted.
@@ -63,7 +68,7 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code.
 ##### Vehicles
 Vehicles have a Minimum and Maximum speed, [min,max].
-+ Gyrocopter: Speed increased from [7,10] to [12,24].
++ Gyrocopter: Speed increased from [7,10] to [12,24], better handling added.
 + Bicycle:  Speed increased from [5,10] to [10,20].
 + Minibike: Speed increased from [7,10] to [14,20].
 + Motorcycle: Speed increased from [9,14] to [18,28].
@@ -72,3 +77,9 @@ Vehicles have a Minimum and Maximum speed, [min,max].
 + Food, Hunger, and Exp bars now brighter colors.
 + When you press Escape a server information panel will pop up.
 + Alot of colored text just about everywhere now.
++ Updated Compass UI with more info.
++ Lockable item slots.
++ Hidden Admins on players menu.
+#### Biomes
++ Weather in biomes has more effect/stronger.
++ Lots of random debris (cinder blocks) have been removed.
