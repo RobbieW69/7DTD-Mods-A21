@@ -1,5 +1,186 @@
 <windows>
 
+    <!-- FPS HUD Mod -->
+    <!--  Stats 
+    <remove xpath="/windows/window[@name='HUDLeftStatBars']"/>
+
+    <append xpath="/windows">
+        <window name="HUDLeftStatBars" pos="30,-5" size="240,175">
+            <rect name="playerInfo" size="700,100" depth="99" pos="1225,1005" controller="CharacterFrameWindow">
+                <sprite depth="3" pos="-40,4" height="20" width="150" color="[darkGrey]" foregroundlayer="true" type="sliced"/>
+                <sprite depth="4" pos="-40,4" height="20" width="150" color="{xpcolor}" sprite="menu_empty3px" type="filled" fill="{xp}" globalopacitymod="1.5"
+                        controller="ToolbeltWindow" standard_xp_color="85,125,180,200" updating_xp_color="[green]"
+                        deficit_xp_color="[red]" xp_fill_speed="3.5"/>
+                <rect>
+                    <panel name="header" height="15" depth="1" pos="9999,9999" backgroundspritename="ui_game_panel_header">
+                        <label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32"/>
+                        <label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
+                    </panel>
+                    <rect visible="{showcharacter}" pos="9999,9999" >
+                        <panel name="previewFrame" depth="0" pos="0,0" width="10" on_press="true" on_hover="true" disableautobackground="true" snap="false">
+                            <rect>
+                                <texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="8,8" globalopacity="false"/>
+                            </rect>
+                        </panel>
+                    </rect>
+                    <label depth="5" name="TextContent" pos="-35,4" font_size="18" color="[white]" justify="left" pivot="topleft" text="Level: {playerlevel} - {playerxptonextlevel}" controller="PlayerStatsWindow"/>
+                    <label name="playerXP" font_size="18" pos="135,4" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="KDZ - {playerpvpkills} | {playerdeaths} | {playerzombiekills}" justify="left"/>
+                </rect>
+            </rect>
+            <rect name="fpsHUDstatBars" pos="-47,137" size="240,150" rows="2" cols="1" side="right">
+                <sprite depth="0" name="background" color="0,0,0,180" pos="38,4" size="185,125" globalopacitymod="0" type="sliced" />
+                <rect name="fpsHUDstealthBar" pos="67,40" size="240,55" controller="HUDStatBar" stat_type="Stealth"
+                      visible="{statvisible}">
+                    <filledsprite name="barBackground" depth="4" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled"
+                                  fill="1" color="[darkGrey]"/>
+                    <filledsprite name="BarContent" depth="5" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled"
+                                  fill="0" color="[hudElementsStealth]"/>
+                    <texture name="Icon" depth="7" pos="-17,-2" size="20,20"
+                             texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_stats_stealth_icon.png"
+                             color="[hudElementsIcon]" foregroundlayer="true"/>
+                    <label name="TextContent" depth="7" pos="-5,-4" text="{statcurrent}" font_size="16"
+                           color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1"
+                           justify="center" pivot="topleft"/>
+                </rect>
+                <rect name="fpsHUDstatContainer" pos="10,8">
+                    <rect name="fpsHUDhealthBar"  pos="0,-4" size="240,55" controller="HUDStatBar" stat_type="Health"
+                          visible="{statvisible}">
+                        <sprite name="background" depth="2" pos="66,-10" size="140,24" atlas="uiAtlas" type="sliced"
+                                globalopacitymod="0.6" color="[hudElementsBG]"/>
+                        <filledsprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
+                        <filledsprite name="BarContent" depth="5" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="0" color="[hudElementsHealth]"/>
+                        <texture name="Icon" depth="7" pos="37,-12" size="22,22"
+                                 texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_stats_health_icon.png"
+                                 color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <label name="TextContent" depth="7" pos="50,-14" text="{statcurrentwithmax}" font_size="16"
+                               color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1"
+                               justify="center" pivot="topleft"/>
+                    </rect>
+                    <rect name="fpsHUDstaminaBar" pos="0,-32" size="240,55" controller="HUDStatBar" stat_type="Stamina"
+                          visible="{statvisible}">
+                        <sprite name="background" depth="2" pos="66,-10" size="140,24" atlas="uiAtlas" type="sliced"
+                                globalopacitymod="0.6" color="[hudElementsBG]"/>
+                        <filledsprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
+                        <filledsprite name="BarContent" depth="5" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="0" color="[hudElementsStamina]"/>
+                        <texture name="Icon" depth="7" pos="37,-12" size="22,22"
+                                 texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_stats_stamina_icon.png"
+                                 color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <label name="TextContent" depth="7" pos="50,-14" text="{statcurrentwithmax}" font_size="16"
+                               color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1"
+                               justify="center" pivot="topleft"/>
+                    </rect>
+                    <rect name="fpsHUDhungerBar"  pos="0,-60" size="240,55" controller="HUDStatBar" stat_type="Food"
+                          visible="{statvisible}">
+                        <sprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="sliced"
+                                color="[darkGrey]" flip="vertically"/>
+                        <filledsprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
+                        <filledsprite name="BarContent" depth="4" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="0" color="[hudElementsFood]"/>
+                        <texture name="Icon" depth="7" pos="37,-12" size="22,22"
+                                 texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_stats_hunger_icon.png"
+                                 color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <label name="TextContent" depth="7" pos="65,-14" text="{playerfood}" font_size="16"
+                               color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1"
+                               justify="center" pivot="topleft" controller="PlayerStatsWindow"/>
+                    </rect>
+                    <rect name="fpsHUDthirstBar"  pos="0,-88" size="240,55" controller="HUDStatBar" stat_type="Water"
+                          visible="{statvisible}">
+                        <sprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="sliced"
+                                color="[darkGrey]" flip="vertically"/>
+                        <filledsprite name="background" depth="3" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
+                        <filledsprite name="BarContent" depth="4" pos="66,-10" size="140,24" atlas="uiAtlas" type="filled"
+                                      fill="0" color="[hudElementsWater]"/>
+                        <texture name="Icon" depth="7" pos="37,-12" size="22,22"
+                                 texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_stats_thirst_icon.png"
+                                 color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <label name="TextContent" depth="7" pos="65,-14" text="{playerwater}" font_size="16"
+                               color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1"
+                               justify="center" pivot="topleft" controller="PlayerStatsWindow"/>
+                    </rect>
+                </rect>
+            </rect>
+
+            <rect name="hud" pos="76,190" side="left" controller="BuffPopoutList" pivot="BottomLeft">
+                <panel width="168" height="28" name="item" visible="false" pivot="right" disableautobackground="true"
+                       pos="70, -10" style="press" sound="[recipe_click]" on_hover="true">
+                    <sprite depth="3" pos="-5,0" name="Background" sprite="ui_game_popup" height="30" width="162"
+                            pivot="center" flip="Horizontally" color="[transparent]"/>
+                    <sprite depth="4" name="Icon" size="25,25" pos="-60,0" pivot="center" color="[transparent]"/>
+                    <label depth="6" name="TextContent" pos="-20,0" font_size="18" color="[white]" justify="center"
+                           height="40" pivot="center"/>
+                </panel>
+            </rect>
+
+        </window>
+    </append>-->
+
+    <!--  Toolbelt 
+    <remove xpath="/windows/window[@name='windowToolbelt']"/>
+    <append xpath="/windows">
+        <window name="windowToolbelt" depth="0" pos="0,70" size="750,215" backgroundcolor="[black]"
+                controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
+            <sprite depth="0" name="background" color="0,0,0,180" pos="-370,36" size="723,95" globalopacitymod="0" type="sliced" />
+            <rect>
+                <grid name="fpsHUDtoolbelt" depth="1" pos="-368,21" rows="1" cols="8" cell_width="90"
+                      cell_height="75" controller="Toolbelt" repeat_content="true">
+                    <fpsHUD_toolbelt_interface name="0"/>
+                </grid>
+                <grid name="fpsHUDtoolbeltNumbers" depth="1" pos="-332,-43" rows="1" cols="8" cell_width="90"
+                      cell_height="60" repeat_content="false">
+                    <label name="fpsHUDtbNumber1" depth="10" size="12,22" text="1" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber2" depth="10" size="12,22" text="2" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber3" depth="10" size="12,22" text="3" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber4" depth="10" size="12,22" text="4" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber5" depth="10" size="12,22" text="5" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber6" depth="10" size="12,22" text="6" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber7" depth="10" size="12,22" text="7" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                    <label name="fpsHUDtbNumber8" depth="10" size="12,22" text="8" font_size="12" color="white"
+                           crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+                </grid>
+            </rect>
+        </window>
+    </append>-->
+
+    <!-- Chat and Output
+    <remove xpath="/windows/window[@name='chatoutput']"/>
+    <append xpath="/windows">
+        <window name="chatoutput" pos="20, -350" depth="100" width="500" height="200" anchor="LeftTop" controller="ChatOutput" fadeout_wait_time="5" fadeout_duration="1">
+            <textlist name="txtOutput" pos="8,-214" width="485" height="170" list_style="chat" pivot="bottomleft" depth="2" font_size="22" crispness="Never" />
+        </window>
+    </append>
+    <remove xpath="/windows/window[@name='chat']"/>
+    <append xpath="/windows">
+        <window name="chat" pos="20, -350" width="500" height="180" anchor="LeftTop" controller="Chat" cursor_area="true">
+            <rect name="input" depth="2" pos="0,-218" height="32">
+                <combobox name="cbxTarget" type="ComboBoxList`1[EChatType]" value_max="party" pos="2, -6" width="100" height="22" font_size="22" localization_prefix="xuiChatTarget" />
+                <textfield name="txtInput" backgroundcolor="[transparent]" depth="2" pos="110,-16" width="386" height="28" pivot="left" justify="left" overflow="ClampContent" max_line_count="1" crispness="Never" />
+            </rect>
+            <sprite color="[black]" pos="0, -50" height="200" type="sliced" globalopacitymod="0.9" />
+        </window>
+    </append>
+    <remove xpath="/windows/window[@name='windowGroupBars']"/>
+
+    <append xpath="/windows">
+    <window name="windowGroupBars" controller="PartyWindow" depth="-20">
+        <grid name="hud" pos="20,-25" rows="7" cols="1" width="168" cell_width="168" cell_height="40" side="left" repeat_content="true" controller="PartyEntryList" >
+            <fpsHUD_party_entry />
+        </grid>
+    </window> 
+    </append> -->
+
     <!-- Since A20 already has the combo box, we're just enabling it by KHA20 -->
 	<append xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']"> 		
 		<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />

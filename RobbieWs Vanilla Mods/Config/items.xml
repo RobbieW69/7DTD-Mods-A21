@@ -12,9 +12,6 @@
        <property name="SellableToTrader" value="true"/>
 	</append>
 
-	<!-- Stop jars from taking water sources -->
-	<remove xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
-
 	<!--
 	<append xpath="//item[contains(@name, 'melee')]/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">values here</append>-->
 

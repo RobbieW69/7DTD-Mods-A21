@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 	
+	<!--Claymores boulders drop stuff editied-->
+	<append xpath="/blocks/block[@name='rockResource']">
+		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="9" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceCoal" count="8" prob="0.18" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.18" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceScrapLead" count="8" prob="0.18" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceClayLump" count="8" prob="0.18"  tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceScrapBrass" count="8" prob="0.10"  tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRawDiamond" count="1" prob=".008" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" count="1" prob=".01" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" count="1" prob=".01" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrStone']">
+		<drop event="Harvest" name="resourceScrapIron" count="2" tag="oreWoodHarvest"/>
+		<drop event="Fall" name="resourceScrapIron" count="4" prob="0.5" stick_chance="0"/>
+	</append>
+
 	<!-- Sell any block to trader -->
 	<append xpath="//block">
        <property name="SellableToTrader" value="true"/>

@@ -11,6 +11,63 @@
 				<label depth="3" pos="15,-5" width="198" font_size="26" text="${textcontent}" justify="left" color="[white]" />
 				<label depth="3" pos="305,-5" width="88" font_size="26" text="${valuecontent}" justify="right" color="[selectedColor]" pivot="topright" />
 			</rect>
-	</my_entry>
+		</my_entry>
 	</append>
+
+
+
+
+	<!--hud?-->
+	<!--  Toolbelt Interface 
+
+	<append xpath="/controls">
+		<fpsHUD_toolbelt_interface>
+			<rect style="hover, fpsHUD_toolbelt_interface" controller="ItemStack" collider_scale="1.1">
+				<sprite name="background" depth="2" pos="0,15" size="90,75" atlas="uiAtlas" type="sliced" fillcenter="false" globalopacity="true" />
+				<sprite name="highlightOverlay" depth="3" pos="0,0" size="90,75" color="[darkGrey]" type="sliced" globalopacity="true" visible="false" />
+
+				<sprite name="itemIcon" depth="4" pos="42,-20" size="50,50" atlas="ItemIconAtlas" sprite="{itemicon}" color="{iconcolor}" foregroundlayer="true" pivot="center" />
+				<sprite name="lockTypeIcon" depth="8" pos="8,7" size="15,15" sprite="" foregroundlayer="true" />
+				<sprite name="itemtypeicon" depth="8" pos="8,7" size="15,15" sprite="ui_game_symbol_{itemtypeicon}" color="[white]" foregroundlayer="true" visible="{hasitemtypeicon}" />
+
+				<sprite name="durabilityBackground" depth="3" pos="0,-54" size="90,5" atlas="uiAtlas" color="[hudElementsBG]" type="sliced" foregroundlayer="true" />
+				<sprite name="durability" depth="4" pos="0,-54" size="90,5" atlas="uiAtlas"  color="[transparent]" type="filled" foregroundlayer="true" />
+
+				<sprite name="disabledOverlay" depth="5" pos="1,-1" size="82,82" color="[darkGrey_half_alpha]" type="sliced" visible="false" />
+
+				<label name="stackValue" depth="7" pos="6,-25" size="73,28" text="{itemcount}" font_size="20" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" justify="center" />
+				<label name="timer" depth="7" pos="35,-38" size="70,24" font_size="22" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" color="[beige]" justify="center" pivot="center" />
+				<texture name="cancel" depth="9" size="40,28" texture="@https://raw.githubusercontent.com/lloan/7dtd-survivorHUD/master/UIAtlases/ItemIconAtlas/survivorHUD_hud_general_cancel_icon.png" color="[hudElementsIcon]" type="sliced" foregroundlayer="true" visible="false"  />
+				<label name="itemName" depth="12" pos="40,-35" size="0,0" text="" font_size="22" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" overflow="resizefreely" justify="center" pivot="center" above_soft_cursor="true" />
+
+				<sprite name="assembleIcon" depth="13" pos="19,-19" size="40,40" sprite="{stacklockicon}" visible="{isassemblelocked}" foregroundlayer="true" />
+			</rect>
+		</fpsHUD_toolbelt_interface>
+	</append>-->
+
+	<!-- Party Interface 
+	<append xpath="/controls">
+		<fpsHUD_party_entry>
+			<rect width="168" height="27" pos="60, 0" controller="PartyEntry" visible="{partyvisible}">
+
+				<sprite depth="2" name="background" color="0,0,0,140" height="22" width="165" type="sliced" />
+
+				<filledsprite depth="3" name="BarHealthModifiedMax" color="110,110,110,128" height="22" width="165" type="filled" fill="{healthmodifiedmax}" />
+				<filledsprite depth="3" name="BarStaminaModifiedMax" color="110,110,110,128" height="22" width="165" type="filled" fill="{staminamodifiedmax}" />
+
+				<filledsprite depth="5"  name="BarHealth" color="255,0,0,128" width="165" height="22" type="filled" fill="{healthfill}" />
+				<filledsprite depth="5"  pos="0, -22" name="BarStamina" color="0,54,255,128" width="165" height="6" type="filled" fill="{staminafill}" />
+
+				<filledsprite depth="8" name="BarHealthModifiedMax" color="0,0,0,255" width="165" fillcenter="false" type="filled" fill="{healthmodifiedmax}" />
+				<filledsprite depth="3" name="BarHealthModifiedMax" color="0,0,0,255" width="165" fillcenter="false" type="filled" fill="{healthmodifiedmax}" />
+
+
+				<label depth="6" name="TextContent" pos="6, 0" font_size="20" color="[white]" justify="left" pivot="topleft" text="{name} {level}" height="30" width="124"/>
+				<label depth="6" name="TextContent" pos="200,0" font_size="20" color="[white]" pivot="topleft" text="{distance}" height="30" effect="outline"/>
+
+				<sprite depth="8" name="leader" width="16" height="16" pos="140,-2" sprite="{icon}" visible="{showicon}" />
+				<sprite depth="8" name="arrowContent" width="16" height="16" pos="184,-10" sprite="ui_game_symbol_map_player_arrow" visible="{showarrow}" pivot="center" color="{arrowcolor}" />
+			</rect>
+		</fpsHUD_party_entry>
+	</append>-->
 </configs>

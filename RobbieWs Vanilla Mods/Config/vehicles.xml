@@ -7,26 +7,22 @@
 	<!-- Motorcycle			9,14	-->
 	<!-- Truck				9,13	-->
 	<!-- The latter value is maximum speed a vehicle can reach; in meter per second. -->
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">12, 24</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax']/@value">10, 20</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">14, 20</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">18, 28</set>
-	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">18, 28</set>
-
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">12, 24</set>
+	<set xpath="//vehicle[@name='vehicleBicycle']/property[@name='velocityMax']/@value">10, 20</set>
+	<set xpath="//vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">14, 20</set>
+	<set xpath="//vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">18, 28</set>
+	<set xpath="//vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">18, 28</set>
 
 	<!--Ragsy_Gyro_Better_Gyro_handling -->
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='motorTorqueMinQ']/@value">2000</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='motorTorqueMaxQ']/@value">3000</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='brakeTorque']/@value">4000</set>
-	
-	
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='steerRate']/@value">70</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='steerCenteringRate']/@value">2</set>
-	
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='tiltAngleMax']/@value">4</set>
-	
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='upAngleMax']/@value">15</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='upForce']/@value">0.55</set>
-	
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">18, 28</set>
-	<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='airDrag_velScale_angVelScale']/@value">.993, .93</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='motorTorqueMinQ']/@value">2000</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='motorTorqueMaxQ']/@value">3000</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='brakeTorque']/@value">4000</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='steerRate']/@value">70</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='steerCenteringRate']/@value">2</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='tiltAngleMax']/@value">4</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='upAngleMax']/@value">15</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='upForce']/@value">0.55</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">18, 28</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='airDrag_velScale_angVelScale']/@value">.993, .93</set>
+
+	</configs>

@@ -6,6 +6,40 @@
 			<window name="serverinfowindow" />
 		</window_group>    
 
-    </append>
+        <!--alignment component
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+            <window name="alignments" anchor="LeftTop"/>
+        </append>-->
+
+        <!--player info component
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+            <window name="playerInfo" anchor="CenterTop"/>
+        </append>
+
+        <setattribute xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']" name="anchor">CenterTop</setattribute>-->
+
+        <!--   Level Display & XP Bar 
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+            <window name="fpsHUDlevelXP" anchor="LeftTop"/>
+        </append>-->
+
+
+        <!--   Day & Time Display HUD 
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+            <window name="fpsHUDdayTimeFrame" anchor="LeftTop"/>
+        </append>-->
+
+
+        <!--   Time Display UI 
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='map']">
+            <window name="fpsHUDtimeFrame" anchor="LeftTop"/>
+        </append>-->
+
+        <!--   Temperature & Elevation Display 
+        <append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+            <window name="fpsHUDenvironment" anchor="LeftTop"/>
+        </append>-->
+
+        </append>
 
 </xui>
