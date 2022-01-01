@@ -1,4 +1,4 @@
-# Updated(12-31-2021 Do not download atm, under construction)
+# Updated(12-31-2021)
 ## 7 Days to Die Alpha 20 Mods
 This is a combination of many mods I've found/made over the last 5 years, all rights go to their owners as I am not here to make it seems like I made it all myself, just wanted to share it with everyone :)
 ## Features
@@ -56,8 +56,6 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Almost all crafting times have been reduced to basically instant as well as scrap times.
 + All ammo crafted actually produces 3x times the amount.
 + All items now sellable to traders.[Have not configured pricing yet].
-+ Empty jars no longer take water source on use.
-+ T0(Stone tools) have been removed from finding in loot, instead there is a slightly higher chance to find T1(Iron tools) at low levels.
 ##### Sounds
 + All sounds lowered, though the auger and chainsaw can still be pretty loud when using.
 + The 'ching' sound when trying to repair something but not having the required materials is now muted.
