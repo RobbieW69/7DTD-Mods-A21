@@ -789,6 +789,11 @@
 			<ingredient count="1" name="resourceCropCoffeeBeans"/>
 			<ingredient count="1" name="drinkJarPureMineralWater"/>
 		</recipe>
+		<!-- first aid kit schem -->
+		<recipe count="1" name="medicalFirstAidKitSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="medicalFirstAidKit"/>
+		</recipe>
 		<!-- resourceFeather -->
 		<recipe count="1" name="resourceFeather">
 			<ingredient count="3" name="resourcePaper"/>

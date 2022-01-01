@@ -22,14 +22,13 @@
     </insertAfter>
 
 
-	<!--repair amount by default is: 32000 so we'll see-->
-	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>
+	<!--repair amount by default is: 32000 so we'll see
+	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>-->
 
 
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">5.5</set>
-    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">2.2</set>
 
 	<!-- Disabling spread on any weapon/tool that has it by RobbieW-->
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">0</set>
@@ -38,6 +37,7 @@
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierCrouching']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
 
 	<!-- Turn off the constant moving the crosshair shaking my screen for augy
 	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
@@ -56,7 +56,7 @@
 	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>-->
 
 	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan']">
-		<passive_effect name="DamageModifier" operation="perc_add" value="30" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head"/>
 	</append>
 
 	<!-- Forge limit set to 1 million -->
@@ -65,7 +65,7 @@
 	<set xpath="//item[@name='unit_iron']/property[@name='Stacknumber']/@value">49999</set>-->
 
 	<!-- <set xpath=""></set> -->
-	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='MaxRange']/@value">3.5</set>
+	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='MaxRange']/@value">5</set>
 	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='BlockRange']/@value">5</set>
 
 	<!--Working Sink Mod -->

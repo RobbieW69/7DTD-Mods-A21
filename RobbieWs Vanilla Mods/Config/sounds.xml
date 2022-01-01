@@ -9,5 +9,10 @@
 	<set xpath="//SoundDataNode[contains(@name, 'Auger') or contains(@name, 'auger')]/MaxVoices/@value">0</set>
 
 	<set xpath="//SoundDataNode[contains(@name, 'Repair') or contains(@name, 'repair')]/MaxVoices/@value">0</set>
+
+	<remove	xpath="/Sounds/SoundDataNode[@name='bullethitstone']"/>
+	<remove	xpath="/Sounds/SoundDataNode[@name='bullethitearth']"/>
+	<remove	xpath="/Sounds/SoundDataNode[@name='bullethitwood']"/>
+	<remove	xpath="/Sounds/SoundDataNode[@name='bullethitmetal']"/>
 	
 </configs>
