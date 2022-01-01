@@ -4,17 +4,10 @@
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>
 
-    <!--Remove any chance of getting T0 loot and grant small chance of T1 loot at early gamestages
-	<set xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT0']/loot/@prob">0</set>
-	<set xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT0Backup']/loot/@prob">0</set>
-	<set xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT1']/loot[@level='0,9']/@prob">.10</set>-->
-
     <!-- Destroy garbage on loot-->
     <setattribute xpath="/lootcontainers/lootcontainer[@id='9']" name="destroy_on_close">true</setattribute>  <!-- bags -->
     <setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>  <!-- garbage -->
     <setattribute xpath="/lootcontainers/lootcontainer[@id='25']" name="destroy_on_close">true</setattribute>  <!-- birdnest -->
     <set xpath="/lootcontainers/lootcontainer[@id='25']/@sound_close">silencefiller</set>  <!-- birdnest sound -->
     <setattribute xpath=" /lootcontainers/lootcontainer[@id='48']" name="destroy_on_close">true</setattribute>  <!-- purse -->
-
-    <!--<remove xpath="/lootcontainers/lootgroup[contains(@name, 'group') and (contains(@name, 'Ammo') or (contains(@name, 'ammo')))]/item[contains(@group, 'Weapon')]"/> -->
 </configs>

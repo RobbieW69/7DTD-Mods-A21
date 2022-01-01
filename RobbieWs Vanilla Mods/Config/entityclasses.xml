@@ -20,9 +20,10 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
+
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
-		<property name="CorpseBlock" value="goreBlockHumanBones"/>
+		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
 		<property name="CorpseBlockChance" value="0.2"/>
 	</append>
 	

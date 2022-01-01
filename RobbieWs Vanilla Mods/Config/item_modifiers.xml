@@ -1,0 +1,6 @@
+<configs>
+    
+    <!-- Disable ADS Crosshair on all item mods as well cause apprently they override -->
+    <set xpath="//item_modifier/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
+
+</configs>

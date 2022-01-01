@@ -10,6 +10,14 @@
         <passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-0.20,-0.40,-0.60"/>
 </append>-->
 
+<!--
+<append xpath="//attribute[@name='attFortitude']">
+    <effect_group>
+        <requirement tags="attFortitude"/>
+        <passive_effect name="HealthMax" operation="perc_add" level="2,10" value="0.2,1"/>
+    </effect_group>
+</append>-->
+
 <!--Set skill points per level up to: 5, and turn off level gate for skills 
 <setattribute xpath="//level[@skill_points_per_level='1']" name="skill_points_per_level">5</setattribute>  my old way -->
 <set xpath="//level/@skill_points_per_level">5</set>

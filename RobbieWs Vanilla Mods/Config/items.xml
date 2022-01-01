@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
-	<!--
-	Sam's AutoShotgun Unnerfing
-	v20.0.0
-	by saminal
-	-->
+	<!-- Turn off crosshair when aiming down sights on any weapon that supports it and exclude bows by RobbieW -->
+	<set xpath="//item[contains(@name,'gun') and not(@name='gunBowT0PrimitiveBow' or @name='gunBowT1WoodenBow')]/property[@name='CrosshairOnAim']/@value">false</set>
 	
+	<!-- Increase FOV on sniper rifle, max_out" value="55", Zoom_max_in" value="55" -->
+	<set xpath="//item[@name='gunRifleT3SniperRifle']/property[@class='Action1']/property[@name='Zoom_max_out']/@value">35</set>
+	<set xpath="//item[@name='gunRifleT3SniperRifle']/property[@class='Action1']/property[@name='Zoom_max_in']/@value">35</set>
+
 	<!-- sell any item to trader -->
 	<append xpath="//item">
        <property name="SellableToTrader" value="true"/>
@@ -25,7 +26,7 @@
 	<!--repair amount by default is: 32000 so we'll see
 	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>-->
 
-
+	<!-- Sam's AutoShotgun Unnerfing v20.0.0 by saminal -->
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">5.5</set>
@@ -38,22 +39,6 @@
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
-
-	<!-- Turn off the constant moving the crosshair shaking my screen for augy
-	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
-	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
-	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
-	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
-	<set xpath="//item[contains(@name,'Chainsaw')]/effect_group/passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>-->
-
-	<!--FF8621-->
-
-	<!-- Turn off the constant moving the crosshair shaking my screen for chainsaw
-	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
-	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
-	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
-	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
-	<set xpath="//item[contains(@name,'Auger')]/effect_group/passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>-->
 
 	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head"/>
@@ -114,9 +99,6 @@
 	<set xpath="//item/effect_group/passive_effect[(@name='MagazineSize') and (@value='-.122,.122')]/@value">.122</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set>
 	<!--End Item Stack Changes -->
-	
-	<!-- Turn off crosshair when ADS on a weapon that supports it and exclude bows by RobbieW -->
-	<set xpath="//item[contains(@name,'gun') and not(contains(@name,'Bow'))]/property[@name='CrosshairOnAim']/@value">false</set>
 	
 	<!-- Add: "better auger mod" idk if this actually works but here it is -->
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">62.1</set>

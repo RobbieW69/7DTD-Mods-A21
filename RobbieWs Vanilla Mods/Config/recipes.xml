@@ -20,7 +20,7 @@
 	<set xpath="//recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 	<set xpath="//recipe[@name='modGunScopeLarge']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 
-	<!-- fix farming or at least try 
+	<!-- fix farming or at least try -->
 	<set xpath="//recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
 	<set xpath="//recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">1</set>
 	<set xpath="//recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">2</set>
@@ -36,7 +36,7 @@
 	<set xpath="//recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">1</set>
 	<set xpath="//recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">1</set>
 	<set xpath="//recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">1</set>
-	<set xpath="//recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">1</set>-->
+	<set xpath="//recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">1</set>
 	
 <!-- Recipe changes/adiddionts-->
 	<append xpath="/recipes">
@@ -59,126 +59,417 @@
 			<ingredient count="1" name="resourceWood"/>
 			<ingredient count="1" name="foodRottingFlesh"/>
 		</recipe>
-		<!--  Ratchet Schematic -->
-		<recipe craft_area="workbench" count="1" name="meleeToolSalvageT2RatchetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeToolSalvageT2Ratchet"/>
-		</recipe>
-		<!--  ImpactDriver Schematic -->
-		<recipe craft_area="workbench" count="1" name="meleeToolSalvageT3ImpactDriverSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeToolSalvageT3ImpactDriver"/>
-		</recipe>
-		<!--  Machete Schematic -->
-		<recipe craft_area="workbench" count="1" name="meleeWpnBladeT3MacheteSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeWpnBladeT3Machete"/>
-		</recipe>
-		<!--  Pistol Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunHandgunT1PistolSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunHandgunT1Pistol"/>
-		</recipe>
-		<!--  SMG Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunHandgunT3SMG5Schematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunHandgunT3SMG5"/>
-		</recipe>
-		<!--  Magnum44 Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunHandgunT2Magnum44Schematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunHandgunT2Magnum44"/>
-		</recipe>
-		<!--  DesertVulture Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunHandgunT3DesertVultureSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunHandgunT3DesertVulture"/>
-		</recipe>
-		<!--  AutoShotgun Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunShotgunT3AutoShotgunSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunShotgunT3AutoShotgun"/>
-		</recipe>
-		<!--  SniperRifle Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunRifleT3SniperRifleSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunRifleT3SniperRifle"/>
-		</recipe>
-		<!--  AR Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunMGT2TacticalARSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunMGT2TacticalAR"/>
-		</recipe>		
-		<!--  M60 Schematic -->
-		<recipe craft_area="workbench" count="1" name="bookAutoWeaponsMachineGuns">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunMGT3M60"/>
-		</recipe>
-		<!--  RocketLauncher Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunExplosivesT3RocketLauncherSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunExplosivesT3RocketLauncher"/>
-		</recipe>
-		<!--  CompoundBow Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunBowT3CompoundBowSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunBowT3CompoundBow"/>
-		</recipe>
-		<!--  CompoundCrossbow Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunBowT3CompoundCrossbowSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunBowT3CompoundCrossbow"/>
-		</recipe>
-		<!--  Woodenbow Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunBowT1WoodenBowSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunBowT1WoodenBow"/>
-		</recipe>
-		<!--  MarksmanRifle Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunRifleT2LeverActionRifleSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunRifleT2LeverActionRifle"/>
-		</recipe>
-		<!--  PumpShotgun Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunShotgunT2PumpShotgunSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunShotgunT2PumpShotgun"/>
-		</recipe>
-		<!--  DoubleBarrel Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunShotgunT1DoubleBarrelSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunShotgunT1DoubleBarrel"/>
-		</recipe>
-		<!--  HuntingRifle Schematic -->
-		<recipe craft_area="workbench" count="1" name="gunRifleT1HuntingRifleSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="gunRifleT1HuntingRifle"/>
-		</recipe>
 		<!--  Taza's Stone Axe -->
 		<recipe craft_area="workbench" count="1" name="meleeToolRepairT0TazasStoneAxe">
 			<ingredient count="300" name="resourceFeather"/>
 			<ingredient count="5" name="meleeToolRepairT0StoneAxe"/>
 			<ingredient count="1" name="modDyeRed"/>
 		</recipe>
-		<!--  Huntingknife Schematic -->
-		<recipe craft_area="workbench" count="1" name="meleeWpnBladeT1HuntingKnifeSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeWpnBladeT1HuntingKnife"/>
+		<!-- gunMGT1AK47Parts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunMGT1AK47Parts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
 		</recipe>
-		<!--  thrownAmmoPipeBomb schem -->
-		<recipe craft_area="workbench" count="1" name="thrownAmmoPipeBombSchematic">
-			<ingredient count="1" name="thrownAmmoPipeBomb"/>
-			<ingredient count="1" name="resourcePaper"/>
+		<!-- gunHandgunT1PistolParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunHandgunT1PistolParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
 		</recipe>
-		<!--  thrownGrenadeContact schem -->
-		<recipe craft_area="workbench" count="1" name="thrownGrenadeContactSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="thrownGrenadeContact"/>
+		<!--gunRifleT1HuntingRifleParts   -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunRifleT1HuntingRifleParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
 		</recipe>
-		<!--  thrownGrenade schem -->
-		<recipe craft_area="workbench" count="1" name="thrownGrenadeSchematic">
+		<!-- gunShotgunT1DoubleBarrelParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunShotgunT1DoubleBarrelParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- gunExplosivesT3RocketLauncherParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunExplosivesT3RocketLauncherParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!--gunBotRoboticsParts   -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunBotRoboticsParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- meleeWpnBatonT2StunBatonParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnBatonT2StunBatonParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- meleeWpnKnucklesT3SteelKnucklesParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnKnucklesT3SteelKnucklesParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!--  meleeWpnBladeT3MacheteParts -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnBladeT3MacheteParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!--  meleeWpnSpearT3SteelSpearParts -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnSpearT3SteelSpearParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!--  meleeWpnClubT3SteelClubParts -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnClubT3SteelClubParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- meleeWpnSledgeT3SteelSledgehammerParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnSledgeT3SteelSledgehammerParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- meleeToolAxeT3ChainsawParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeToolAxeT3ChainsawParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- armorSteelSetParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="armorSteelSetParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- resourceSewingKit  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="resourceSewingKit">
+			<ingredient count="1" name="resourceScrapIron"/>
+			<ingredient count="1" name="resourceCloth"/>
+		</recipe>
+		<!-- foodCanBeef  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="foodCanBeef">
+			<ingredient count="1" name="drinkCanEmpty"/>
+			<ingredient count="1" name="foodRawMeat"/>
+		</recipe>
+		<!--  bucketRiverWater -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="bucketRiverWater">
+			<ingredient count="1" name="bucketEmpty"/>
+			<ingredient count="5" name="resourceSnowBall"/>
+		</recipe>
+		<!-- Cash -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="800" name="oldCash">
+			<ingredient count="100" name="resourcePaper"/>
+			<ingredient count="1" name="modDyeGreen"/>
+		</recipe>
+		<!-- COINS -->
+		<recipe craft_area="forge" tags="workbenchCrafting" count="300" name="casinoCoin">
+			<ingredient count="300" name="resourceScrapBrass"/>
+		</recipe>
+		<!-- Cash -->
+		<recipe craft_area="forge" count="1" name="drugJailBreakers">
+			<ingredient count="1" name="drinkJarGrandpasMoonshine"/>
+			<ingredient count="1" name="resourceAcid"/>
+			<ingredient count="1" name="drinkJarGrandpasMoonshine"/>
+			<ingredient count="1" name="bucketRiverWater"/>
+		</recipe>
+		<!-- OH SHITZ DROPS -->
+		<recipe craft_area="forge" count="1" name="drugOhShitzDrops">
+			<ingredient count="2" name="drinkJarGrandpasMoonshine"/>
+			<ingredient count="1" name="resourceAcid"/>
+			<ingredient count="1" name="bucketRiverWater"/>
+		</recipe>
+		<!-- ACID -->
+		<recipe craft_area="workbench" count="3" name="resourceAcid">
+			<ingredient count="15" name="ammoGasCan"/>
+			<ingredient count="15" name="resourceScrapPolymers"/>
+			<ingredient count="1" name="toolBeaker"/>
+		</recipe>
+		<!-- solarCell -->
+		<recipe craft_area="forge" count="3" name="solarCell">
+			<ingredient count="25" name="resourceMechanicalParts"/>
+			<ingredient count="25" name="resourceElectricParts"/>
+			<ingredient count="10" name="resourceForgedIron"/>
+		</recipe>
+		<!-- solarbank -->
+		<recipe craft_area="forge" count="3" name="solarbank">
+			<ingredient count="25" name="resourceMechanicalParts"/>
+			<ingredient count="25" name="resourceElectricParts"/>
+			<ingredient count="10" name="resourceForgedIron"/>
+		</recipe>
+		<!-- Spring -->
+		<recipe craft_area="forge" count="1" name="resourceSpring">
+			<ingredient count="1" name="unit_iron"/>
+		</recipe>
+	<!-- Alpha 20 Changes/Additions -->
+	<!-- Additions -->
+		<!-- smallEngine -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="smallEngine">
+			<ingredient count="25" name="resourceForgedIron"/>
+			<ingredient count="8" name="resourceMetalPipe"/>
+			<ingredient count="6" name="resourceElectricParts"/>
+			<ingredient count="6" name="resourceMechanicalParts"/>
+			<ingredient count="4" name="resourceOil"/>
+			<ingredient count="1" name="resourceRadiator"/>
+		</recipe>
+		<!-- carBattery -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="carBattery">
+			<ingredient count="25" name="resourceElectricParts"/>
+			<ingredient count="8" name="resourceScrapPolymers"/>
+			<ingredient count="25" name="resourceScrapLead"/>
+			<ingredient count="1" name="resourceScrapIron"/>
+			<ingredient count="2" name="resourceGlue"/>
+			<ingredient count="1" name="drinkJarRiverWater"/>
+		</recipe>
+		<!-- solarCell -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarCell">
+			<ingredient count="5" name="resourceElectricParts"/>
+			<ingredient count="1" name="glassBulletproofBlockVariantHelper"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- solarbank -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarbank">
+			<ingredient count="30" name="resourceElectricParts"/>
+			<ingredient count="6" name="glassBulletproofBlockVariantHelper"/>
+			<ingredient count="6" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- drinkCanMegaCrush -->
+		<recipe craft_area="campfire" count="1" name="drinkCanMegaCrush">
+			<ingredient count="1" name="drinkJarGoldenRodTea"/>
+			<ingredient count="1" name="resourceCropCoffeeBeans"/>
+			<ingredient count="1" name="drinkJarPureMineralWater"/>
+		</recipe>
+		<!-- resourceFeather -->
+		<recipe count="1" name="resourceFeather">
+			<ingredient count="3" name="resourcePaper"/>
+			<ingredient count="1" name="resourceSewingKit"/>
+		</recipe>
+		<!-- foodRottingFlesh -->
+		<recipe count="200" name="foodRottingFlesh">
+			<ingredient count="200" name="foodRawMeat"/>
+			<ingredient count="1" name="resourceAcid"/>
+			<ingredient count="1" name="drinkJarRiverWater"/>
+		</recipe>
+		<!-- resourcePaper -->
+		<recipe craft_area="workbench" count="100" name="resourcePaper">
+			<ingredient count="10" name="resourceWood"/>
+			<ingredient count="1" name="drinkJarBoiledWater"/>
+		</recipe>
+		<!-- resourceCoal -->
+		<recipe craft_area="campfire" count="5" name="resourceCoal">
+			<ingredient count="1" name="resourceWood"/>
+		</recipe>
+		<!-- resourceCloth -->
+		<recipe count="1" name="resourceCloth">
+			<ingredient count="20" name="resourceYuccaFibers"/>
+			<ingredient count="1" name="resourceSewingKit"/>
+		</recipe>
+		<!-- toolBeaker -->
+		<recipe craft_area="forge" material_based="true" count="1" name="toolBeaker">
+			<ingredient count="10" name="unit_glass"/>
+		</recipe>
+	<!-- Schematics -->
+		<!-- drinkJarGrandpasMoonshineSchematic schem -->
+		<recipe count="1" name="drinkJarGrandpasMoonshineSchematic">
 			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="thrownGrenade"/>
+			<ingredient count="1" name="drinkJarGrandpasMoonshine"/>
+		</recipe>
+		<!-- drinkJarGrandpasLearningElixirSchematic schem -->
+		<recipe count="1" name="drinkJarGrandpasLearningElixirSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drinkJarGrandpasLearningElixir"/>
+		</recipe>
+		<!-- drinkJarGrandpasAwesomeSauceSchematic schem -->
+		<recipe count="1" name="drinkJarGrandpasAwesomeSauceSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drinkJarGrandpasAwesomeSauce"/>
+		</recipe>
+		<!-- drugHerbalAntibioticsSchematic schem -->
+		<recipe count="1" name="drugHerbalAntibioticsSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drugHerbalAntibiotics"/>
+		</recipe>
+		<!-- drugAntibioticsSchematic schem -->
+		<recipe count="1" name="drugAntibioticsSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drugAntibiotics"/>
+		</recipe>
+		<!-- ammoGasCanSchematic schem -->
+		<recipe count="1" name="ammoGasCanSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="ammoGasCan"/>
+		</recipe>
+		<!-- electrictimerrelaySchematic schem -->
+		<recipe count="1" name="electrictimerrelaySchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="electrictimerrelay"/>
+		</recipe>
+		<!-- batterybankSchematic schem -->
+		<recipe count="1" name="batterybankSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="batterybank"/>
+		</recipe>
+		<!-- spotlightPlayerSchematic schem -->
+		<recipe count="1" name="spotlightPlayerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="spotlightPlayer"/>
+		</recipe>
+		<!-- speakerSchematic schem -->
+		<recipe count="1" name="speakerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="speaker"/>
+		</recipe>
+		<!-- motionsensorSchematic schem -->
+		<recipe count="1" name="motionsensorSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="motionsensor"/>
+		</recipe>
+		<!-- electricfencepostSchematic schem -->
+		<recipe count="1" name="electricfencepostSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="electricfencepost"/>
+		</recipe>
+		<!-- autoTurretSchematic schem -->
+		<recipe count="1" name="autoTurretSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="autoTurret"/>
+		</recipe>
+		<!-- shotgunTurretSchematic schem -->
+		<recipe count="1" name="shotgunTurretSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="shotgunTurret"/>
+		</recipe>
+		<!-- dartTrapSchematic schem -->
+		<recipe count="1" name="dartTrapSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="dartTrapSchematic"/>
+		</recipe>
+		<!-- bladeTrapSchematic schem -->
+		<recipe count="1" name="bladeTrapSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="bladeTrap"/>
+		</recipe>
+		<!-- pressureplateSchematic schem -->
+		<recipe count="1" name="pressureplateSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="pressureplate"/>
+		</recipe>
+		<!-- generatorbankSchematic schem -->
+		<recipe count="1" name="generatorbankSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="generatorbank"/>
+		</recipe>
+		<!-- medicalPlasterCastSchematic schem -->
+		<recipe count="1" name="medicalPlasterCastSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="medicalPlasterCast"/>
+		</recipe>
+		<!-- medicalFirstAidBandageSchematic schem -->
+		<recipe count="1" name="medicalFirstAidBandageSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="medicalFirstAidBandage"/>
+		</recipe>
+		<!-- resourceMilitaryFiberSchematic schem -->
+		<recipe count="1" name="resourceMilitaryFiberSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="resourceMilitaryFiber"/>
+		</recipe>
+		<!-- armorLeatherSetSchematic schem -->
+		<recipe count="1" name="armorLeatherSetSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="armorLeatherHood"/>
+			<ingredient count="1" name="armorLeatherChest"/>
+			<ingredient count="1" name="armorLeatherGloves"/>
+			<ingredient count="1" name="armorLeatherPants"/>
+			<ingredient count="1" name="armorLeatherBoots"/>
+		</recipe>
+		<!-- gunBotT2JunkTurretSchematic schem -->
+		<recipe count="1" name="gunBotT2JunkTurretSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBotT2JunkTurret"/>
+		</recipe>
+		<!-- gunBotT1JunkSledgeSchematic schem -->
+		<recipe count="1" name="gunBotT1JunkSledgeSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBotT1JunkSledge"/>
+		</recipe>
+		<!-- gunMGT3M60Schematic schem -->
+		<recipe count="1" name="gunMGT3M60Schematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunMGT3M60"/>
+		</recipe>
+		<!-- gunMGT1AK47Schematic schem -->
+		<recipe count="1" name="gunMGT1AK47Schematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunMGT1AK47"/>
+		</recipe>
+		<!-- gunBowT1IronCrossbowSchematic schem -->
+		<recipe count="1" name="gunBowT1IronCrossbowSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBowT1IronCrossbow"/>
+		</recipe>
+		<!-- meleeWpnSpearT1IronSpearSchematic schem -->
+		<recipe count="1" name="meleeWpnSpearT1IronSpearSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnSpearT1IronSpear"/>
+		</recipe>
+		<!-- meleeToolSalvageT1WrenchSchematic schem -->
+		<recipe count="1" name="meleeToolSalvageT1WrenchSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolSalvageT1Wrench"/>
+		</recipe>
+		<!-- meleeToolIronSetSchematic schem -->
+		<recipe count="1" name="meleeToolIronSetSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolRepairT1ClawHammer"/>
+			<ingredient count="1" name="meleeToolAxeT1IronFireaxe"/>
+			<ingredient count="1" name="meleeToolPickT1IronPickaxe"/>
+			<ingredient count="1" name="meleeToolShovelT1IronShovel"/>
+		</recipe>
+		<!-- meleeWpnBatonT2StunBatonSchematic schem -->
+		<recipe count="1" name="meleeWpnBatonT2StunBatonSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnBatonT2StunBaton"/>
+		</recipe>
+		<!-- meleeWpnSledgeT3SteelSledgehammerSchematic schem -->
+		<recipe count="1" name="meleeWpnSledgeT3SteelSledgehammerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnSledgeT3SteelSledgehammer"/>
+		</recipe>
+		<!--  meleeWpnSledgeT1IronSledgehammerSchematic schem -->
+		<recipe count="1" name="meleeWpnSledgeT1IronSledgehammerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnSledgeT1IronSledgehammer"/>
+		</recipe>
+		<!-- meleeWpnClubT1BaseballBatSchematic schem -->
+		<recipe count="1" name="meleeWpnClubT1BaseballBatSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnClubT1BaseballBat"/>
+		</recipe>
+		<!-- T1IronKnuckles schem -->
+		<recipe count="1" name="meleeWpnKnucklesT1IronKnucklesSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnKnucklesT1IronKnuckles"/>
+		</recipe>
+		<!-- T3SteelKnuckles schem -->
+		<recipe count="1" name="meleeWpnKnucklesT3SteelKnucklesSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnKnucklesT3SteelKnuckles"/>
+		</recipe>
+		<!-- first aid kit schem -->
+		<recipe count="1" name="medicalFirstAidKitSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="medicalFirstAidKit"/>
+		</recipe>
+		<!-- meleeToolSteelSetSchematic Schem -->
+		<recipe craft_area="workbench" count="1" name="meleeToolSteelSetSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolShovelT2SteelShovel"/>
+			<ingredient count="1" name="meleeToolPickT2SteelPickaxe"/>
+			<ingredient count="1" name="meleeToolAxeT2SteelAxe"/>
+		</recipe>
+		<!-- Auger Schem -->
+		<recipe craft_area="workbench" count="1" name="meleeToolPickT3AugerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolPickT3Auger"/>
+		</recipe>
+		<!-- Chainsaw Schem -->
+		<recipe craft_area="workbench" count="1" name="meleeToolAxeT3ChainsawSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolAxeT3Chainsaw"/>
 		</recipe>
 		<!--  thrownTimedCharge schem -->
 		<recipe craft_area="workbench" count="1" name="bookGreatHeistTimedCharge">
@@ -190,95 +481,32 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="thrownDynamite"/>
 		</recipe>
+		<!-- armorMilitarySetSchematic schem  -->
 		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorMilitaryHelmet"/>
-		</recipe>
-		
-		<!--  armorMilitarySetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorMilitaryVest"/>
-		</recipe>
-		<!--  armorMilitarySetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorMilitaryGloves"/>
-		</recipe>
-		<!--  armorMilitarySetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorMilitaryLegs"/>
-		</recipe>
-		<!--  armorMilitarySetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorMilitaryBoots"/>
-		</recipe>
-		<!--  armorMilitarySetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorMilitarySetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="armorMilitaryStealthBoots"/>
 		</recipe>
 		<!-- armorIronSetSchematic -->
 		<recipe craft_area="workbench" count="1" name="armorIronSetSchematic">
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorIronHelmet"/>
-		</recipe>
-		<!--  armorIronSetSchematic -->
-		<recipe craft_area="workbench" count="1" name="armorIronSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorIronChest"/>
-		</recipe>
-		<!--   armorIronSetSchematic-->
-		<recipe craft_area="workbench" count="1" name="armorIronSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorIronGloves"/>
-		</recipe>
-		<!-- armorIronSetSchematic  -->
-		<recipe craft_area="workbench" count="1" name="armorIronSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorIronLegs"/>
-		</recipe>
-		<!-- armorIronSetSchematic  -->
-		<recipe craft_area="workbench" count="1" name="armorIronSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorIronBoots"/>
 		</recipe>
 		<!--  armorSteelSetSchematicschem -->
 		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorSteelHelmet"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorSteelChest"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorSteelGloves"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorSteelLegs"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="armorSteelBoots"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="armorFirefightersHelmet"/>
-		</recipe>
-		<!--  armorSteelSetSchematicschem -->
-		<recipe craft_area="workbench" count="1" name="armorSteelSetSchematic">
-			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="armorSwatHelmet"/>
 		</recipe>
 		<!--  toolBellowsschem -->
 		<recipe craft_area="workbench" count="1" name="toolBellowsSchematic">
@@ -330,6 +558,7 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="vehicleGyroCopterAccessories"/>
 		</recipe>
+	<!-- Mods -->
 		<!-- modGunBarrelExtender schem -->
 		<recipe craft_area="workbench" count="1" name="modGunBarrelExtenderSchematic">
 			<ingredient count="1" name="resourcePaper"/>
@@ -605,225 +834,123 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="modFuelTankLarge"/>
 		</recipe>
-		<!-- gunMGT1AK47Parts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunMGT1AK47Parts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- gunHandgunT1PistolParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunHandgunT1PistolParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!--gunRifleT1HuntingRifleParts   -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunRifleT1HuntingRifleParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- gunShotgunT1DoubleBarrelParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunShotgunT1DoubleBarrelParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- gunExplosivesT3RocketLauncherParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunExplosivesT3RocketLauncherParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!--gunBotRoboticsParts   -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunBotRoboticsParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- meleeWpnBatonT2StunBatonParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnBatonT2StunBatonParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- meleeWpnKnucklesT3SteelKnucklesParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnKnucklesT3SteelKnucklesParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!--  meleeWpnBladeT3MacheteParts -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnBladeT3MacheteParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!--  meleeWpnSpearT3SteelSpearParts -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnSpearT3SteelSpearParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!--  meleeWpnClubT3SteelClubParts -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnClubT3SteelClubParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- meleeWpnSledgeT3SteelSledgehammerParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeWpnSledgeT3SteelSledgehammerParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- meleeToolAxeT3ChainsawParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeToolAxeT3ChainsawParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- armorSteelSetParts  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="armorSteelSetParts">
-			<ingredient count="1" name="resourceDuctTape"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- resourceSewingKit  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="resourceSewingKit">
-			<ingredient count="1" name="resourceScrapIron"/>
-			<ingredient count="1" name="resourceCloth"/>
-		</recipe>
-		<!-- foodCanBeef  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="foodCanBeef">
-			<ingredient count="1" name="drinkCanEmpty"/>
-			<ingredient count="1" name="foodRawMeat"/>
-		</recipe>
-		<!--  bucketRiverWater -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="bucketRiverWater">
-			<ingredient count="1" name="bucketEmpty"/>
-			<ingredient count="5" name="resourceSnowBall"/>
-		</recipe>
-		<!-- meleeToolSteelSetSchematic Schem -->
-		<recipe craft_area="workbench" count="2" name="meleeToolSteelSetSchematic">
+
+	<!-- throwns -->
+		<!--  Huntingknife Schematic -->
+		<recipe craft_area="workbench" count="1" name="meleeWpnBladeT1HuntingKnifeSchematic">
 			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeToolShovelT2SteelShovel"/>
-			<ingredient count="1" name="meleeToolPickT2SteelPickaxe"/>
-			<ingredient count="1" name="meleeToolAxeT2SteelAxe"/>
+			<ingredient count="1" name="meleeWpnBladeT1HuntingKnife"/>
 		</recipe>
-		<!-- Auger Schem -->
-		<recipe craft_area="workbench" count="2" name="meleeToolPickT3AugerSchematic">
+		<!--  thrownAmmoPipeBomb schem -->
+		<recipe craft_area="workbench" count="1" name="thrownAmmoPipeBombSchematic">
+			<ingredient count="1" name="thrownAmmoPipeBomb"/>
 			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeToolPickT3Auger"/>
 		</recipe>
-		<!-- Chainsaw Schem -->
-		<recipe craft_area="workbench" count="2" name="meleeToolAxeT3ChainsawSchematic">
+		<!--  thrownGrenadeContact schem -->
+		<recipe craft_area="workbench" count="1" name="thrownGrenadeContactSchematic">
 			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="meleeToolAxeT3Chainsaw"/>
+			<ingredient count="1" name="thrownGrenadeContact"/>
 		</recipe>
-		<!-- Cash -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="800" name="oldCash">
-			<ingredient count="100" name="resourcePaper"/>
-			<ingredient count="1" name="modDyeGreen"/>
-		</recipe>
-		<!-- COINS -->
-		<recipe craft_area="forge" tags="workbenchCrafting" count="300" name="casinoCoin">
-			<ingredient count="300" name="resourceScrapBrass"/>
-		</recipe>
-		<!-- Cash -->
-		<recipe craft_area="forge" count="1" name="drugJailBreakers">
-			<ingredient count="1" name="drinkJarGrandpasMoonshine"/>
-			<ingredient count="1" name="resourceAcid"/>
-			<ingredient count="1" name="drinkJarGrandpasMoonshine"/>
-			<ingredient count="1" name="bucketRiverWater"/>
-		</recipe>
-		<!-- OH SHITZ DROPS -->
-		<recipe craft_area="forge" count="1" name="drugOhShitzDrops">
-			<ingredient count="2" name="drinkJarGrandpasMoonshine"/>
-			<ingredient count="1" name="resourceAcid"/>
-			<ingredient count="1" name="bucketRiverWater"/>
-		</recipe>
-		<!-- ACID -->
-		<recipe craft_area="workbench" count="3" name="resourceAcid">
-			<ingredient count="15" name="ammoGasCan"/>
-			<ingredient count="15" name="resourceScrapPolymers"/>
-			<ingredient count="1" name="toolBeaker"/>
-		</recipe>
-		<!-- solarCell -->
-		<recipe craft_area="forge" count="3" name="solarCell">
-			<ingredient count="25" name="resourceMechanicalParts"/>
-			<ingredient count="25" name="resourceElectricParts"/>
-			<ingredient count="10" name="resourceForgedIron"/>
-		</recipe>
-		<!-- solarbank -->
-		<recipe craft_area="forge" count="3" name="solarbank">
-			<ingredient count="25" name="resourceMechanicalParts"/>
-			<ingredient count="25" name="resourceElectricParts"/>
-			<ingredient count="10" name="resourceForgedIron"/>
-		</recipe>
-		<!-- Spring -->
-		<recipe craft_area="forge" count="1" name="resourceSpring">
-			<ingredient count="1" name="unit_iron"/>
-		</recipe>
-	<!-- Alpha 20 Changes/Additions -->
-	<!-- Additions -->
-		<!-- smallEngine -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="smallEngine">
-			<ingredient count="25" name="resourceForgedIron"/>
-			<ingredient count="8" name="resourceMetalPipe"/>
-			<ingredient count="6" name="resourceElectricParts"/>
-			<ingredient count="6" name="resourceMechanicalParts"/>
-			<ingredient count="4" name="resourceOil"/>
-			<ingredient count="1" name="resourceRadiator"/>
-		</recipe>
-		<!-- carBattery -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="carBattery">
-			<ingredient count="25" name="resourceElectricParts"/>
-			<ingredient count="8" name="resourceScrapPolymers"/>
-			<ingredient count="25" name="resourceScrapLead"/>
-			<ingredient count="1" name="resourceScrapIron"/>
-			<ingredient count="2" name="resourceGlue"/>
-			<ingredient count="1" name="drinkJarRiverWater"/>
-		</recipe>
-		<!-- solarCell -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarCell">
-			<ingredient count="5" name="resourceElectricParts"/>
-			<ingredient count="1" name="glassBulletproofBlockVariantHelper"/>
-			<ingredient count="1" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- solarbank -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarbank">
-			<ingredient count="30" name="resourceElectricParts"/>
-			<ingredient count="6" name="glassBulletproofBlockVariantHelper"/>
-			<ingredient count="6" name="resourceForgedSteel"/>
-		</recipe>
-		<!-- drinkCanMegaCrush -->
-		<recipe craft_area="campfire" count="1" name="drinkCanMegaCrush">
-			<ingredient count="1" name="drinkJarGoldenRodTea"/>
-			<ingredient count="1" name="resourceCropCoffeeBeans"/>
-			<ingredient count="1" name="drinkJarPureMineralWater"/>
-		</recipe>
-		<!-- first aid kit schem -->
-		<recipe count="1" name="medicalFirstAidKitSchematic">
+		<!--  thrownGrenade schem -->
+		<recipe craft_area="workbench" count="1" name="thrownGrenadeSchematic">
 			<ingredient count="1" name="resourcePaper"/>
-			<ingredient count="1" name="medicalFirstAidKit"/>
+			<ingredient count="1" name="thrownGrenade"/>
 		</recipe>
-		<!-- resourceFeather -->
-		<recipe count="1" name="resourceFeather">
-			<ingredient count="3" name="resourcePaper"/>
-			<ingredient count="1" name="resourceSewingKit"/>
+		<!--  M60 Schematic -->
+		<recipe craft_area="workbench" count="1" name="bookAutoWeaponsMachineGuns">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunMGT3M60"/>
 		</recipe>
-		<!-- foodRottingFlesh -->
-		<recipe count="200" name="foodRottingFlesh">
-			<ingredient count="200" name="foodRawMeat"/>
-			<ingredient count="1" name="resourceAcid"/>
-			<ingredient count="1" name="drinkJarRiverWater"/>
+		<!--  RocketLauncher Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunExplosivesT3RocketLauncherSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunExplosivesT3RocketLauncher"/>
 		</recipe>
-		<!-- resourcePaper -->
-		<recipe craft_area="workbench" count="100" name="resourcePaper">
-			<ingredient count="10" name="resourceWood"/>
-			<ingredient count="1" name="drinkJarBoiledWater"/>
+		<!--  CompoundBow Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunBowT3CompoundBowSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBowT3CompoundBow"/>
 		</recipe>
-		<!-- resourceCoal -->
-		<recipe craft_area="campfire" count="5" name="resourceCoal">
-			<ingredient count="1" name="resourceWood"/>
+		<!--  CompoundCrossbow Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunBowT3CompoundCrossbowSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBowT3CompoundCrossbow"/>
 		</recipe>
-		<!-- resourceCloth -->
-		<recipe count="1" name="resourceCloth">
-			<ingredient count="20" name="resourceYuccaFibers"/>
-			<ingredient count="1" name="resourceSewingKit"/>
+		<!--  Woodenbow Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunBowT1WoodenBowSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunBowT1WoodenBow"/>
 		</recipe>
-		<!-- toolBeaker -->
-		<recipe craft_area="forge" material_based="true" count="1" name="toolBeaker">
-			<ingredient count="10" name="unit_glass"/>
+		<!--  MarksmanRifle Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunRifleT2LeverActionRifleSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunRifleT2LeverActionRifle"/>
 		</recipe>
-	<!-- Schematics -->
+		<!--  PumpShotgun Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunShotgunT2PumpShotgunSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunShotgunT2PumpShotgun"/>
+		</recipe>
+		<!--  DoubleBarrel Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunShotgunT1DoubleBarrelSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunShotgunT1DoubleBarrel"/>
+		</recipe>
+		<!--  HuntingRifle Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunRifleT1HuntingRifleSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunRifleT1HuntingRifle"/>
+		</recipe>
+		<!--  Ratchet Schematic -->
+		<recipe craft_area="workbench" count="1" name="meleeToolSalvageT2RatchetSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolSalvageT2Ratchet"/>
+		</recipe>
+		<!--  ImpactDriver Schematic -->
+		<recipe craft_area="workbench" count="1" name="meleeToolSalvageT3ImpactDriverSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeToolSalvageT3ImpactDriver"/>
+		</recipe>
+		<!--  Machete Schematic -->
+		<recipe craft_area="workbench" count="1" name="meleeWpnBladeT3MacheteSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="meleeWpnBladeT3Machete"/>
+		</recipe>
+		<!--  Pistol Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunHandgunT1PistolSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunHandgunT1Pistol"/>
+		</recipe>
+		<!--  SMG Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunHandgunT3SMG5Schematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunHandgunT3SMG5"/>
+		</recipe>
+		<!--  Magnum44 Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunHandgunT2Magnum44Schematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunHandgunT2Magnum44"/>
+		</recipe>
+		<!--  DesertVulture Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunHandgunT3DesertVultureSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunHandgunT3DesertVulture"/>
+		</recipe>
+		<!--  AutoShotgun Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunShotgunT3AutoShotgunSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunShotgunT3AutoShotgun"/>
+		</recipe>
+		<!--  SniperRifle Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunRifleT3SniperRifleSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunRifleT3SniperRifle"/>
+		</recipe>
+		<!--  AR Schematic -->
+		<recipe craft_area="workbench" count="1" name="gunMGT2TacticalARSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="gunMGT2TacticalAR"/>
+		</recipe>		
 		<!-- Drone -->
 		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunBotT3JunkDroneSchematic">
 			<ingredient count="1" name="resourcePaper"/>

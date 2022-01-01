@@ -1,0 +1,28 @@
+<configs>   
+
+    <!-- Set starter quest to give 5 skill points, and change all Quests exp and coin given by RobbieW--> 
+    
+    <!-- Make the starter quest give 5 points instead of 4 -->
+    <set xpath="//quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">5</set>
+
+    <!-- Nerf XP gain but increase money for Tier 1 Quests, default: exp 2500, coin 330-->
+    <set xpath="//quest[contains(@id, 'tier1_fetch') or contains(@id, 'tier1_clear') or contains(@id, 'tier1_buried')]/reward[@type='Exp']/@value">500</set>
+    <set xpath="//quest[contains(@id, 'tier1_fetch') or contains(@id, 'tier1_clear') or contains(@id, 'tier1_buried')]/reward[@type='Item']/@value">500</set>
+
+    <!-- Nerf XP gain but increase money for Tier 2 Quests, default: exp 3750, coin 560-->
+    <set xpath="//quest[contains(@id,'tier2_fetch') or contains(@id,'tier2_clear') or contains(@id,'tier2_buried') or contains(@id,'tier2_restore')]/reward[@type='Exp']/@value">1500</set>
+    <set xpath="//quest[contains(@id,'tier2_fetch') or contains(@id,'tier2_clear') or contains(@id,'tier2_buried') or contains(@id,'tier2_restore')]/reward[@type='Item']/@value">1000</set>
+
+    <!-- Nerf XP gain but increase money for Tier 3 Quests, default: exp 5000, coin 800-->
+    <set xpath="//quest[contains(@id,'tier3_fetch') or contains(@id,'tier3_clear') or contains(@id,'tier3_buried') or contains(@id,'tier3_restore')]/reward[@type='Exp']/@value">3000</set>
+    <set xpath="//quest[contains(@id,'tier3_fetch') or contains(@id,'tier3_clear') or contains(@id,'tier3_buried') or contains(@id,'tier3_restore')]/reward[@type='Item']/@value">2000</set>
+
+    <!-- Nerf XP gain but increase money for Tier 4 Quests, default: exp 6250, coin 1020-->
+    <set xpath="//quest[contains(@id,'tier4_fetch') or contains(@id,'tier4_clear') or contains(@id,'tier4_buried') or contains(@id,'tier4_restore')]/reward[@type='Exp']/@value">9000</set>
+    <set xpath="//quest[contains(@id,'tier4_fetch') or contains(@id,'tier4_clear') or contains(@id,'tier4_buried') or contains(@id,'tier4_restore')]/reward[@type='Item']/@value">4000</set>
+
+    <!-- Nerf XP gain but increase money for Tier 5 Quests, default: exp 12500, coin 2040-->
+    <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Exp']/@value">12500</set>
+    <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Item']/@value">8000</set>
+
+</configs>

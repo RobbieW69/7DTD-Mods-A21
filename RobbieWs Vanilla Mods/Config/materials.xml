@@ -1,6 +1,0 @@
-<configs>
-
-<!-- swim quickly -->
-<set xpath="//material[@id='Mwater']/property[@name='movement_factor']/@value">3.5</set>
-
-</configs>

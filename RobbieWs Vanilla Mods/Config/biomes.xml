@@ -12,48 +12,48 @@
 	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='cntBirdnest']/@prob">0.008</set>
 	
 	<!--
-	########## Mod vanilla items  DOUGHS WEATHER MOD ##########
-	NOTE: Setting ChunkMargin="1" is rally cool and dense effect, but hits FPS a little too much. Default game is ChunkMargin="7"
-	Set ChunkMargin="1" anyway as this is the lowest it can go and can add overriding mods to lessen it
+		########## Mod vanilla items  DOUGHS WEATHER MOD ##########
+		NOTE: Setting ChunkMargin="1" is rally cool and dense effect, but hits FPS a little too much. Default game is ChunkMargin="7"
+		Set ChunkMargin="1" anyway as this is the lowest it can go and can add overriding mods to lessen it
 
-	Spectrums:
-	BloodMoon Foggy Rainy Stormy Snowy
-	Note: Foggy is noce, snowy is very white, like super fog
-	-->
+		Spectrums:
+		BloodMoon Foggy Rainy Stormy Snowy
+		Note: Foggy is noce, snowy is very white, like super fog
+		-->
 
-	<!-- 
-	a20 notes:
-	NO DO: radiated,caveFloor, caveCeiling
-	WHY: biome defined but no vanilla configuration exists.
-	-->
+		<!-- 
+		a20 notes:
+		NO DO: radiated,caveFloor, caveCeiling
+		WHY: biome defined but no vanilla configuration exists.
+		-->
 
-	<!--
-	Temperature min="26" max="32" -> fahrenheit. add to global offset. Sun adds to temp.
-	GUESSING: Temps seem reasonabley defaulted. prob a -5 - +5 "global range" so +/- 5 F?
-	but even +-/10 woudl not be unreal. so maybe leave ranges, add to "edges" of biome
-	to make the extreme a bit more.
-	DECISION: Try 6 as the "extreme" to pad with
-	CloudThickness min="10" max="60" ->  0 and 100 will subtract from the temperature
-	Precipitation min="0" max="0" -> 0 and 100 will subtract from the temperature
-	Fog min="0" max="2" -> 0 and 100 will subtract from the temperature
-	Wind min="10" max="25" -> 0 and 100. will subtract from the temperature
+		<!--
+		Temperature min="26" max="32" -> fahrenheit. add to global offset. Sun adds to temp.
+		GUESSING: Temps seem reasonabley defaulted. prob a -5 - +5 "global range" so +/- 5 F?
+		but even +-/10 woudl not be unreal. so maybe leave ranges, add to "edges" of biome
+		to make the extreme a bit more.
+		DECISION: Try 6 as the "extreme" to pad with
+		CloudThickness min="10" max="60" ->  0 and 100 will subtract from the temperature
+		Precipitation min="0" max="0" -> 0 and 100 will subtract from the temperature
+		Fog min="0" max="2" -> 0 and 100 will subtract from the temperature
+		Wind min="10" max="25" -> 0 and 100. will subtract from the temperature
 
-	Spectrums:
-	<spectrum name="Snowy"/>
-	<spectrum name="Rainy"/>
-	<spectrum name="Stormy"/>
-	-->
+		Spectrums:
+		<spectrum name="Snowy"/>
+		<spectrum name="Rainy"/>
+		<spectrum name="Stormy"/>
+		-->
 
-	<!-- 
-	NOTE: all biomes cleaner so might be a LOT easier to not delete biomes!
-	-->
+		<!-- 
+		NOTE: all biomes cleaner so might be a LOT easier to not delete biomes!
+		-->
 
-	<!-- 
-	######################################
-	BIOME: snow. Spectrum: snow
-	Note: Almost always worse and can dip colder thatn vanilla
-	Note: Vanillas settings appear very good/reasonable, temp wise.
-	######################################
+		<!-- 
+		######################################
+		BIOME: snow. Spectrum: snow
+		Note: Almost always worse and can dip colder thatn vanilla
+		Note: Vanillas settings appear very good/reasonable, temp wise.
+		######################################
 	-->
 
 	<!-- Purpose: Increase prob of worse weather conditions. Must add up to 100 -->
