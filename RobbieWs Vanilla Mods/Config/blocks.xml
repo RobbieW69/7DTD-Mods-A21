@@ -25,6 +25,8 @@
 	</append> 
 
 	<!-- Make trees turn into Stumps instead of going away --> 
+	<remove xpath="//block[contains(@name, 'Grass') or contains(@name, 'treePlant02') or contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
+	<remove xpath="//block[contains(@name, 'Shrub') or contains(@name, 'Cactus') or contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/drop[@event='Fall']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/property[@value='ModelTree']"/>
 	<append xpath="//block[contains(@name, 'tree') and @name != 'treeStump']">
@@ -33,12 +35,6 @@
         <property name="DowngradeBlock" value="treeStump"/>
 		<property name="Class" value="PlantGrowing"/>
 	</append>
-	<remove xpath="//block[contains(@name, 'Grass')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'Shrub')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'Cactus')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
-
 	<!-- Add icons for books already read <block name="goreBlockHumanBones">-->
 
 	<!-- Make it where cars have a chance to drop wheels 20% chance-->

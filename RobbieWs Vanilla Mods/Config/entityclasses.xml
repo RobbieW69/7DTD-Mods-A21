@@ -20,6 +20,23 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
+	<!-- 5 is hurt foot shamble, 6 is shitty crackhead, 8 (for burnt radite dis apparently different) spider, 4 is crawler, 9 beh doesnt work yet, 7 is nurse
+	<set xpath="//entity_class[contains(@name, 'zombie') and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
+
+	<!-- Some zombies walk normal like that, some zombies to do foot shamble, and some zombies to be crawlers 
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
+	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
+
 
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">

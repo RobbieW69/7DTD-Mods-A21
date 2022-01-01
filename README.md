@@ -7,6 +7,7 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Cutting down a tree will turn into a tree stump instead of instantly diappearing.
 + Trees now have a chance to drop feathers and eggs and honey while harvesting.
 + All crops grow faster.
++ All crop seeds now cost 1 plant to make each.
 ##### Animals
 + All animal sizes have been increased between 20 to 40%.
 + Chickens now have a chance to drop eggs when harvesting.
@@ -55,12 +56,14 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Auger now does more block and entity damage and uses a little less gas.
 + Almost all crafting times have been reduced to basically instant as well as scrap times.
 + All ammo crafted actually produces 3x times the amount.
-+ All items now sellable to traders.[Have not configured pricing yet].
++ Sniper rifle FOV when ADS is more now, feels smoother.
 ##### Sounds
-+ All sounds lowered, though the auger and chainsaw can still be pretty loud when using.
++ All sounds lowered.
 + The 'ching' sound when trying to repair something but not having the required materials is now muted.
++ Chainsaw and Auger now don't make sound on hits.
 ##### Traders
-+ Traders open basically 24/7 now, we don't abuse it.
++ Traders open from 04:00  to 22:00
++ Inventory should now be bigger
 ##### Twitch
 + Non Sub Pimp Points max: Increased to 5000
 + Sub Pimp Points max: Increased to 25000
@@ -82,3 +85,6 @@ Vehicles have a Minimum and Maximum speed, [min,max].
 #### Biomes
 + Weather in biomes has more effect/stronger.
 + Lots of random debris (cinder blocks) have been removed.
+#### Quests
++ All quests now give less XP but more Money than before.
++ Starter quest now gives 5 skill points again instead of 4.
