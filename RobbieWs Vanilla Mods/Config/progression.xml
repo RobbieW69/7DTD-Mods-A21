@@ -18,9 +18,8 @@
 <setattribute xpath="//level[@skill_points_per_level='1']" name="skill_points_per_level">5</setattribute>  my old way -->
 <set xpath="//level/@skill_points_per_level">5</set>
 <set xpath="/progression/attributes/@cost_multiplier_per_level">1</set>
-<set xpath="/progression/perks/perk/level_requirements/requirement/@value">1</set>
-
-<!--<set xpath="/progression/perks/perk/level_requirements/requirement/@desc_key">reqGenericPoints01</set>
+<!--<set xpath="/progression/perks/perk/level_requirements/requirement/@value">1</set>
+<set xpath="/progression/perks/perk/level_requirements/requirement/@desc_key">reqGenericPoints01</set>
 <set xpath="/progression/attributes/attribute/level_requirements/requirement/@desc_key">reqGenericPoints01</set>-->
 
 <!-- Add faster walking and less stamina with Rule One Cardio -->

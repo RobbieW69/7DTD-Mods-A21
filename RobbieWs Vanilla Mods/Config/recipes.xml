@@ -260,7 +260,7 @@
 		</recipe>
 	<!-- Schematics -->
 		<!-- Pure Minerl Water schem -->
-		<recipe count="1" name="perkWasteTreasuresWater">
+		<recipe count="1" name="bookWasteTreasuresWater">
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="drinkJarPureMineralWater"/>
 		</recipe>
