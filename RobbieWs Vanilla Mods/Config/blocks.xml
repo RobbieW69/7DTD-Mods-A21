@@ -25,8 +25,6 @@
 	</append> 
 
 	<!-- Make trees turn into Stumps instead of going away --> 
-	<remove xpath="//block[contains(@name, 'Grass') or contains(@name, 'treePlant02') or contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
-	<remove xpath="//block[contains(@name, 'Shrub') or contains(@name, 'Cactus') or contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/drop[@event='Fall']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/property[@value='ModelTree']"/>
 	<append xpath="//block[contains(@name, 'tree') and @name != 'treeStump']">
@@ -35,7 +33,15 @@
         <property name="DowngradeBlock" value="treeStump"/>
 		<property name="Class" value="PlantGrowing"/>
 	</append>
+	<remove xpath="//block[contains(@name, 'Grass') or contains(@name, 'treePlant02') or contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
+	<remove xpath="//block[contains(@name, 'Shrub') or contains(@name, 'Cactus') or contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
 	<!-- Add icons for books already read <block name="goreBlockHumanBones">-->
+
+	<!-- Make stumps turn into trees??
+	<append xpath="//block[@name='treeStump']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="PlantGrowing.Next" value="treePlantedOak41m"/>
+	</append>-->
 
 	<!-- Make it where cars have a chance to drop wheels 20% chance-->
 	<append xpath="//block[contains(@name, 'cntCar') and contains(@name, 'Master')]">
@@ -87,8 +93,8 @@
 		</append>
 
 	<!-- Add: Sams faster growing plants by saminal -->
-	<set xpath="//block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">1.35</set>
-    <set xpath="//block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value">1.35</set>
+	<set xpath="//block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">120</set>
+    <set xpath="//block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value">120</set>
 	
 	<!-- set block damage falling onto hay to 0, note that the Round hale bales inherit from this one so theyre safe too -->
 	<set xpath="//block[@name='hayBaleSquare']/property[@name='FallDamage']/@value">0</set>

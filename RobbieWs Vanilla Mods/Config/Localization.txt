@@ -149,6 +149,8 @@ vendingMachineActivate,UI,Use Prompt,,,{0} to interact with {1},
 xuiInventoryFull,UI,XUI,,,"No room in inventory, crafting has been halted until space is cleared.",
 xuiIsAdmin,UI,XUI,,,Server Admin,
 
+resourceScrapIronBundle,items,Item,,[00FF00]Stack of Iron[-],
+
 statAttacksPerMinute,ui_display,Item stat,,,Attacks / Minute,
 statBarteringBuy,ui_display,Item stat,,,Bartering (buying),
 statBarteringSellBuy,ui_display,Item stat,,,Bartering,

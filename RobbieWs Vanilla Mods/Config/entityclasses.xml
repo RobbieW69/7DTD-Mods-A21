@@ -20,6 +20,11 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
+	<!--
+	<append xpath="//entity_class[@name='animalWolf']">
+		<property name="ReplaceMaterial0" value="entities/zombies/materials/zombiedog_radiated"/>
+	</append>-->
+
 	<!-- 5 is hurt foot shamble, 6 is shitty crackhead, 8 (for burnt radite dis apparently different) spider, 4 is crawler, 9 beh doesnt work yet, 7 is nurse
 	<set xpath="//entity_class[contains(@name, 'zombie') and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
 
@@ -36,7 +41,6 @@
 	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
 	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
 	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
-
 
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
@@ -60,6 +64,9 @@
 	</append>
 	<!-- End Tree Eggs -->
 	
+	<!-- MAKE ALL ANIMALS HAVE FAT AND CHANGE FAT %'S -->
+	<set xpath="//entity_class[contains(@name, 'animal') or contains(@name, 'zombie')]/drop[@name='resourceAnimalFat']/@count">4</set>
+
 	<!-- Grace changes-->
 	<set xpath="//entity_class[@name='animalBossGrace']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">2500</set>
 	<set xpath="//entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">2500</set>

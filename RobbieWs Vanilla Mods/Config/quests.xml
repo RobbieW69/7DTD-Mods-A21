@@ -25,4 +25,8 @@
     <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Exp']/@value">12500</set>
     <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Item']/@value">8000</set>
 
+    <!-- Turn off zombie spawning for buried supplies quests 
+    <remove xpath="//quest/action[@type='SpawnGSEnemy']"/>
+    <remove xpath="//quest/event[@type='TreasureRadiusReduction']/action[@type='SpawnGSEnemy']"/>-->
+
 </configs>

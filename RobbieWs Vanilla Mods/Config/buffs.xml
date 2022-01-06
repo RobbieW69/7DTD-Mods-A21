@@ -7,10 +7,10 @@
 </insertAfter>-->
 
 <!-- <set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group/triggered_effect[@action='RemoveBuff']/requirement[@name='PlayerLevel']/@value">0</set> -->
-<append xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group">
+<append xpath="//buff[@name='buffInjuryBleeding']/effect_group">
 	<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_impact_metal_on_organic" local_offset="0,.25,0" parent_transform="Hips"/>
 </append>
-<insertBefore  xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group">
+<insertBefore  xpath="//buff[@name='buffInjuryBleeding']/effect_group">
 	<update_rate value=".05"/>
 </insertBefore >
 

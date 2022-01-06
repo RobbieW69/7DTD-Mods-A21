@@ -4,9 +4,8 @@
 	<!-- Disassemble alot of things -->
 	<!-- Get acid from old lead car batteries-->
 	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
+	<!-- Render meat to give animal fat -->
 
-	<!-- HOW DOES THIS NOT WORK WTF 
-	<setattribute xpath="//recipe[@craft_time]">0</setattribute>-->
 
 	<set xpath="//recipe[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
 	<set xpath="//recipe[@name='meleeWpnBladeT0BoneKnife']/ingredient[@name='resourceBone']/@count">2</set>
@@ -20,7 +19,7 @@
 	<set xpath="//recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 	<set xpath="//recipe[@name='modGunScopeLarge']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 
-	<!-- fix farming or at least try -->
+<!-- fix farming or at least try -->
 	<set xpath="//recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
 	<set xpath="//recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">1</set>
 	<set xpath="//recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">2</set>
@@ -30,9 +29,7 @@
 	<set xpath="//recipe[@name='plantedGoldenrod1']/ingredient[@name='resourceCropGoldenrodPlant']/@count">1</set>
 	<set xpath="//recipe[@name='plantedGraceCorn1']/ingredient[@name='foodCropGraceCorn']/@count">1</set>
 	<set xpath="//recipe[@name='plantedHop1']/ingredient[@name='resourceCropHopsFlower']/@count">1</set>
-
 	<set xpath="//recipe[@name='plantedMushroom1']/ingredient[@name='foodCropMushrooms']/@count">1</set>
-
 	<set xpath="//recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">1</set>
 	<set xpath="//recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">1</set>
 	<set xpath="//recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">1</set>
@@ -48,7 +45,7 @@
 			<ingredient count="1" name="foodCanBeef"/>
 		</recipe>
 		<!-- foodCanPasta -->
-		<recipe craft_area="workbench" count="1" tags="workbenchCrafting" name="foodCanPasta">
+		<recipe craft_area="campfire" count="1" tags="workbenchCrafting" name="foodCanPasta">
 			<ingredient count="1" name="foodCropCorn"/>
 			<ingredient count="1" name="drinkCanEmpty"/>
 		</recipe>
@@ -141,7 +138,7 @@
 			<ingredient count="1" name="resourceCloth"/>
 		</recipe>
 		<!-- foodCanBeef  -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="foodCanBeef">
+		<recipe craft_area="campfire" tags="workbenchCrafting" count="1" name="foodCanBeef">
 			<ingredient count="1" name="drinkCanEmpty"/>
 			<ingredient count="1" name="foodRawMeat"/>
 		</recipe>
@@ -262,6 +259,16 @@
 			<ingredient count="10" name="unit_glass"/>
 		</recipe>
 	<!-- Schematics -->
+		<!-- Pure Minerl Water schem -->
+		<recipe count="1" name="perkWasteTreasuresWater">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drinkJarPureMineralWater"/>
+		</recipe>
+		<!-- drinkJarBeerSchematic schem -->
+		<recipe count="1" name="drinkJarBeerSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="drinkJarBeer"/>
+		</recipe>
 		<!-- drinkJarGrandpasMoonshineSchematic schem -->
 		<recipe count="1" name="drinkJarGrandpasMoonshineSchematic">
 			<ingredient count="1" name="resourcePaper"/>
@@ -558,7 +565,7 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="vehicleGyroCopterAccessories"/>
 		</recipe>
-	<!-- Mods -->
+		<!-- Mods -->
 		<!-- modGunBarrelExtender schem -->
 		<recipe craft_area="workbench" count="1" name="modGunBarrelExtenderSchematic">
 			<ingredient count="1" name="resourcePaper"/>
@@ -834,8 +841,6 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="modFuelTankLarge"/>
 		</recipe>
-
-	<!-- throwns -->
 		<!--  Huntingknife Schematic -->
 		<recipe craft_area="workbench" count="1" name="meleeWpnBladeT1HuntingKnifeSchematic">
 			<ingredient count="1" name="resourcePaper"/>
@@ -982,7 +987,8 @@
 			<ingredient count="1" name="modVehicleReserveFuelTank"/>
 		</recipe>
 		</append>
-		<!-- More Ammo per Craft -->
+
+<!-- More Ammo per Craft -->
 	<set xpath="//recipe[@name='ammo9mmBulletBall']/@count">3</set>
 	<set xpath="//recipe[@name='ammo9mmBulletHP']/@count">3</set>
 	<set xpath="//recipe[@name='ammo9mmBulletAP']/@count">3</set>
