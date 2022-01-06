@@ -1,7 +1,17 @@
-# Updated(01-01-2022)
+# Updated(01-05-2022)
 ## 7 Days to Die Alpha 20 Mods
 This is a combination of many mods I've found/made over the last 5 years, all rights go to their owners as I am not here to make it seems like I made it all myself, just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.
 ## Features
+### Updates
+This section is for people who have read this multiple times and wants the new stuff presented first.
++ Crops now grow fully every two hours IRL.
++ Pain Tolerance updated to not allow you to be knocked down with max level.
++ Miner 69'er updated to do more block damage.
++ Mother Load updated to give more exp while mining.
++ The Brawler now does more damage than before.
++ Level Gates added back, still only requires 1 skill point to buy skills.
++ Added more recipes/schematics.
++ Removed the 'better' handling for the Gyro.
 ### Plants
 + Crops can now be harvested with E once again, however I would recommend punching them for more yield.
 + Cutting down a tree will turn into a tree stump instead of instantly diappearing.
@@ -38,7 +48,6 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Player does more headshot damage with any wepaon, but all Ammo types have been updated to do about 300% more headshot damage.
 + All skill perks now only cost 1 point.
 + You gain 5 skill points per level.
-+ Skill level gates have been removed.
 + Rule One Cardio now increased values even more.
 + Can now craft level 6 items.
 + Living off the land now significantly increases crop yeilds.
@@ -70,7 +79,7 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 + Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code.
 ### Vehicles
 Vehicles have a Minimum and Maximum speed, [min,max].
-+ Gyrocopter: Speed increased from [7,10] to [12,24], better handling added.
++ Gyrocopter: Speed increased from [7,10] to [12,24].
 + Bicycle:  Speed increased from [5,10] to [10,20].
 + Minibike: Speed increased from [7,10] to [14,20].
 + Motorcycle: Speed increased from [9,14] to [18,28].
