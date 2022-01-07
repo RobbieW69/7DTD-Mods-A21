@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!--<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.35" tags="perkMiner69r"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".35" tags="perkMiner69r"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.35" tags="perkMiner69r"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35" tags="perkMiner69r"/> -->
+	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
+	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
+
 	<!-- Turn off crosshair when aiming down sights on any weapon that supports it and exclude bows by RobbieW -->
 	<set xpath="//item[contains(@name,'gun') and not(@name='gunBowT0PrimitiveBow' or @name='gunBowT1WoodenBow')]/property[@name='CrosshairOnAim']/@value">false</set>
 	
@@ -39,7 +48,6 @@
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
-
 	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head"/>
 	</append>
@@ -87,7 +95,7 @@
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.1</set>
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Repair_amount']/@value">20000</set>
 
-	<set xpath="//item/property[@name='Stacknumber']/@value">50000</set>
+	<set xpath="//item/property[@name='Stacknumber']/@value">25000</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='-.15,.15')]/@value">.15</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='.1,.5')]/@value">.5</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='BlockDamage') and (@value='-.15,.15')]/@value">.15</set>

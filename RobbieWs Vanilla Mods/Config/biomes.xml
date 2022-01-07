@@ -1,5 +1,37 @@
 <configs>
 
+
+	<!-- Less Trees
+	<set xpath="worldgeneration/biomes/biome[contains(@name, '')]/subbiome[contains(@prob, '')]/decorations/decoration[contains(@blockname, 'treeMountainPine12m')]/@prob">.00</set>
+	<set xpath="worldgeneration/biomes/biome[contains(@name, '')]/decorations/decoration[contains(@blockname, 'treeMountainPine12m')]/@prob">.00</set>-->
+
+	<!-- 0.01 sets it to hella trees wtf,0.001 not alot but more normal amounts,  0.0001 barely any trees, -->
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Juniper')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Juniper')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Mountain')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Mountain')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Oak')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Oak')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Fir')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Fir')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Pine')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Pine')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Dead')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Dead')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Maple')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Maple')]/@prob">0.001</set>
+
+	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname, 'Winter')]/@prob">0.001</set>
+	<set xpath="//biome/decorations/decoration[contains(@blockname, 'Winter')]/@prob">0.001</set>
+
+
+
 	<!-- War3zuk's remove some biome debris -->
 	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='scrapMetalPile']"/>
 	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks01']"/>

@@ -1,5 +1,9 @@
 Key,Source,Context,Changes,English
 
+
+woodSignBlockVariantHelper,blocks,Variant,,[33FFFF]Signs[-],
+woodSignBlockVariantHelperDesc,blocks,Variant,,,"Craft various signs, some of which you can write on with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.",
+
 tooltipJammed,UI,Menu,,,[33FFFF]{0} Use {1} ([33FFFF]Jammed[-]),
 tooltipLocked,UI,Menu,,[33FFFF]{0}[-] Open {1} ([33FFFF]Locked[-]),
 tooltipUnlocked,UI,Menu,,[33FFFF]{0}[-] Open {1} ([33FFFF]UnLocked[-]),

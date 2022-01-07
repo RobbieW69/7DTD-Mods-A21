@@ -4,15 +4,14 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 # Features
 ### Updates
 This section is for people who have read this multiple times and wants the new stuff presented first.
-+ Crops now grow fully every two hours IRL.
-+ Pain Tolerance updated to not allow you to be knocked down with max level.
-+ Miner 69'er updated to do more block damage.
-+ Mother Load updated to give more exp while mining.
-+ The Brawler now does more damage than before.
-+ Level Gates added back, still only requires 1 skill point to buy skills.
-+ Added more recipes/schematics.
-+ Removed the 'better' handling for the Gyro.
++ LOTS of recipes to craft items added, however the recipe ingredients are in a test mode, will change.
++ Updated Mod Features UI
++ 'Wooden Signs' recipe changed to 'Signs', now costs more ingredients to craft but can use any sign in the game.
++ More colored text. 
++ Slightly less tree spawning.
++ Vehicles should no longer consume food and thirst while using.( Yes, they did.)
 ### Plants
++ Crops now grow fully every two hours IRL.
 + Crops can now be harvested with E once again, however I would recommend punching them for more yield.
 + Cutting down a tree will turn into a tree stump instead of instantly diappearing.
 + Trees now have a chance to drop feathers and eggs and honey while harvesting.
@@ -49,6 +48,11 @@ This section is for people who have read this multiple times and wants the new s
 + All skill perks now only cost 1 point.
 + You gain 5 skill points per level.
 + Rule One Cardio now increased values even more.
++ Pain Tolerance updated to not allow you to be knocked down with max level.
++ Miner 69'er updated to do more block damage.
++ Mother Load updated to give more exp while mining.
++ The Brawler now does more damage than before.
++ Level Gates added back, still only requires 1 skill point to buy skills.
 + Can now craft level 6 items.
 + Living off the land now significantly increases crop yeilds.
 + ExpPenalty for dying set to 0.

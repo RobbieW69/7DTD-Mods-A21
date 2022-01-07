@@ -1,5 +1,4 @@
 <configs>
-    <!-- Gouki -->
     <set xpath="//lootcontainer[@name='playerStorage']/@size">10,9</set>
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>

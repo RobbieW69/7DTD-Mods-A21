@@ -6,6 +6,11 @@
 	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
 	<!-- Render meat to give animal fat -->
 
+	<!-- Change Recipe for 'wooden' signs -->
+	<set xpath="//recipe[@name='woodSignBlockVariantHelper']/ingredient[@name='resourceWood']/@name">resourceForgedIron</set>
+	<append xpath="//recipe[@name='woodSignBlockVariantHelper']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
 
 	<set xpath="//recipe[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
 	<set xpath="//recipe[@name='meleeWpnBladeT0BoneKnife']/ingredient[@name='resourceBone']/@count">2</set>
@@ -193,6 +198,299 @@
 		</recipe>
 	<!-- Alpha 20 Changes/Additions -->
 	<!-- Additions -->
+
+		<!--  decoWineBottleCorner -->
+		<recipe craft_area="forge" count="1" name="decoWineBottleCorner">
+			<ingredient count="10" name="unit_glass"/>
+			<ingredient count="1" name="modDyePurple"/>
+		</recipe>
+		<!-- RetroFridge -->
+		<recipe count="1" name="cntRetroFridgeVer1Closed">
+			<ingredient count="150" name="resourceScrapIron"/>
+			<ingredient count="5" name="resourceMechanicalParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!-- FridgeStainlessSteel -->
+		<recipe count="1" name="cntFridgeStainlessSteel">
+			<ingredient count="150" name="resourceScrapIron"/>
+			<ingredient count="5" name="resourceMechanicalParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!-- BeerCooler  -->
+		<recipe count="1" name="Beer Coolers">
+			<ingredient count="20" name="resourceScrapPolymers"/>
+		</recipe>
+		<!-- factoryConveyorBridge -->
+		<recipe count="1" name="Conveyor Shapes">
+			<ingredient count="15" name="resourceScrapPolymers"/>
+			<ingredient count="5" name="resourceForgedIron"/>
+		</recipe>
+		<!-- factoryConveyorBridge -->
+		<recipe count="1" name="Control Panels (deco)">
+			<ingredient count="15" name="resourceScrapPolymers"/>
+			<ingredient count="5" name="resourceForgedIron"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntHardenedChestSecureT5">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntHardenedChestSecure">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntLootChestHero">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntWallOven">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntStoveOldVer1Closed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntGasGrillClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntCharcoalGrillClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntWoodBurningStove">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntMicrowaveOvenVer1Closed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntMicrowaveOvenVer2Closed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntToaster">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntCoffeeMaker">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntCoffeeMakerCommercial">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntSodaFountain">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntIceMachine">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntFreezerMaster">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntFreezerGroceriesMiddleFullClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntWasherClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntDryerClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntWasherIndustrialClosed">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntToilet01">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="urinalCommercialMounted">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="radiatorHouse01Player">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntTrashCompactor">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cntDumpster">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="cable1">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="schoolDesk">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="decoPicnicTable">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
+		<!--  -->
+		<recipe count="1" name="barStool">
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="1" name="resourceElectricParts"/>
+		</recipe>
 		<!-- smallEngine -->
 		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="smallEngine">
 			<ingredient count="25" name="resourceForgedIron"/>
