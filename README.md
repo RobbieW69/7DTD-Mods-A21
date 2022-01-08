@@ -58,11 +58,11 @@ This section is for people who have read this multiple times and wants the new s
 ### Items
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
 + With any wepaon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
-+ All guns now how no spread, where you aim is where you shoot.
++ All guns now have no spread, where you aim is where you shoot.
 + Books that have already been read now have a green checkmark.
 + Repair kits now repair less per, meaning it takes more kits to repair items heavily damaged.
 + Empty jars and buckes can now be filled at Sinks, just use secondary action with the jar in hand when standing at a skink.
-+ Stack sizes increased to 50k.
++ Stack sizes increased to 25k.
 + When aiming down sights on all guns the crosshair turns off except with the bows.
 + All storage boxes are slightly bigger capacity.
 + Auger now does more block and entity damage and uses a little less gas.
