@@ -15,7 +15,6 @@ This section is for people who have read this multiple times and wants the new s
 + Crops can now be harvested with E once again, however I would recommend punching them for more yield.
 + Cutting down a tree will turn into a tree stump instead of instantly diappearing.
 + Trees now have a chance to drop feathers and eggs and honey while harvesting.
-+ All crops grow faster.
 + All crop seeds now cost 1 plant to make each.
 ### Animals
 + All animal sizes have been increased between 20 to 40%.
