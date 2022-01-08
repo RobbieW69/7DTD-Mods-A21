@@ -35,7 +35,7 @@ This section is for people who have read this multiple times and wants the new s
 + Swim speed drastically reduced.
 + Zombies now also target animals.
 + Zombie loot bags drop more often.
-+ Zombies can no turn into a Gore Block on death 20% of the time, not 100 for FPS.
++ Zombies can now turn into a Gore Block on death 20% of the time, not 100 for FPS.
 ### Player
 + Reach extended a little.
 + Jumping no longer requires stamina.
