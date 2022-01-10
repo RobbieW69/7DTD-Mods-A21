@@ -99,6 +99,9 @@ Vehicles have a Minimum and Maximum speed, [min,max].
 + Updated Compass UI with more info.
 + Lockable item slots.
 + Hidden Admins on players menu.
++ BedRoll Deadzone size setting can now be set between: 0, 120.
++ DayNight length setting can now be set between: 1 Minute and 1440 Minutes IRL, 1 Minute to 24 Hours.
++ DayLight length setting can now be set between: 0, 24.
 ### Biomes
 + Weather in biomes has more effect/stronger.
 + Lots of random debris (cinder blocks) have been removed.
