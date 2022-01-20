@@ -69,10 +69,9 @@
                     <label text="- You should be able to make a schematic of a weapon you find at a workbench."/>
                     <label text="- You gain 3x the amount of ammo when crafting it."/>
                     <label text="- Traders now open from 04:00 - 22:00."/>
-                    <label text="- Many recipes to craft items added."/>
-                    <label text="- 'Wooden signs' is now just 'Signs' and now can be changed to any sign, hence the ingredient changes, this took a long time."/>
+                    <label text="- 'Wooden signs' is now just 'Signs' and now can be changed to any sign."/>
                     <label text="- Lots of craftable item recipes need updated."/>
-                    <label text="- For all other features check: https://github.com/RobbieW69/My-7DTD-Modlets"/>
+                    <label name="ServerWebsiteURL" text="https://github.com/RobbieW69/My-7DTD-Modlets" style="press, hover"/>
                 </grid>
             </panel>
         </window>

@@ -8,7 +8,7 @@
     <!-- Nerf XP gain but increase money for Tier 1 Quests, default: exp 2500, coin 330-->
     <set xpath="//quest[contains(@id, 'tier1_fetch') or contains(@id, 'tier1_clear') or contains(@id, 'tier1_buried')]/reward[@type='Exp']/@value">500</set>
     <set xpath="//quest[contains(@id, 'tier1_fetch') or contains(@id, 'tier1_clear') or contains(@id, 'tier1_buried')]/reward[@type='Item']/@value">500</set>
-
+    
     <!-- Nerf XP gain but increase money for Tier 2 Quests, default: exp 3750, coin 560-->
     <set xpath="//quest[contains(@id,'tier2_fetch') or contains(@id,'tier2_clear') or contains(@id,'tier2_buried') or contains(@id,'tier2_restore')]/reward[@type='Exp']/@value">1500</set>
     <set xpath="//quest[contains(@id,'tier2_fetch') or contains(@id,'tier2_clear') or contains(@id,'tier2_buried') or contains(@id,'tier2_restore')]/reward[@type='Item']/@value">1000</set>
@@ -25,8 +25,472 @@
     <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Exp']/@value">12500</set>
     <set xpath="//quest[contains(@id,'tier5_fetch') or contains(@id,'tier5_clear') or contains(@id,'tier5_buried')]/reward[@type='Item']/@value">8000</set>
 
-    <!-- Turn off zombie spawning for buried supplies quests 
+    <!-- Turn off zombie spawning for quests 
     <remove xpath="//quest/action[@type='SpawnGSEnemy']"/>
     <remove xpath="//quest/event[@type='TreasureRadiusReduction']/action[@type='SpawnGSEnemy']"/>-->
+
+
+    <!--Redo the crappy starter quests to teach the player some stuff 
+    Build Basic Tools Of Survival, 
+    Craft Clothes,
+    Finding Food,
+    Grind Resources,
+    Kill Zeds,
+    Gather Crops,
+    Using Skill Points,
+    Build Home,
+    -->
+    <append xpath="/quests">
+        <!-- Craft a Stone Axe, Shovel, Spear, Club, and Bow n Arrows  1-->
+        <quest id="quest_BetterQuest1">
+            <property name="group_name" value=""/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value="Craft Basic Tools"/>
+            <property name="description" value="You will need tools to gain resources and protect yourself, a Stone Axe, Stone Shivel, Stone Spear, Primitive Bow, and Wooden Club are the easiest things to make right now, find the materials required. To open crafting menu, press Tab."/>
+            <property name="offer" value="You will need tools to gain resources and protect yourself, a Stone Axe, Stone Shivel, Stone Spear, Primitive Bow, and Wooden Club are the easiest things to make right now, find the materials required, also craft as many arrows as you'd like!. To open crafting menu, press Tab."/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            <action type="TrackQuest"/>
+
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="75"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="75"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!-- Craft Clothes and wear them 2-->
+        <quest id="quest_BetterQuest2">
+            <property name="group_name" value=""/>
+            <property name="name" value="Basic Survival 2/12"/>
+            <property name="subtitle" value="Wear Clothes"/>
+            <property name="description" value="You will need clothing as different biomes have varied temperatures. Gather Plant Fibers by punching grass to craft primitive plant fiber clothing. We'll have you make a Plant Fiber Hat instead of a Hood as the Hat provides more heat protection. To wear it press B, you can Shift Click the clothes and they will auto fill where they go."/>
+            <property name="offer" value="You will need clothing as different biomes have varied temperatures. Gather Plant Fibers by punching grass to craft primitive plant fiber clothing. We'll have you make a Plant Fiber Hat instead of a Hood as the Hat provides more heat protection. To wear it press B, you can Shift Click the clothes and they will auto fill where they go."/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="25" phase="1"/>
+            <objective type="Craft" id="apparelPlantFiberPants" value="1" phase="2"/>
+		    <objective type="Craft" id="apparelPlantFiberShirt" value="1" phase="2"/>
+            <objective type="Craft" id="apparelPlantFiberShoes" value="1" phase="2"/>
+            <objective type="Craft" id="apparelPlantFiberGloves" value="1" phase="2"/>
+            <objective type="Craft" id="apparelPlantFiberHat" value="1" phase="2"/>
+
+            <objective type="Wear" id="apparelPlantFiberPants" value="1" phase="2"/>
+		    <objective type="Wear" id="apparelPlantFiberShirt" value="1" phase="2"/>
+            <objective type="Wear" id="apparelPlantFiberShoes" value="1" phase="2"/>
+            <objective type="Wear" id="apparelPlantFiberGloves" value="1" phase="2"/>
+            <objective type="Wear" id="apparelPlantFiberHat" value="1" phase="2"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!--Find/Gather Food 3-->
+        <quest id="quest_BetterQuest3">
+            <property name="group_name" value=""/>
+            <property name="name" value="Basic Survival 3/12"/>
+            <property name="subtitle" value="Gather Food"/>
+            <property name="description" value="Finding Food can be tricky, many towns have Farms where crops grow such as Corn, Potatoes, Blue Berries, ect. Very quick food is Eggs, as they are found in Birds Nests. To gain Meat you must kill Animals, careful of the Wolves/Dogs/Bears!, Empty Jars can be filled up at Lakes/pools of water, this Murky water can be cooked in a Campfire with a Cooking Pot."/>
+            <property name="offer" value="Finding Food can be tricky, many towns have Farms where crops grow such as Corn, Potatoes, Blue Berries, ect. Very quick food is Eggs, as they are found in Birds Nests. To gain Meat you must kill Animals, careful of the Wolves/Dogs/Bears!, Empty Jars can be filled up at Lakes/pools of water, this Murky water can be cooked in a Campfire with a Cooking Pot. Cook some Raw Meat and Murky Water in a Campfire to make Charred Meat and Boiled Water."/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="foodRawMeat" value="15" phase="1"/>
+            <objective type="FetchKeep" id="drinkJarRiverWater" value="1" phase="1"/>
+            
+            <objective type="Craft" id="foodCharredMeat" value="3" phase="1"/>
+            <objective type="Craft" id="drinkJarBoiledWater" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!--Grind Resources 4-->
+        <quest id="quest_BetterQuest4">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 4/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!--Kill Zombies: 5-->
+        <quest id="quest_BetterQuest5">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!--Gather Crops 6-->
+        <quest id="quest_BetterQuest6">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!-- Using Skill Points 7-->
+        <quest id="quest_BetterQuest7">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!-- Build a Base 8-->
+        <quest id="quest_BetterQuest8">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+        <!-- Find Trader 9 -->
+        <quest id="quest_BetterQuest9">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_BetterQuest10">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_BetterQuest11">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_BetterQuest12">
+            <property name="group_name" value="Basic Survival"/>
+            <property name="name" value="Basic Survival 1/12"/>
+            <property name="subtitle" value=""/>
+            <property name="description" value=""/>
+            <property name="offer" value=""/>
+            <property name="icon" value="ui_game_symbol_map_bed"/>
+            <property name="category" value="quest"/>
+            <property name="difficulty" value="veryeasy"/>
+            <property name="shareable" value="false"/>
+            
+            <action type="TrackQuest"/>
+            
+            <objective type="FetchKeep" id="resourceWood" value="22" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_wood"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="FetchKeep" id="resourceYuccaFibers" value="12" phase="1"/>
+            
+            <objective type="FetchKeep" id="resourceRockSmall" value="13" phase="1">
+                <modifier type="TrackBlocks">
+                    <property name="block_index_name" value="quest_stone"/>
+                    <property name="nav_object" value="quest_resource"/>
+                    <property name="track_distance" value="200"/>
+                </modifier>
+            </objective>
+            
+            <objective type="Craft" id="meleeToolRepairT0StoneAxe" value="1" phase="1"/>
+            <objective type="Craft" id="meleeToolShovelT0StoneShovel" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnSpearT0StoneSpear" value="1" phase="1"/>
+            <objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="1"/>
+            <objective type="Craft" id="meleeWpnClubT0WoodenClub" value="1" phase="1"/>
+
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+    </append>
 
 </configs>

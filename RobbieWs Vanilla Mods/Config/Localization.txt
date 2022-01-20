@@ -1,5 +1,66 @@
 Key,Source,Context,Changes,English
 
+tutorialTipQuest01,Journal Tip,,,"Dear Friend,\n\n Welcome to the zombie apocalypse, we found you passed out and surrounded by a horde, all we could manage was leaving you somewhere safe with a little food but any clothes you had must have been robbed by someone else before we got there. If you can remember who you are and figure out the basics we'll take you in. We left some notes on vital information you'll want to read them over. Goodluck. Press Tab to open your Inventory. \n\n -Noah", 
+tutorialTipQuest01_title,Journal Tip,,,Started Trying To Survive
+
+quest_BetterQuest3,Quest,Quest Info,,,Basic Survival 3/12,
+quest_BetterQuest3_description,Quest,Quest Info,,,"",
+quest_BetterQuest3_subtitle,Quest,Quest Info,,,Gather Food,
+
+quest_BetterQuest4,Quest,Quest Info,,,Basic Survival 4/12,
+quest_BetterQuest4_description,Quest,Quest Info,,,"Grinding Resources is absolutely necessary, punch alot of grass and tear down some trees and boulders! You'll thank me later.",
+quest_BetterQuest4_subtitle,Quest,Quest Info,,,Grind Resources,
+
+quest_BetterQuest5,Quest,Quest Info,,,Basic Survival 5/12,
+quest_BetterQuest5_description,Quest,Quest Info,,,"Killing zombies is the most important skill, you need to know how, kill a few with the weapons/tools you made earlier.",
+quest_BetterQuest5_subtitle,Quest,Quest Info,,,Kill Some Zombies,
+
+quest_BetterQuest6,Quest,Quest Info,,,Basic Survival 6/12,
+quest_BetterQuest6_description,Quest,Quest Info,,,"Crops are important, the Cotton is for Cloth, Crysanthemum is for Red Tea, and Goldenrod is for Goldenrod Tea. Each has different effects, to read them click on them in the menu and click the book icon to read the description.",
+quest_BetterQuest6_subtitle,Quest,Quest Info,,,Find Crops,
+
+quest_BetterQuest7,Quest,Quest Info,,,Basic Survival 7/12,
+quest_BetterQuest7_description,Quest,Quest Info,,,"Keeping your inventory clean will make sure you don't get too encumbered to move, another way to do this is to become stronger so you can carry more!/n/nThe gray slots with the man in your inventory are Encumbered slots, making you slower to walk. Buy 1 point of Pack Mule to have some of those sweet slots back, max level removes all of the encumbered slots. Press N to open the skills menu.",
+quest_BetterQuest7_subtitle,Quest,Quest Info,,,Use Skill Points,
+
+quest_BetterQuest8,Quest,Quest Info,,,Basic Survival 8/12,
+quest_BetterQuest8_description,Quest,Quest Info,,,"Building a base is also very important as once nightime starts, all of them start running at 22:00. You need protection from the weather and the wandering hordes. Build a small hut. Craft 'Frame Shapes' and hold R once in your hotbar and selected, then click on Shapes. Upgrade by right clicking them with your stone axe./n/n To protect the parts of your base you can't reach you can craft some Wood Spikes and line the outside of the base with them./n/nAlso I would make a door and upgrade it too, and always think of an escape plan!",
+quest_BetterQuest8_subtitle,Quest,Quest Info,,,Base For Surviving,
+
+quest_BetterQuest9,Quest,Quest Info,,,Basic Survival 9/12,
+quest_BetterQuest9_description,Quest,Quest Info,,,"We found a trader who has lot's of useful items, if you've got some of the Duke's coin you can buy from them, though they aren't always the friendliest and DEFINITELY not the cheapest, but beggars can't be choosers, Goodluck!",
+quest_BetterQuest9_subtitle,Quest,Quest Info,,,Find Trader,
+
+quest_BetterQuest10,Quest,Quest Info,,,Basic Survival 10/12,
+quest_BetterQuest10_description,Quest,Quest Info,,,"A Stone Axe, Stone Shivel, Stone Spear, Primitive Bow, and Wooden Club are the easiest things to make right now, find the materials required. To open crafting menu, press Tab.",
+quest_BetterQuest10_subtitle,Quest,Quest Info,,,Craft Basic Tools To Survive,
+
+quest_BetterQuest11,Quest,Quest Info,,,Basic Survival 11/12,
+quest_BetterQuest11_description,Quest,Quest Info,,,"A Stone Axe, Stone Shivel, Stone Spear, Primitive Bow, and Wooden Club are the easiest things to make right now, find the materials required. To open crafting menu, press Tab.",
+quest_BetterQuest11_subtitle,Quest,Quest Info,,,Craft Basic Tools To Survive,
+
+quest_BetterQuest12,Quest,Quest Info,,,Basic Survival 12/12,
+quest_BetterQuest12_description,Quest,Quest Info,,,"A Stone Axe, Stone Shivel, Stone Spear, Primitive Bow, and Wooden Club are the easiest things to make right now, find the materials required. To open crafting menu, press Tab.",
+quest_BetterQuest12_subtitle,Quest,Quest Info,,,Craft Basic Tools To Survive,
+
+quest_BetterQuestStartNote1,items,Item,,[FFFFFF]Basic Survival 1/12[-],
+quest_BetterQuestStartNote2,items,Item,,[FFFFFF]Basic Survival 2/12[-],
+quest_BetterQuestStartNote3,items,Item,,[FFFFFF]Basic Survival 3/12[-],
+quest_BetterQuestStartNote4,items,Item,,[FFFFFF]Basic Survival 4/12[-],
+quest_BetterQuestStartNote5,items,Item,,[FFFFFF]Basic Survival 5/12[-],
+quest_BetterQuestStartNote6,items,Item,,[FFFFFF]Basic Survival 6/12[-],
+quest_BetterQuestStartNote7,items,Item,,[FFFFFF]Basic Survival 7/12[-],
+quest_BetterQuestStartNote8,items,Item,,[FFFFFF]Basic Survival 8/12[-],
+quest_BetterQuestStartNote9,items,Item,,[FFFFFF]Basic Survival 9/12[-],
+quest_BetterQuestStartNote10,items,Item,,[FFFFFF]Basic Survival 10/12[-],
+quest_BetterQuestStartNote11,items,Item,,[FFFFFF]Basic Survival 11/12[-],
+quest_BetterQuestStartNote12,items,Item,,[FFFFFF]Basic Survival 12/12[-],
+
+Pebbles,items,Item,,Pebble,
+PebblesDesc,items,Item,,"By banging two stones together they become smaller pieces, use these pieces with a bow to fire like a slingshot."
+
+resourceRockSmall,items,Item,,Stone,
+resourceRockSmallBundle,items,Item,,Stack of Stone (6000),
 
 woodSignBlockVariantHelper,blocks,Variant,,[33FFFF]Signs[-],
 woodSignBlockVariantHelperDesc,blocks,Variant,,,"Craft various signs, some of which you can write on with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.",
@@ -89,7 +150,6 @@ foodSteakAndPotato,items,Food,,[F5DEB3]Steak and Potato Meal[-],
 foodTunaFishGravyToast,items,Food,,[CD853F]Tuna Fish Gravy Toast[-],
 foodVegetableStew,items,Food,,[DAA520]Vegetable Stew[-],
 
-
 drinkCanEmpty,items,Food,,[C0C0C0]Empty Can[-],
 drinkCanMegaCrush,items,Food,,[7CFC00]Mega Crush[-],
 drinkJarBeer,items,Food,,[FFA500]Beer[-],
@@ -125,7 +185,6 @@ friendInviteDeclined,UI,Menu,,[EEEE22]Declined friend invite from {0}.[-],
 friendInviteDeclined2,UI,Menu,,[EEEE22]{0} declined your friend request.[-],
 friendInviteReceived,UI,Menu,,[EEEE22]Friend invite received from {0}.[-],
 friendSentInvite,UI,Menu,,[EEEE22]Friend invite sent to {0}.[-],
-
 
 useSwitchLightOff,UI,Menu,,[FB9A08]{0} Switch light off[-],
 useSwitchLightOn,UI,Menu,,[29EFCA]{0} Switch light on[-],

@@ -9,4 +9,5 @@
 	<!-- Set more trader inventory, defaults: min 30, max 70 -->
 	<set xpath="//trader_info/@min_inventory">80</set>
 	<set xpath="//trader_info/@max_inventory">120</set>
+	
 </configs>

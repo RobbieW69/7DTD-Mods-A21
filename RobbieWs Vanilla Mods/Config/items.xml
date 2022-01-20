@@ -1,10 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+	<!--Change how the starter quest works, create our own notes :) -->
+	<append xpath="/items">
+		<item name="quest_BetterQuestStartNote1">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest1"/>
+				<property name="Create_item" value="foodRawMeat"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote2">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest2"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote3"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote3">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest3"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote4"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote4">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest4"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote5">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest5"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote6">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest6"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote7">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest7"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote8">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest8"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote9">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest9"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote10">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest10"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote11">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest11"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<item name="quest_BetterQuestStartNote12">
+			<property name="Extends" value="questMaster"/>
+			<property name="CustomIconTint" value="FF1F29"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_BetterQuest12"/>
+				<property name="Create_item" value="quest_BetterQuestStartNote2"/>
+				<property name="Create_item_count" value="1"/>
+			</property>
+		</item>
+		<!-- Make our own rocks that are shootable with bows cause its hilarious -->
+		<item name="Pebbles">
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="Meshfile" value="#Other/Items?Crafting/rock_smallPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Crafting/rock_smallPrefab.prefab"/>
+			<property name="CustomIcon" value="resourceRockSmall"/>
+			<property name="CustomIconTint" value="737373"/>
+			<property name="HoldType" value="40"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".25"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value="1"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons,Basics,Ammo,Ranged Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+				<property name="FlyTime" value="0"/>
+				<property name="Gravity" value="-4"/>
+				<property name="LifeTime" value="300"/>
+			</property>
+			<effect_group name="Pebbles" tiered="false"> <!-- ammoArrowStone -->
+				<passive_effect name="EntityDamage" operation="base_set" value="10" tags="perkArchery"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="30" tags="perkArchery"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="//item[contains(@name,'Bow')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,Pebbles</append>
 
-	<!--<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.35" tags="perkMiner69r"/>
-		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".35" tags="perkMiner69r"/>
-		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.35" tags="perkMiner69r"/>
-		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35" tags="perkMiner69r"/> -->
+	<!-- Let's add Rocket Boots at some point -->
+	
+	<!-- Makes Mod slots scale with item level  -->
+	<set xpath="//item/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+
+	<!-- This was to try to eliminate the "moving" of the camera when using the Auger as I thought it was kicback, it was not and this doesn't work :/  -->
 	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
@@ -18,7 +165,7 @@
 	<set xpath="//item[@name='gunRifleT3SniperRifle']/property[@class='Action1']/property[@name='Zoom_max_in']/@value">35</set>
 
 	<!-- sell any item to trader -->
-	<append xpath="//item">
+	<append xpath="//item[@name!='casinoCoin']">
        <property name="SellableToTrader" value="true"/>
 	</append>
 
@@ -36,6 +183,8 @@
 	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>-->
 
 	<!-- Sam's AutoShotgun Unnerfing v20.0.0 by saminal -->
+	<set xpath="//item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">650</set>
+	<set xpath="//item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">650</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
     <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">5.5</set>
@@ -48,8 +197,11 @@
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
-	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan']">
+	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan' and @name!='Pebbles']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head"/>
+	</append>
+	<append xpath="//effect_group[@name='Pebbles']">
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="head"/>
 	</append>
 
 	<!-- Forge limit set to 1 million -->
@@ -109,7 +261,7 @@
 	<!--End Item Stack Changes -->
 	
 	<!-- Add: "better auger mod" idk if this actually works but here it is -->
-	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">62.1</set>
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">150</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">62.1</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
 	

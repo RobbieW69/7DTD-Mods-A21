@@ -6,6 +6,17 @@
 	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
 	<!-- Render meat to give animal fat -->
 
+	<!--Subtract amount of resources required for master chef recipes -->
+    <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[@name='CraftingIngredientCount']/@level">2,5</set>
+    <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[contains(@tags, 'food') or contains(@tags, 'Bone')]/@value">-1,-4</set>
+
+	<!-- Add our new pebbles for bows -->
+	<append xpath="/recipes">
+		<recipe name="Pebbles" count="6">
+			<ingredient name="resourceRockSmall" count="2"/>
+		</recipe>
+	</append>
+
 	<!-- Change Recipe for 'wooden' signs -->
 	<set xpath="//recipe[@name='woodSignBlockVariantHelper']/ingredient[@name='resourceWood']/@name">resourceForgedIron</set>
 	<append xpath="//recipe[@name='woodSignBlockVariantHelper']">

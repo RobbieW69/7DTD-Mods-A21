@@ -8,9 +8,9 @@
 	<property name="TurnSpeed" value="27"/>
 	<property name="MaxDistance" value="2.2"/>-->
 
-	<!-- nerf the stupid xp deficit  -->
+	<!-- nerf the stupid xp deficit  
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value='.25']/@value">0</set>
-	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>-->
 
 	<!-- Zombie changes -->
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedAggro']/@value">0.08, 0.08</set>
@@ -19,11 +19,6 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='DismemberMultiplierHead']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
-
-	<!--
-	<append xpath="//entity_class[@name='animalWolf']">
-		<property name="ReplaceMaterial0" value="entities/zombies/materials/zombiedog_radiated"/>
-	</append>-->
 
 	<!-- 5 is hurt foot shamble, 6 is shitty crackhead, 8 (for burnt radite dis apparently different) spider, 4 is crawler, 9 beh doesnt work yet, 7 is nurse
 	<set xpath="//entity_class[contains(@name, 'zombie') and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
@@ -170,35 +165,8 @@
 	<set xpath="//entity_class[@name='animalBear']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
 	<set xpath="//entity_class[@name='animalWolf']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
 	
-	<!-- Add: Jessica's animal blood bags -->
-	<append xpath="//entity_class[@name='animalStag']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
-	</append>
-	<append xpath="//entity_class[@name='animalRabbit']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="1"/>
-	</append>
-	<append xpath="//entity_class[@name='animalChicken']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="1"/>
-	</append>
-	<append xpath="//entity_class[@name='animalBear']">
+	<!-- animal blood bags -->
+	<append xpath="//entity_class[contains(@name, 'animal')]">
 		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="3"/>
-	</append>
-	<append xpath="//entity_class[@name='animalWolf']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
-	</append>
-	<append xpath="//entity_class[@name='animalDireWolf']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
-	</append>
-	<append xpath="//entity_class[@name='animalSnake']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
-	</append>
-	<append xpath="//entity_class[@name='animalBoar']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
-	</append>
-	<append xpath="//entity_class[@name='animalBossGrace']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="3"/>
-	</append>
-	<append xpath="//entity_class[@name='animalMountainLion']">
-		<drop event="Harvest" name="medicalBloodBag" tag="butcherHarvest" count="2"/>
 	</append>
 </configs>

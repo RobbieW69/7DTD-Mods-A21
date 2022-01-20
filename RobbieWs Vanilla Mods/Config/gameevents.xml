@@ -1,0 +1,42 @@
+<configs>
+
+    <!-- <set xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddQuest']/property[@name='quest']/@value">quest_BetterQuest1</set> 
+	<remove xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddQuest']"/>
+    <remove xpath="//action_sequence[@name='game_on_death']/action[@class='AddXPDeficit']"/>
+
+    <append xpath="//action_sequence[@name='game_first_spawn']">
+        <action class="AddItems">
+			<property name="added_items" value="quest_BetterQuestStartNote1"/>
+			<property name="added_item_counts" value="1" />
+		</action>
+    </append>-->
+	<!-- <set xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddJournalTip']/property[@name='tip_name']/@value">quest_BetterQuest</set> -->
+    
+	<!-- 
+        <action_sequence name="game_first_spawn">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+			
+			<action class="Delay">
+				<property name="time" value="4.5" />
+			</action>
+
+			<action class="AddJournalTip">
+				<property name="tip_name" value="tutorialTipQuest01" />
+				<property name="show_window" value="true" />
+				<property name="phase" value="1" />
+			</action>
+
+			<action class="Delay">
+				<property name="time" value="2" />
+				<property name="phase" value="2" />
+			</action>
+
+			<action class="AddQuest">
+				<property name="quest" value="quest_BasicSurvival1" />
+				<property name="phase" value="3" />
+			</action>
+		</action_sequence>
+    -->
+    
+</configs>
