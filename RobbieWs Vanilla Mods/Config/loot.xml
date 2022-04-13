@@ -3,6 +3,35 @@
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>
 
+    <!--
+        vehicleBicycle storage, vehicle storage max is 90 slots, width has worked up to 16+ 
+        <lootcontainer id="76" name="vehicleBicycle" count="0" size="9,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+        </lootcontainer>
+
+         vehicleMinibike storage 
+        <lootcontainer id="77" name="vehicleMinibike" count="0" size="9,3" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+        </lootcontainer>
+
+         vehicleMotorcycle storage 
+        <lootcontainer id="78" name="vehicleMotorcycle" count="0" size="9,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+        </lootcontainer>
+
+        vehicle4x4Truck storage 
+        <lootcontainer id="79" name="vehicle4x4Truck" count="0" size="9,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+        </lootcontainer>
+
+         vehicleGyrocopter storage
+        <lootcontainer id="80" name="vehicleGyrocopter" count="0" size="9,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+        </lootcontainer>
+    -->
+
+    <set xpath="//lootcontainer[@id='76']/@size">9,3</set>
+    <set xpath="//lootcontainer[@id='77']/@size">9,5</set>
+    <set xpath="//lootcontainer[@id='78']/@size">9,8</set>
+    <set xpath="//lootcontainer[@id='79']/@size">9,10</set>
+    <set xpath="//lootcontainer[@id='80']/@size">9,10</set>
+
+
     <!-- Destroy garbage on loot-->
     <setattribute xpath="//lootcontainer[@id='9']" name="destroy_on_close">true</setattribute>  <!-- bags -->
     <setattribute xpath="//lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>  <!-- garbage -->

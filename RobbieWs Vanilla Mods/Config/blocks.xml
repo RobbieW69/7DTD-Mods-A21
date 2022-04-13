@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<append xpath="/blocks/block[@name='forge' or @name='cntCollapsedForge']">
+  		<property name="TintColor" value="facf39"/>
+	</append>
+
 	<append xpath="/blocks/block[@name='hayBaleSquare']">
         <property name="CanPickup" value="true"/>
     </append>
@@ -9,8 +13,26 @@
 		<property name="CanPickup" value="true"/>
 	</append>
 
+	<!-- Remove drop events for roll up doors, and make it drop a rollup door when you break it-->
+	<remove xpath="//block[@name='rollUpDoor3x3White']/drop"/>
+	<append xpath="//block[@name='rollUpDoor3x3White']">
+		<drop event="Destroy" name="rollUpDoor3x3VariantHelper" count="1,1" tag="allHarvest"/>
+	</append>
+
+	<remove xpath="//block[@name='rollUpDoor5x4White']/drop"/>
+	<append xpath="//block[@name='rollUpDoor5x4White']">
+		<drop event="Destroy" name="rollUpDoor5x4VariantHelper" count="1,1" tag="allHarvest"/>
+	</append>
+
+	<remove xpath="//block[@name='rollUpDoor7x4White']/drop"/>
+	<append xpath="//block[@name='rollUpDoor7x4White']">
+		<drop event="Destroy" name="rollUpDoor7x4VariantHelper" count="1,1" tag="allHarvest"/>
+	</append>
+
 	<!-- Change wooden signs to make more  -->
 	<append xpath="//block[@name='woodSignBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,signRoadArrowheadApache,signRoadAZ260eastSpeed65,signRoadAZ260west,signRoadAZ260westSpeed65,signRoadAZ73north,signRoadAZ73northSpeed65,signRoadAZ73south,signRoadAZ73southSpeed65,signRoadApacheAZ260,signRoadBellLake,signRoadCoronado,signRoadCoronadoCourtland,signRoadCourtlandApache,signRoadCourtlandAZ260Left,signRoadCourtlandAZ260Right,signRoadCourtlandBell,signRoadCourtlandHuenink,signRoadCourtlandMaple,signRoadCourtlandTran,signRoadDavis,signRoadEssig,signRoadLangTran,signRoadTran,signRoadMaple,signRoadDestinationsEast,signRoadDestinationsWest,signCamping,signSpillwayLake,signAnselAdamsRiver,signNationalPark,signCampFish,signInfoCenter,signNoHazardousWaste,signRoadWork,signRoadRoughSurface,signSchoolZone,signRoadSlow,signRoadSpeed25,signRoadSpeed25noTrucks,signRoadSpeed35,signRoadSpeed45,signRoadSpeed55,signRoadSpeed65,signRoadStop,signRoadStop4way,signRoadPrivate,signYardSign01,signCrossWalkYellow,signDoNotEnter,signHandicapParking,signNoParking,signTowAway,signShopColdBeer,signShopTraderJoel2x5Wall,signShopTraderJoel1x3Wall,signShopGas,signShopGasLit,signShopGasWall,signShopGasWallLit,signShopGasLarge,signShopGasLargeLit,signShopGasLargeWall,signShopGasLargeWallLit,signShopGunStore,signShopGunStoreLit,signShopGunStoreWall,signShopGunStoreWallLit,signShopGunStoreLarge,signShopGunStoreLargeLit,signShopGunStoreLargeWall,signShopGunStoreLargeWallLit,signShopBookStore,signShopBookStoreLit,signShopBookStoreWall,signShopBookStoreWallLit,signShopBookStoreLarge,signShopBookStoreLargeLit,signShopBookStoreLargeWall,signShopBookStoreLargeWallLit,signShopPharmacy,signShopPharmacyLit,signShopPharmacyWall,signShopPharmacyWallLit,signShopPharmacyLarge,signShopPharmacyLargeLit,signShopPharmacyLargeWall,signShopPharmacyLargeWallLit,signShopToolStore,signShopToolStoreLit,signShopToolStoreWall,signShopToolStoreWallLit,signShopToolStoreLarge,signShopToolStoreLargeLit,signShopToolStoreLargeWall,signShopToolStoreLargeWallLit,signShopGrocery,signShopGroceryLit,signShopGroceryWall,signShopGroceryWallLit,signShopGroceryLarge,signShopGroceryLargeLit,signShopGroceryLargeWall,signShopGroceryLargeWallLit,signShopSavageCountry,signShopSavageCountryLit,signShopSavageCountryWall,signShopSavageCountryWallLit,signShopSavageCountryLarge,signShopSavageCountryLargeLit,signShopSavageCountryLargeWall,signShopSavageCountryLargeWallLit,signShopMoPowerElectronics,signShopMoPowerElectronicsLit,signShopMoPowerElectronicsWall,signShopMoPowerElectronicsWallLit,signShopMoPowerElectronicsLarge,signShopMoPowerElectronicsLargeLit,signShopMoPowerElectronicsLargeWall,signShopMoPowerElectronicsLargeWallLit,signShopPostOfficeSign,signShopPostOfficeSignLit,signShopPostOfficeSignWall,signShopPostOfficeSignWallLit,signShopPostOfficeSignLarge,signShopPostOfficeSignLargeLit,signShopPostOfficeSignLargeWall,signShopPostOfficeSignLargeWallLit,signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signBulletinBoard01,signBulletinBoard02,signBookSaleAd,signBread01,signBread02,signCigaretteAd,signDinersMenu,signDinersMenu2m,signDinersMenu2mCentered,signLaborDaySaleAd,signMegaCrushAd,signNotice01,signNotice02,signNotice03,signNotice04,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,signExitLight,signPillsLogo,signPillsLogoSmall,signShopOpen,signTrafficLight,signTrafficLightOffset,signCrosswalk</append>
+
+
 	<!-- Add helper blocks to craft alot of items -->
 	<append xpath="/blocks">
 		<block name="Beer Coolers">
@@ -54,7 +76,7 @@
 	</append>
 
 	<!--Claymores boulders drop stuff editied-->
-	<append xpath="/blocks/block[@name='rockResource']">
+	<append xpath="//block[@name='rockResource']">
 		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
 		<drop event="Harvest" name="resourceScrapIron" count="9" tag="oreWoodHarvest"/>
 		<drop event="Harvest" name="resourceCoal" count="8" prob="0.18" tag="oreWoodHarvest"/>
@@ -71,10 +93,10 @@
 		<drop event="Fall" name="resourceScrapIron" count="4" prob="0.5" stick_chance="0"/>
 	</append>
 
-	<!-- Sell any block to trader -->
+	<!-- Sell any block to trader 
 	<append xpath="//block">
        <property name="SellableToTrader" value="true"/>
-	</append> 
+	</append> -->
 
 	<!-- Make trees turn into Stumps instead of going away --> 
 	<remove xpath="//block[contains(@name, 'tree')]/drop[@event='Fall']"/>
@@ -87,6 +109,7 @@
 	</append>
 	<remove xpath="//block[contains(@name, 'Grass') or contains(@name, 'treePlant02') or contains(@name, 'Dead')]/property[@name='DowngradeBlock']"/>
 	<remove xpath="//block[contains(@name, 'Shrub') or contains(@name, 'Cactus') or contains(@name, 'eet')]/property[@name='DowngradeBlock']"/>
+	
 	<!-- Add icons for books already read <block name="goreBlockHumanBones">-->
 
 	<!-- Make stumps turn into trees??
@@ -198,6 +221,12 @@
 	</append>
 
 	<!-- harvest plants with E (you can get at least 2 from any plant, however punching gives you more as its level based) -->
+
+	<append xpath="//block[@name='plantedPotato3Harvest']">
+		<property name="DowngradeBlock" value="plantedPotato1"/>
+		<property name="Class" value="CropsGrown"/>
+	</append>
+
 	<append xpath="//block[@name='plantedPumpkin3Harvest']">
 		<property name="DowngradeBlock" value="plantedPumpkin1"/>
 		<property name="Class" value="CropsGrown"/>
@@ -562,4 +591,4 @@
 			<property name="Weight" value="60"/>
 		</append>
 		
-	</configs>
+</configs>

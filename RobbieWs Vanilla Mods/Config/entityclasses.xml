@@ -8,9 +8,9 @@
 	<property name="TurnSpeed" value="27"/>
 	<property name="MaxDistance" value="2.2"/>-->
 
-	<!-- nerf the stupid xp deficit  
+	<!-- This effectively disables the xp deficit -->
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value='.25']/@value">0</set>
-	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>-->
+	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>
 
 	<!-- Zombie changes -->
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedAggro']/@value">0.08, 0.08</set>
@@ -20,22 +20,65 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
-	<!-- 5 is hurt foot shamble, 6 is shitty crackhead, 8 (for burnt radite dis apparently different) spider, 4 is crawler, 9 beh doesnt work yet, 7 is nurse
-	<set xpath="//entity_class[contains(@name, 'zombie') and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
+	<!--
+		1= the fat guy belly out walk, Moe
+		2= kind of heavier lumber jack walk, Mutated
+		3= hands up shambling forward a lil quick, Arlene
+		4= crawler, 
+		5= broken foot shamble, Joe
+		6= crackhead walk, Steve
+		7= nurse slow walk, Nurse
+		8= spider crawl, Spider
 
-	<!-- Some zombies walk normal like that, some zombies to do foot shamble, and some zombies to be crawlers 
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>
-	<set xpath="//entity_class[@name='' and @extends='zombieTemplateMale']/property[@name='WalkType']/@value">7</set>-->
+		zombieFemaleFat (feral, rad) 1
+		zombieFatHawaiian (feral, rad) 1
+		zombieMoe (feral, rad) 1
+		zombieFatCop (feral, rad) 1
+
+		zombieSkateboarder (feral, rad) 2
+		zombieSoldier (feral, rad) 2
+		zombieWightFeral 2 
+		zombieWightRadiated 2
+		zombieMutated 2
+		zombieDemolition 2
+		zombieBoe (feral, rad) 2
+		zombieLumberjack (feral, rad) 2
+
+		zombieArlene (feral, rad) 3
+		zombiePartyGirl (feral, rad) 3
+		zombieScreamer (feral, rad) 3
+		zombieDarlene (feral, rad) 3
+
+		zombieSteveCrawler 4
+		zombieSteveCrawlerFeral 4
+
+		zombieMarlene (feral, rad) 5
+		zombieJoe (feral, rad) 5
+		zombieYo (feral, rad) 5
+		zombieJanitor (feral, rad) 5
+
+		zombieSteve (feral, rad) 6
+		zombieTomClark (feral, rad) 6
+		zombieUtilityWorker (feral, rad) 6
+
+		zombieBusinessMan (feral, rad) 7
+		zombieBurnt (feral, rad) 7
+		zombieMaleHazmat (feral, rad) 7
+		zombieBiker (feral, rad) 7
+		zombieLab (feral, rad) 7
+		zombieNurse (feral, rad) 7
+
+		zombieSpider (feral, rad) 8
+	-->
+	
+	<!-- Change zombie walk types -->
+	<set xpath="//entity_class/property[@name='WalkType' and @value='1']/@value">7</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='2']/@value">3</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='3']/@value">7</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='5']/@value">7</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='6']/@value">5</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='7']/@value">7</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='8']/@value">6</set>
 
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
@@ -61,7 +104,6 @@
 	
 	<!-- MAKE ALL ANIMALS HAVE FAT AND CHANGE FAT %'S -->
 	<set xpath="//entity_class[contains(@name, 'animal') or contains(@name, 'zombie')]/drop[@name='resourceAnimalFat']/@count">4</set>
-
 	<!-- Grace changes-->
 	<set xpath="//entity_class[@name='animalBossGrace']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax']/@value">2500</set>
 	<set xpath="//entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">2500</set>

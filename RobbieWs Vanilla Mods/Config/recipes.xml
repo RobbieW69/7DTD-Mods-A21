@@ -6,9 +6,11 @@
 	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
 	<!-- Render meat to give animal fat -->
 
+	<!-- Make sure mods can be blueprinted and Anvil-->
+
 	<!--Subtract amount of resources required for master chef recipes -->
     <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[@name='CraftingIngredientCount']/@level">2,5</set>
-    <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[contains(@tags, 'food') or contains(@tags, 'Bone')]/@value">-1,-4</set>
+    <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[contains(@tags, 'food') or contains(@tags, 'Bone')]/@value">-1,-3</set>
 
 	<!-- Add our new pebbles for bows -->
 	<append xpath="/recipes">
@@ -77,6 +79,16 @@
 			<ingredient count="300" name="resourceFeather"/>
 			<ingredient count="5" name="meleeToolRepairT0StoneAxe"/>
 			<ingredient count="1" name="modDyeRed"/>
+		</recipe>
+		<!-- gunBowT1WoodenBowParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunBowT1WoodenBowParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
+		</recipe>
+		<!-- meleeToolAllSteelParts  -->
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="meleeToolAllSteelParts">
+			<ingredient count="1" name="resourceDuctTape"/>
+			<ingredient count="1" name="resourceForgedSteel"/>
 		</recipe>
 		<!-- gunMGT1AK47Parts  -->
 		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="gunMGT1AK47Parts">
@@ -241,32 +253,27 @@
 			<ingredient count="15" name="resourceScrapPolymers"/>
 			<ingredient count="5" name="resourceForgedIron"/>
 		</recipe>
-		<!--  -->
+		<!-- cntHardenedChestSecureT5 -->
 		<recipe count="1" name="cntHardenedChestSecureT5">
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="15" name="resourceElectricParts"/>
+			<ingredient count="15" name="resourceForgedSteel"/>
+			<ingredient count="5" name="resourceMechanicalParts"/>
+			<ingredient count="5" name="resourceScrapPolymers"/>
 		</recipe>
 		<!--  -->
 		<recipe count="1" name="cntHardenedChestSecure">
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="15" name="resourceElectricParts"/>
+			<ingredient count="15" name="resourceForgedSteel"/>
+			<ingredient count="5" name="resourceMechanicalParts"/>
+			<ingredient count="5" name="resourceScrapPolymers"/>
 		</recipe>
 		<!--  -->
 		<recipe count="1" name="cntLootChestHero">
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
-			<ingredient count="1" name="resourceElectricParts"/>
+			<ingredient count="15" name="resourceForgedIron"/>
+		</recipe>
+		<!-- cntLootChestHeroInsecureT2 -->
+		<recipe count="1" name="cntLootChestHeroInsecureT2">
+			<ingredient count="15" name="resourceLeather"/>
 		</recipe>
 		<!--  -->
 		<recipe count="1" name="cntWallOven">
@@ -1295,6 +1302,46 @@
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="modVehicleReserveFuelTank"/>
 		</recipe>
+		<!-- modVehicleMegaSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modVehicleMegaSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modVehicleMega"/>
+		</recipe>-->
+		<!-- modRoboticDroneArmorPlatingModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneArmorPlatingModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneArmorPlatingMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneCargoModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneCargoModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneCargoMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneMoraleBoosterModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneMoraleBoosterModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneMoraleBoosterMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneHeadlampModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneHeadlampModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneHeadlampMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneMedicModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneMedicModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneMedicMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneWeaponModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneWeaponModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneWeaponMod"/>
+		</recipe>-->
+		<!-- modRoboticDroneStunWeaponModSchematic 
+		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="modRoboticDroneStunWeaponModSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modRoboticDroneStunWeaponMod"/>
+		</recipe>-->
 		</append>
 
 <!-- More Ammo per Craft -->

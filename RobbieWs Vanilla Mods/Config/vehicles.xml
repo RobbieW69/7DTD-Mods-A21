@@ -1,6 +1,7 @@
 <configs>
 
 
+
 	<remove xpath="//vehicle[@name='vehicleMotorcycle']"/>
 	<append xpath="/vehicles">
 			<vehicle name="vehicleMotorcycle">
@@ -150,11 +151,9 @@
 	<set xpath="//vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">18, 28</set>
 	<set xpath="//vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">18, 28</set>
 
-
 	<!-- Adjust vehicles to not use food or water -->
 	<remove xpath="//vehicle[@name='vehicleGyrocopter']/property[@class='engine']/property[@name='foodDrain']" />
 	<remove xpath="//vehicle[@name='vehicleMinibike']/property[@class='engine']/property[@name='foodDrain']" />
 	<remove xpath="//vehicle[@name='vehicleMotorcycle']/property[@class='engine']/property[@name='foodDrain']" />
 	<remove xpath="//vehicle[@name='vehicle4x4Truck']/property[@class='engine']/property[@name='foodDrain']" />
-
-	</configs>
+</configs>
