@@ -1,6 +1,6 @@
 # 7 Days to Die Alpha 20 Mods
 ## Updated (04-13-2022)
-This is a combination of many mods I've found/made over the last 5 years, all rights go to their owners as I am not here to make it seems like I made it all myself, just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.
+This is a combination of many mods I've found/made over the last 5 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.
 # Installation Instructions
 + To install the mod, click the green `Code` button top right, Download as Zip, open the file you downloaded with an extraction tool such as WinRar or 7Zip. 
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
