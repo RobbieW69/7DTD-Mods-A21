@@ -9,9 +9,9 @@ This is a combination of many mods I've found/made over the last 5 years, all ri
 ```xml
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
-## Updates
-This section is for people who have read this multiple times and wants the new stuff presented first.
-+Fixed Vehicle Mod slots not showing.
+## Updates   
+This section is for people who have read this multiple times and wants the new stuff presented first.   
++Fixed Vehicle Mod slots not showing.   
 +Fixed Storage Capacities.   
 
 # Features
