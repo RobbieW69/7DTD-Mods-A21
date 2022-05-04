@@ -1,7 +1,5 @@
 # 7 Days to Die Alpha 20 Mods
-## Updated (04-13-2022)
-This is a combination of many mods I've found/made over the last 5 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.
-# Installation Instructions
+## Installation Instructions
 + To install the mod, click the green `Code` button top right, Download as Zip, open the file you downloaded with an extraction tool such as WinRar or 7Zip. 
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
   + Now move that folder to your `Mods` folder in your 7 Days to Die directory.     
@@ -9,6 +7,9 @@ This is a combination of many mods I've found/made over the last 5 years, I just
 ```xml
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
+## Updated (04-13-2022)
+This is a combination of many mods I've found/made over the last 5 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
+
 ## Updates   
 This section is for people who have read this multiple times and wants the new stuff presented first.   
 +Fixed Vehicle Mod slots not showing.   
