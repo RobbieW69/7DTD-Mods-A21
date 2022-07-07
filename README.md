@@ -45,13 +45,13 @@ This section is for people who have read this multiple times and wants the new s
 + All animals should drop blood bags when being harvested.
 ### Zombies
 + Death animation should be removed from all zombies.
-+ Zombies now despawn after 1 second of being dead.
++ Zombies now despawn after 1 second of being dead. (to increase FPS)
 + Zombies can no longer climb ladders.
 + Head explodes with headshots more often.
 + Swim speed drastically reduced.
-+ Zombies now also target animals.
++ Zombies now also target animals. (Aggro animals will fight back)
 + Zombie loot bags drop more often.
-+ Zombies can now turn into a Gore Block on death 20% of the time, not 100 for FPS.
++ Zombies can now turn into a Gore Block on death 20% of the time. (Not 100% for FPS)
 ### Player
 + Reach extended a little.
 + Jumping no longer requires stamina.
@@ -69,18 +69,17 @@ This section is for people who have read this multiple times and wants the new s
 + The Brawler now does more damage than before.
 + Level Gates added back, still only requires 1 skill point to buy skills.
 + Can now craft level 6 items.
-+ Living off the land now significantly increases crop yeilds.
-+ ExpPenalty for dying set to 0.
++ Living off the land now significantly increases crop yeilds. (Punching plants is highly recommended, don't press E on them)
++ ExpPenalty for dying set to 0. (Basically there is no consequence for dying)
 ### Items
-+ Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
-+ With any wepaon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
++ Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, Cloth, Solar Cells, ect)
++ With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)
 + All guns now have no spread, where you aim is where you shoot.
 + Books that have already been read now have a green checkmark.
-+ Repair kits now repair less per, meaning it takes more kits to repair items heavily damaged.
-+ Empty jars and buckes can now be filled at Sinks, just use secondary action with the jar in hand when standing at a skink.
++ Empty jars and buckets can now be filled at Sinks, just use secondary action with the jar in hand when standing at a sink.
 + Stack sizes increased to 25k.
 + When aiming down sights on all guns the crosshair turns off except with the bows.
-+ All storage boxes are slightly bigger capacity.
++ All storage boxes are bigger capacity.
 + Auger now does more block and entity damage and uses a little less gas.
 + Almost all crafting times have been reduced to basically instant as well as scrap times.
 + All ammo crafted actually produces 3x times the amount.
