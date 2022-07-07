@@ -95,7 +95,7 @@ This section is for people who have read this multiple times and wants the new s
 ### Twitch
 + Non Sub Pimp Points max: Increased to 5000
 + Sub Pimp Points max: Increased to 25000
-+ Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code.
++ Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code. (If you would like this changed please lmk)
 ### Vehicles
 Vehicles have a Minimum and Maximum speed, [min,max].
 + Gyrocopter: Speed increased from [7,10] to [12,24].
