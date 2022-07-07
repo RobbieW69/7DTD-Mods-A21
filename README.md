@@ -2,7 +2,7 @@
 ## Installation Instructions
 + To install the mod, click the green `Code` button top right, Download as Zip, open the file you downloaded with an extraction tool such as [WinRAR](https://www.win-rar.com/fileadmin/winrar-versions/winrar/th/winrar-x64-602.exe) or [7 Zip](https://www.7-zip.org/a/7z2106-x64.exe). 
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
-  + Now move that folder to your `Mods` folder in your 7 Days to Die directory.     
+  + Now move that folder to your `Mods` folder in your 7 Days to Die directory, if you do not have one, make one.        
 + Your directory should now look like this:
 ```c
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
