@@ -4,7 +4,7 @@
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
   + Now move that folder to your `Mods` folder in your 7 Days to Die directory.     
 + Your directory should now look like this:
-```xml
+```c
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
 *Note: These installation instructions will change soon due to the game devs changing how Mods are loaded*
