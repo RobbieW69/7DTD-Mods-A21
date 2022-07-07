@@ -15,7 +15,7 @@ This section is for people who have read this multiple times and wants the new s
 + Updated any storage UI to have Combo box slots and new buttons, also added extra UI colors.
 + Added Anvil Schematic.
 
-# Features
+## Features
 
 + LOTS of recipes to craft items added, however the recipe ingredients are in a test mode, will change.
 + Updated Mod Features UI
