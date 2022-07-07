@@ -1,12 +1,14 @@
 # 7 Days to Die Alpha 20 Mods
 ## Installation Instructions
-+ To install the mod, click the green `Code` button top right, Download as Zip, open the file you downloaded with an extraction tool such as WinRar or 7Zip. 
++ To install the mod, click the green `Code` button top right, Download as Zip, open the file you downloaded with an extraction tool such as [WinRAR](https://www.win-rar.com/fileadmin/winrar-versions/winrar/th/winrar-x64-602.exe) or [7 Zip](https://www.7-zip.org/a/7z2106-x64.exe). 
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
   + Now move that folder to your `Mods` folder in your 7 Days to Die directory.     
 + Your directory should now look like this:
 ```xml
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
+*Note: These installation instructions will change soon due to the game devs changing how Mods are loaded*
+
 ## Updated (07-06-2022)
 This is a combination of many mods I've found/made over the last 6 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
 
