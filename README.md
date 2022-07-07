@@ -16,6 +16,7 @@ This is a combination of many mods I've found/made over the last 6 years, I just
 This section is for people who have read this multiple times and wants the new stuff presented first.   
 + Updated any storage UI to have Combo box slots and new buttons, also added extra UI colors.
 + Added Anvil Schematic.
++ Auger/Chainsaw do alot more block damage per hit and you gain more Exp.
 
 ## Features
 
