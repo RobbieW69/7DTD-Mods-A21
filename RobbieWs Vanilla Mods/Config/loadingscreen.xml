@@ -1,0 +1,11 @@
+<configs>
+
+
+<!-- <set xpath="/doc/backgrounds/tex[starts-with(@file,'GUI/')]/@file">@modfolder:lois.png</set> -->
+
+<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_1']/@file">@modfolder:lp1.jpg</set>
+<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_2']/@file">@modfolder:lp2.jpg</set>
+<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_3']/@file">@modfolder:lp3.jpg</set>
+<set xpath="/doc/backgrounds/tex[@file='GUI/loading_screen_4']/@file">@modfolder:lp4.jpg</set>
+
+</configs>

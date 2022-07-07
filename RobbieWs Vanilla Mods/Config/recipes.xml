@@ -5,8 +5,8 @@
 	<!-- Get acid from old lead car batteries-->
 	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
 	<!-- Render meat to give animal fat -->
-
-	<!-- Make sure mods can be blueprinted and Anvil-->
+	<!--Add ammo conversion recipes (ie. Scrap 1 Bullet into Resources to make bullet)-->
+	<!-- Make sure mods can be blueprinted-->
 
 	<!--Subtract amount of resources required for master chef recipes -->
     <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[@name='CraftingIngredientCount']/@level">2,5</set>
@@ -55,12 +55,18 @@
 	
 <!-- Recipe changes/adiddionts-->
 	<append xpath="/recipes">
+		<!-- toolAnvil -->
+		<recipe craft_area="workbench" count="1" tags="workbenchCrafting" name="toolAnvilSchematic">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="toolAnvil"/>
+		</recipe>
 		<!-- foodSpaghetti -->
-		<recipe craft_area="campfire" count="1" name="foodSpaghetti">
+		<recipe craft_area="campfire" count="1" name="foodSpaghetti" tags="perkMasterChef,learnable">
 			<ingredient count="1" name="foodRawMeat"/>
 			<ingredient count="1" name="drinkJarEmpty"/>
 			<ingredient count="1" name="resourceAnimalFat"/>
 			<ingredient count="1" name="foodCanBeef"/>
+			<ingredient count="1" name="foodCanPasta"/>
 		</recipe>
 		<!-- foodCanPasta -->
 		<recipe craft_area="campfire" count="1" tags="workbenchCrafting" name="foodCanPasta">
@@ -221,7 +227,6 @@
 		</recipe>
 	<!-- Alpha 20 Changes/Additions -->
 	<!-- Additions -->
-
 		<!--  decoWineBottleCorner -->
 		<recipe craft_area="forge" count="1" name="decoWineBottleCorner">
 			<ingredient count="10" name="unit_glass"/>

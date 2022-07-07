@@ -1,5 +1,8 @@
 <configs>
 
+
+<!--We can now add stuff because of gameevents-->
+
 <set xpath="/twitch/@nonsub_pp_cap">5000</set>
 <set xpath="/twitch/@sub_pp_cap">25000</set>
 

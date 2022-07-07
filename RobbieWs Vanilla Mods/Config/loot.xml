@@ -1,7 +1,19 @@
 <configs>
+
+    <!-- 28 NOT USED -->
+    <!-- 29 NOT USED -->
+    <!-- 30 NOT USED -->
+    <!-- 31 NOT USED -->
+    <!-- 32 NOT USED -->
+    <!-- 33 NOT USED -->
+    <!-- 81 NOT USED -->
+    <!-- 82 NOT USED -->
+    <!-- 96 NOT_USED -->
+
     <set xpath="//lootcontainer[@name='playerStorage']/@size">10,9</set>
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>
+    <set xpath="//lootcontainer[@name='apacheArtifactChest']/@size">10,9</set>
 
     <!--
         vehicleBicycle storage, vehicle storage max is 90 slots, width has worked up to 16+ 
@@ -32,10 +44,11 @@
     <set xpath="//lootcontainer[@id='80']/@size">9,10</set>
 
 
-    <!-- Destroy garbage on loot-->
-    <setattribute xpath="//lootcontainer[@id='9']" name="destroy_on_close">true</setattribute>  <!-- bags -->
-    <setattribute xpath="//lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>  <!-- garbage -->
-    <setattribute xpath="//lootcontainer[@id='25']" name="destroy_on_close">true</setattribute>  <!-- birdnest -->
+    <set xpath="//lootcontainer[@id='10']/item[@group='groupJunk']/@group">groupGarbage</set>
+
+    <!-- Destroy garbage on loot--> <!-- bags --> <!-- garbage --> <!-- birdnest --> <!-- purse -->
+    <setattribute xpath="//lootcontainer[@id='9' or @id='10' or @id='25' or @id='48']" name="destroy_on_close">true</setattribute>
+
     <set xpath="//lootcontainer[@id='25']/@sound_close">silencefiller</set>  <!-- birdnest sound -->
-    <setattribute xpath="//lootcontainer[@id='48']" name="destroy_on_close">true</setattribute>  <!-- purse -->
+
 </configs>

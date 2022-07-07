@@ -18,7 +18,8 @@
 	</append>
 
 	<!-- This line changes the options for the number of blocks for Bedroll Dead Zone => zone without respawns -->
-	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid/gameoption[@name='BedrollDeadZoneSize']/@values">0, 10, 15, 20, 30, 40, 50, 60, 80, 100, 120</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsGeneral']/grid/gameoption[@name='DayNightLength']/@values">1, 5, 10, 20, 30, 40, 50, 60, 90, 120, 180, 240, 480, 960, 1440</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsGeneral']/grid/gameoption[@name='DayLightLength']/@values">0, 1, 2, 3, 4, 8, 12, 14, 16, 18, 20, 23, 24</set>
+	<set xpath="//window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid/gameoption[@name='BedrollDeadZoneSize']/@values">0, 10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 140, 200</set>
+  <set xpath="//window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid/gameoption[@name='LandClaimSize']/@values">20, 40, 60, 80, 100, 120</set>
+	<set xpath="//window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsGeneral']/grid/gameoption[@name='DayNightLength']/@values">1, 5, 10, 20, 30, 40, 50, 60, 90, 120, 180, 240, 480, 960, 1440</set>
+	<set xpath="//window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsGeneral']/grid/gameoption[@name='DayLightLength']/@values">0, 1, 2, 3, 4, 8, 12, 14, 16, 18, 20, 23, 24</set>
 </configs>

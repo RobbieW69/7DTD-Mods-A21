@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+
+	<!-- FUck you jars
+	<append xpath="//item/property[class='Action0']/property[@value='player_drinking']/..">
+		<property name="Create_item" value="drinkJarEmpty"/>
+		<property name="Create_item_count" value="1"/>
+	</append>-->
+
 	<!--Change how the starter quest works, create our own notes :) -->
 	<append xpath="/items">
 		<!-- Make our own rocks that are shootable with bows cause its hilarious -->
@@ -36,6 +43,7 @@
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="30" tags="perkArchery"/>
 			</effect_group>
 		</item>
+
 	</append>
 	<append xpath="//item[contains(@name,'Bow')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,Pebbles</append>
 

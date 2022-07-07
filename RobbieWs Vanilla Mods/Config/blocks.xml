@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
-	<append xpath="/blocks/block[@name='forge' or @name='cntCollapsedForge']">
+
+	<remove xpath="//block[@name='cntLootChestHero']/drop[@event='Harvest']"/>
+
+	<append xpath="//block[@name='tableLampLight']">
+		<property value="4.50" name="SizeScale"/>
+	</append>
+
+	<remove xpath="//block[@name='cntRetroFridgeVer1Closed']/drop"/>
+
+	<!--change it where Tilt trucks dont die-->
+	<set xpath="//block[contains(@name,'cntTilt') or @name='cntBin' or @name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">garbage</set>
+
+	<!-- Add a chance to get water/yucca juice from cactus, going with Yucca juice but water would also make sense-->
+	<append xpath="//block[@name='treeCactus01']">
+		<drop event="Destroy" name="drinkJarYuccaJuice" count="1" prob="0.1"/>
+	</append>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntStorageChest']/drop[@event='Destroy']/@name">cntSecureStorageChest</set>
+	<set xpath="//block[@name='cntStorageChest']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntStorageGenericInsecure']/drop[@event='Destroy']/@name">cntStorageGenericInsecure</set>
+	<set xpath="//block[@name='cntStorageGenericInsecure']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntChest01']/drop[@event='Destroy']/@name">cntChest01</set>
+	<set xpath="//block[@name='cntChest01']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntStorageGenericPOI']/drop[@event='Destroy']/@name">cntStorageGenericPOI</set>
+	<set xpath="//block[@name='cntStorageGenericPOI']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntLootChestHeroInsecureT1']/drop[@event='Destroy']/@name">cntLootChestHeroInsecureT1</set>
+	<set xpath="//block[@name='cntLootChestHeroInsecureT1']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy']/@name">cntLootChestHeroInsecureT2</set>
+	<set xpath="//block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntLootChestHeroInsecure']/drop[@event='Destroy']/@name">cntLootChestHero</set>
+	<set xpath="//block[@name='cntLootChestHeroInsecure']/drop[@event='Destroy']/@count">1</set>
+
+	<!--Wood chest-->
+	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@name">cntHardenedChestInsecure</set>
+	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@count">1</set>
+
+
+	<remove xpath="//block[@name='cntChest01']/drop[@event='Destroy']"/>
+
+	<!--Wood chest-->
+	<append xpath="//block[@name='cntApacheArtifactChest']">
+		<drop event="Destroy" name="cntApacheArtifactChest" count="1"/>
+	</append>
+	
+	<append xpath="//block[@name='forge' or @name='cntCollapsedForge']">
   		<property name="TintColor" value="facf39"/>
 	</append>
 
-	<append xpath="/blocks/block[@name='hayBaleSquare']">
+	<append xpath="//block[@name='hayBaleSquare']">
         <property name="CanPickup" value="true"/>
     </append>
 
@@ -14,18 +71,18 @@
 	</append>
 
 	<!-- Remove drop events for roll up doors, and make it drop a rollup door when you break it-->
-	<remove xpath="//block[@name='rollUpDoor3x3White']/drop"/>
-	<append xpath="//block[@name='rollUpDoor3x3White']">
+	<remove xpath="//block[contains(@name, 'rollUpDoor3x3')]/drop"/>
+	<append xpath="//block[contains(@name, 'rollUpDoor3x3')]">
 		<drop event="Destroy" name="rollUpDoor3x3VariantHelper" count="1,1" tag="allHarvest"/>
 	</append>
 
-	<remove xpath="//block[@name='rollUpDoor5x4White']/drop"/>
-	<append xpath="//block[@name='rollUpDoor5x4White']">
+	<remove xpath="//block[contains(@name, 'rollUpDoor5x4')]/drop"/>
+	<append xpath="//block[contains(@name, 'rollUpDoor5x4')]">
 		<drop event="Destroy" name="rollUpDoor5x4VariantHelper" count="1,1" tag="allHarvest"/>
 	</append>
 
-	<remove xpath="//block[@name='rollUpDoor7x4White']/drop"/>
-	<append xpath="//block[@name='rollUpDoor7x4White']">
+	<remove xpath="//block[contains(@name, 'rollUpDoor7x4')]/drop"/>
+	<append xpath="//block[contains(@name, 'rollUpDoor7x4')]">
 		<drop event="Destroy" name="rollUpDoor7x4VariantHelper" count="1,1" tag="allHarvest"/>
 	</append>
 
@@ -73,6 +130,17 @@
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 		</block>
+
+		<block name="Wood Chest">
+			<property name="Extends" value="cntChest01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntMountainManStorageChest,cntApacheArtifactChest"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
 	</append>
 
 	<!--Claymores boulders drop stuff editied-->
@@ -88,7 +156,7 @@
 		<drop event="Harvest" name="resourceSilverNugget" count="1" prob=".01" tag="artOfMiningLuckyStrikeHarvest"/>
 		<drop event="Harvest" name="resourceGoldNugget" count="1" prob=".01" tag="artOfMiningLuckyStrikeHarvest"/>
 	</append>
-	<append xpath="/blocks/block[@name='terrStone']">
+	<append xpath="//block[@name='terrStone']">
 		<drop event="Harvest" name="resourceScrapIron" count="2" tag="oreWoodHarvest"/>
 		<drop event="Fall" name="resourceScrapIron" count="4" prob="0.5" stick_chance="0"/>
 	</append>
@@ -183,7 +251,7 @@
 	
 	<!-- Add: get Brass when harvesting iron -->
 	<append xpath="//block [@name='terrOreIron']">
-		<drop event="Harvest" name="resourceScrapBrass" prob="1.07"  count="50" tag="artOfMiningLuckyStrikeHarvest" />
+		<drop count="50,100" prob="0.2" tag="allToolsHarvest" name="resourceScrapBrass" event="Harvest"/>
 	</append>
 
 	<append xpath="//block[@name='bedroll']">

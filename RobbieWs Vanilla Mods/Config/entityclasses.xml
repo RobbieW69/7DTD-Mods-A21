@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+
+	<!-- Change starting Items for players -->
+	<set xpath="//entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnter')]/@value">drinkJarBoiledWater,foodCanChili,foodCanPears,medicalFirstAidBandage,medicalFirstAidBandage,candle</set>
+
+	<append xpath="//entity_class[@name='playerMale']">
+		<property name="Mesh" value="opaque2"/>
+	</append>
+
 	<set xpath="//entity_class[@name='junkTurretSledge']/property[@name='MaxDistance']/@value">5</set>
 
 	<!-- <property name="YawRange" value="170"/> horizontal swivel range. Keep under 180. 
@@ -20,7 +28,7 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
-	<!--
+	<!-- Different zombie walk types
 		1= the fat guy belly out walk, Moe
 		2= kind of heavier lumber jack walk, Mutated
 		3= hands up shambling forward a lil quick, Arlene

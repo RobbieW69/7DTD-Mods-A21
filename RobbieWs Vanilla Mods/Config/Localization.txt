@@ -1,7 +1,10 @@
 Key,Source,Context,Changes,English
 
-tutorialTipQuest01,Journal Tip,,,"Dear Friend,\n\n Welcome to the zombie apocalypse, we found you passed out and surrounded by a horde, all we could manage was leaving you somewhere safe with a little food but any clothes you had must have been robbed by someone else before we got there. If you can remember who you are and figure out the basics we'll take you in. We left some notes on vital information you'll want to read them over. Goodluck. Press Tab to open your Inventory. \n\n -Noah", 
+tutorialTipQuest01,Journal Tip,,,"Dear Friend,\n\n Welcome to the zombie apocalypse, we found you passed out and surrounded by a horde, all we could manage was leaving you somewhere safe with a little food but any clothes you had must have been robbed by someone else before we got there. If you can remember who you are and figure out the basics we'll take you in. Goodluck. Press Tab to open your Inventory. \n\n -Noah", 
 tutorialTipQuest01_title,Journal Tip,,,Started Trying To Survive
+
+myTutorialTip01,Journal Tip,,,"Building a base is also very important as once nightime starts, all of them start running at 22:00. You need protection from the weather and the wandering hordes. Build a small hut. Craft 'Frame Shapes' and hold R once in your hotbar and selected, then click on Shapes. Upgrade by right clicking them with your stone axe./n/n To protect the parts of your base you can't reach you can craft some Wood Spikes and line the outside of the base with them./n/nAlso I would make a door and upgrade it too, and always think of an escape plan!",
+myTutorialTip01_title,Journal Tip,,,Noahs Survival Guide pt1
 
 quest_BetterQuest3,Quest,Quest Info,,,Basic Survival 3/12,
 quest_BetterQuest3_description,Quest,Quest Info,,,"",
@@ -20,7 +23,7 @@ quest_BetterQuest6_description,Quest,Quest Info,,,"Crops are important, the Cott
 quest_BetterQuest6_subtitle,Quest,Quest Info,,,Find Crops,
 
 quest_BetterQuest7,Quest,Quest Info,,,Basic Survival 7/12,
-quest_BetterQuest7_description,Quest,Quest Info,,,"Keeping your inventory clean will make sure you don't get too encumbered to move, another way to do this is to become stronger so you can carry more!/n/nThe gray slots with the man in your inventory are Encumbered slots, making you slower to walk. Buy 1 point of Pack Mule to have some of those sweet slots back, max level removes all of the encumbered slots. Press N to open the skills menu.",
+quest_BetterQuest7_description,Quest,Quest Info,,,"Keeping your inventory clean will make sure you don't get too encumbered to move, another way to do this is to become stronger so you can carry more!/n/nThe gray slots with the man in your inventory are Encumbered slots, making you walk slower. Buy 1 point of Pack Mule to have some of those sweet slots back, max level removes all of the encumbered slots. Press N to open the skills menu.",
 quest_BetterQuest7_subtitle,Quest,Quest Info,,,Use Skill Points,
 
 quest_BetterQuest8,Quest,Quest Info,,,Basic Survival 8/12,
@@ -321,3 +324,6 @@ statTrue,ui_display,Item stat,,,Yes,
 statVisibility,ui_display,Item stat,,,Visibility,
 statWaterAmount,ui_display,Item stat,,,Water,
 statWeaponHandling,ui_display,Item stat,,,Weapon Handling,
+
+lblBlkDmg,UI,Item Info,,,Block Damage,[FFA500]{0}[-]
+lblBlkRpr,UI,Item Info,,,Block Repair,[FFA500]{0}[-]

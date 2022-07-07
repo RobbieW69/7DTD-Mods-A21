@@ -7,13 +7,13 @@
 ```xml
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
-## Updated (04-13-2022)
-This is a combination of many mods I've found/made over the last 5 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
+## Updated (07-06-2022)
+This is a combination of many mods I've found/made over the last 6 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
 
 ## Updates   
 This section is for people who have read this multiple times and wants the new stuff presented first.   
-+Fixed Vehicle Mod slots not showing.   
-+Fixed Storage Capacities.   
++ Updated any storage UI to have Combo box slots and new buttons, also added extra UI colors.
++ Added Anvil Schematic.
 
 # Features
 
@@ -101,6 +101,8 @@ Vehicles have a Minimum and Maximum speed, [min,max].
 + Motorcycle: Speed increased from [9,14] to [18,28].
 + 4x4 Truck: Speed increased from [9,13] to [18,28].
 ### UI
++ Fixed Vehicle Mod slots not showing.   
++ Fixed Storage Capacities.
 + Food, Hunger, and Exp bars now brighter colors.
 + When you press Escape a server information panel will pop up.
 + Alot of colored text just about everywhere now.

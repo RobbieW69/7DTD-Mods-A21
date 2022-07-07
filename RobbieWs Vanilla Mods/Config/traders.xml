@@ -8,6 +8,21 @@
 
 	<!-- Set more trader inventory, defaults: min 30, max 70 -->
 	<set xpath="//trader_info/@min_inventory">80</set>
-	<set xpath="//trader_info/@max_inventory">120</set>
+	<set xpath="//trader_info/@max_inventory">160</set>
+
+	<!-- Set trader to swap out more stuff on reset -->
+	<set xpath="//trader_info/@min_items_swapped">80</set>
+	<set xpath="//trader_info/@max_items_swapped">160</set>
+
+	<!--Change trader interval of resetting, def 3-->
+	<set xpath="//trader_info/@reset_interval">4</set>
 	
+	<!-- Change random vending machines to sell?? -->
+	<set xpath="//trader_info[@id='4']/@allow_sell">true</set>
+	<set xpath="//trader_info[@id='4']/@min_inventory">10</set>
+	<set xpath="//trader_info[@id='4']/@max_inventory">20</set>
+	<set xpath="//trader_info[@id='4']/@min_items_swapped">10</set>
+	<set xpath="//trader_info[@id='4']/@max_items_swapped">20</set>
+
+
 </configs>
