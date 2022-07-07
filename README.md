@@ -10,7 +10,7 @@ steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 *Note: These installation instructions will change soon due to the game devs changing how Mods are loaded*
 
 ## Updated (07-06-2022)
-This is a combination of many mods I've found/made over the last 6 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
+This is a combination of many mods I've found/made over the last 6 years, some mods were just incorporated in but most of it I wrote, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them.    
 
 ## Updates   
 This section is for people who have read this multiple times and wants the new stuff presented first.   
