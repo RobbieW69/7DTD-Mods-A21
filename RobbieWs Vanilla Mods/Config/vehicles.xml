@@ -145,7 +145,7 @@
 	<!-- Motorcycle			9,14	-->
 	<!-- Truck				9,13	-->
 	<!-- The latter value is maximum speed a vehicle can reach; in meter per second. -->
-	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">12, 24</set>
+	<set xpath="//vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">12, 28</set>
 	<set xpath="//vehicle[@name='vehicleBicycle']/property[@name='velocityMax']/@value">10, 20</set>
 	<set xpath="//vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">14, 20</set>
 	<set xpath="//vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">18, 28</set>

@@ -1,0 +1,10 @@
+<configs>
+
+<!--Figure out how to make zombie not effected unless thats a good thing?
+<remove xpath="//material/property[@name='movement_factor']"/>
+
+<append xpath="//material">
+    <property name="movement_factor" value="10"/>
+</append>-->
+
+</configs>

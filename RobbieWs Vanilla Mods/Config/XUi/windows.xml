@@ -1,22 +1,10 @@
 <windows>
 
-
-    <!-- change durability text?
-    <remove xpath="//window[@name='focusedBlockHealth']"/>
-    <insertAfter xpath="//window[@name='interactionPrompt']">
-        <window name="focusedBlockHealth" anchor="CenterCenter" pos="0,-40" width="160" height="50" controller="FocusedBlockHealth" fade_window="false">
-            <sprite depth="1" pos="-77,0" width="154" height="12" pivot="left" name="background" sprite="menu_empty" type="sliced" color="[black]" />
-            <filledsprite depth="2" pos="-75,0" width="150" height="8" pivot="left" name="bar" color="[disabledColor]" fill="{fill}" filldirection="horizontal" foregroundlayer="true" />
-            <label name="lblText" pos="0,-10" height="30" font_size="30" effect="outline" effect_distance="1,1" effect_color="0,0,0,150" justify="center" pivot="top" text="{text}" />
-	    </window>
-    </insertAfter>-->
-
     <set xpath="//window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">0,0,0,255</set>
     <set xpath="//window[@name='interactionPrompt']/label[@name='lblText']/@effect_distance">2,1</set>
     <set xpath="//window[@name='focusedBlockHealth']/label[@name='lblText']/@effect_color">0,0,0,255</set>
     <set xpath="//window[@name='focusedBlockHealth']/label[@name='lblText']/@effect_distance">2,2</set>
     <set xpath="//window[@name='focusedBlockHealth']/filledsprite[@name='bar']/@color">[me]</set>
-
 
 
     <set xpath="//window[@name='windowShapeMaterial']/rect/rect[@name='materialControls']/@visible">{#always(true)}</set>   <!--  {#always(false)} -->
@@ -39,8 +27,8 @@
     <append xpath="//window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/rect[@visible='{lootingorvehiclestorage}']">
         <combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
         <rect pos="0,30">
-			<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="lblStashFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
-			<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="lblStashSmart"        pos="46, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+			<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="lblStashFillStacks"   pos="-85, -52" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+			<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="lblStashSmart"        pos="-45, -52" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 		</rect>
     </append>
 

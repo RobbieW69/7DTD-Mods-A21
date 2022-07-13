@@ -1,54 +1,46 @@
 <configs>
 
-    <!-- 28 NOT USED -->
-    <!-- 29 NOT USED -->
-    <!-- 30 NOT USED -->
-    <!-- 31 NOT USED -->
-    <!-- 32 NOT USED -->
-    <!-- 33 NOT USED -->
+    <!-- 28 - 33 NOT USED -->
     <!-- 81 NOT USED -->
     <!-- 82 NOT USED -->
     <!-- 96 NOT_USED -->
 
+    <!--Set Dumpsters to be as big as possible-->
+    <set xpath="//lootcontainer[@id='66']/@size">9,10</set>
+
+    <!--Set Junk Drone storage to be bigger, def 8,2, also note that the Cargo mod adds one more row of 8 slots-->
+    <set xpath="//lootcontainer[@id='139']/@size">8,4</set>
+
+    <!--Set storages to be bigger-->
     <set xpath="//lootcontainer[@name='playerStorage']/@size">10,9</set>
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='apacheArtifactChest']/@size">10,9</set>
 
-    <!--
-        vehicleBicycle storage, vehicle storage max is 90 slots, width has worked up to 16+ 
-        <lootcontainer id="76" name="vehicleBicycle" count="0" size="9,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-        </lootcontainer>
+    <!--More effecient way to set the vehicle storage capacites-->
 
-         vehicleMinibike storage 
-        <lootcontainer id="77" name="vehicleMinibike" count="0" size="9,3" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-        </lootcontainer>
-
-         vehicleMotorcycle storage 
-        <lootcontainer id="78" name="vehicleMotorcycle" count="0" size="9,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-        </lootcontainer>
-
-        vehicle4x4Truck storage 
-        <lootcontainer id="79" name="vehicle4x4Truck" count="0" size="9,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-        </lootcontainer>
-
-         vehicleGyrocopter storage
-        <lootcontainer id="80" name="vehicleGyrocopter" count="0" size="9,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-        </lootcontainer>
-    -->
-
+    <!--Set the vehicleBicycle to bigger, def: 9,1 -->
     <set xpath="//lootcontainer[@id='76']/@size">9,3</set>
+
+    <!--Set the vehicleMinibike to bigger, def: 9,3 -->
     <set xpath="//lootcontainer[@id='77']/@size">9,5</set>
+
+    <!--Set the vehicleMotorcycle to bigger, def: 9,4 -->
     <set xpath="//lootcontainer[@id='78']/@size">9,8</set>
+
+    <!--Set the vehicle4x4Truck to bigger, def: 9,9 -->
     <set xpath="//lootcontainer[@id='79']/@size">9,10</set>
+
+    <!--Set the vehicleGyrocopter to bigger, def: 9,5 -->
     <set xpath="//lootcontainer[@id='80']/@size">9,10</set>
-
-
+ 
+    <!--We have to fix it to where the Dumpsters/trash cans dont get destroyed on lootoinng-->
     <set xpath="//lootcontainer[@id='10']/item[@group='groupJunk']/@group">groupGarbage</set>
 
     <!-- Destroy garbage on loot--> <!-- bags --> <!-- garbage --> <!-- birdnest --> <!-- purse -->
     <setattribute xpath="//lootcontainer[@id='9' or @id='10' or @id='25' or @id='48']" name="destroy_on_close">true</setattribute>
 
+    <!--Silence the sound of Birdnests when being opened-->
     <set xpath="//lootcontainer[@id='25']/@sound_close">silencefiller</set>  <!-- birdnest sound -->
 
 </configs>

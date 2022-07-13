@@ -20,7 +20,7 @@
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value='.25']/@value">0</set>
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value='.5']/@value">0</set>
 
-	<!-- Zombie changes -->
+	<!-- #region Zombie changes -->
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedAggro']/@value">0.08, 0.08</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='SwimSpeed']/@value">0.5</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='CanClimbLadders']/@value">false</set>
@@ -79,20 +79,22 @@
 		zombieSpider (feral, rad) 8
 	-->
 	
-	<!-- Change zombie walk types -->
+	<!-- Change zombie walk types, will have to come back to this later as some zombies arent running at night
 	<set xpath="//entity_class/property[@name='WalkType' and @value='1']/@value">7</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='2']/@value">3</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='3']/@value">7</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='5']/@value">7</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='6']/@value">5</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='7']/@value">7</set>
-	<set xpath="//entity_class/property[@name='WalkType' and @value='8']/@value">6</set>
+	<set xpath="//entity_class/property[@name='WalkType' and @value='8']/@value">6</set>-->
 
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
 		<property name="CorpseBlock" value="goreBlockHumanCorpse"/>
 		<property name="CorpseBlockChance" value="0.2"/>
 	</append>
+
+	<!-- #endregion -->
 	
 	<!-- Walk/Run/Swimming speed increases by Gouki -->
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed']/@value">2.2</set>
@@ -194,7 +196,7 @@
 	<setattribute xpath="//entity_class[@name='playerMale']//passive_effect[@name='StaminaLoss' and @tags='jumping']" name="value">0</setattribute>
 	<setattribute xpath="//entity_class[@name='playerMale']//passive_effect[@name='StaminaLoss' and @tags='swimming']" name="value">0</setattribute>
 	
-	<!-- Set the Zombie HasDeathAnim to false - Off. -->
+	<!-- #region Set the Zombie HasDeathAnim to false - Off. -->
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
 	<set xpath="//entity_class[@name='zombieBoe']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
 	<set xpath="//entity_class[@name='zombieFemaleFat']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
@@ -214,6 +216,7 @@
 	<!--Animals -->
 	<set xpath="//entity_class[@name='animalBear']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
 	<set xpath="//entity_class[@name='animalWolf']/property[@name='HasDeathAnim' and @value='true']/@value">false</set>
+	<!-- #endregion -->
 	
 	<!-- animal blood bags -->
 	<append xpath="//entity_class[contains(@name, 'animal')]">

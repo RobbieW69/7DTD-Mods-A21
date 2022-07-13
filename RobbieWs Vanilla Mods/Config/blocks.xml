@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!--FIX treePlainsTree AND treeAzalea TO NOT STUMP!-->
+
+	<!-- #region Trees: Changed Amount of Wood, Changed Size -->
+	
+	<!-- The Smallest Trees, def: 30-->
+	<set xpath="//block[contains(@name, 'tree')]/drop[@count='30']/@count">150</set>
+
+	<!-- The Medium Trees, def: 70-->
+	<set xpath="//block[contains(@name, 'tree')]/drop[@count='70']/@count">275</set>
+
+	<!-- The Med-High Trees, def: 110 -->
+	<set xpath="//block[contains(@name, 'tree')]/drop[@count='110']/@count">400</set>
+
+	<!-- The Highest Trees, def: 150-->
+	<set xpath="//block[contains(@name, 'tree')]/drop[@count='150']/@count">600</set>
+
+	<!--Change all trees to bigger -->
+	<set xpath="//block[contains(@name, 'tree')]/property[@name='MultiBlockDim']/@value">1,47,1</set>
+
+	<!-- #endregion-->
+
 
 	<remove xpath="//block[@name='cntLootChestHero']/drop[@event='Harvest']"/>
 
@@ -17,6 +38,8 @@
 	<append xpath="//block[@name='treeCactus01']">
 		<drop event="Destroy" name="drinkJarYuccaJuice" count="1" prob="0.1"/>
 	</append>
+
+	<!-- #region Chests -->
 
 	<!--Wood chest-->
 	<set xpath="//block[@name='cntStorageChest']/drop[@event='Destroy']/@name">cntSecureStorageChest</set>
@@ -50,13 +73,16 @@
 	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@name">cntHardenedChestInsecure</set>
 	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@count">1</set>
 
-
 	<remove xpath="//block[@name='cntChest01']/drop[@event='Destroy']"/>
+
+	
 
 	<!--Wood chest-->
 	<append xpath="//block[@name='cntApacheArtifactChest']">
 		<drop event="Destroy" name="cntApacheArtifactChest" count="1"/>
 	</append>
+
+	<!-- #endregion -->
 	
 	<append xpath="//block[@name='forge' or @name='cntCollapsedForge']">
   		<property name="TintColor" value="facf39"/>
@@ -169,7 +195,7 @@
 	<!-- Make trees turn into Stumps instead of going away --> 
 	<remove xpath="//block[contains(@name, 'tree')]/drop[@event='Fall']"/>
 	<remove xpath="//block[contains(@name, 'tree')]/property[@value='ModelTree']"/>
-	<append xpath="//block[contains(@name, 'tree') and @name != 'treeStump']">
+	<append xpath="//block[contains(@name, 'tree') and @name != 'treeStump' and @name != 'treePlant02' and @name != 'treeAzalea' and @name != 'treePlainsTree']">
 		<drop event="Destroy" count="0"/>
         <drop event="Harvest" count="0"/>
         <property name="DowngradeBlock" value="treeStump"/>

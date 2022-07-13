@@ -14,6 +14,11 @@
 		</my_entry>
 	</append>
 
+	<remove xpath="//skill_book_level/panel/sprite[@name='btnBuy']"/>
+
+	<append xpath="//skill_book_level/panel">
+		<button depth="3" name="btnBuy" pos="${width-36},-${Round(height/2,0)}" style="icon30px, press, hover" sprite="{buyicon}" pivot="center" tooltip="{buytooltip}" sound="[paging_click]" defaultcolor="FFA500" manualcolors="true" visible="{buyvisible}" />
+	</append>
 
 	<!--hud?-->
 	<!--  Toolbelt Interface 

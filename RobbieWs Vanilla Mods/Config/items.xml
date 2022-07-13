@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!-- #region Fix the zombie reach. -->
 
-	<!-- FUck you jars
-	<append xpath="//item/property[class='Action0']/property[@value='player_drinking']/..">
-		<property name="Create_item" value="drinkJarEmpty"/>
-		<property name="Create_item_count" value="1"/>
-	</append>-->
+	<!-- Okay first we're going to make another "meleehandmaster" for the zombies to inherit from where the range is set lower-->
+	<insertAfter xpath="//item[@name='meleeHandMaster']">
+		<item name="meleeHandZombieMaster">
+			<property name="Tags" value="blunt,melee,light,perkFlurryOfBlows"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="9"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Canhold" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action0"><!-- AttackAction -->
+				<property name="Class" value="Melee"/>
+				<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="0.1"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+				<property name="Sphere" value=".1"/>
+				<property name="Block_range" value="0.1"/>
+				<property name="DamageEntity" value="10"/>
+				<property name="DamageBlock" value="16"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<effect_group name="meleeHandMaster" tiered="false">
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="0.1"/>
+				<passive_effect name="MaxRange" operation="base_set" value="0.1"/>
+				<passive_effect name="BlockRange" operation="base_set" value="0.1"/>
+			</effect_group>
+		</item>
+	</insertAfter>
 
-	<!--Change how the starter quest works, create our own notes :) -->
+	<!--Now we're going to change their hand inhereitance to the one we made-->
+	<set xpath="//item[contains(@name, 'zombie')]/property[@value='meleeHandMaster']/@value">meleeHandZombieMaster</set>
+
+
+	<!-- #endregion -->
+
+	<!-- #region Add our pebbles and set them to be used as ammo in bows  -->
 	<append xpath="/items">
 		<!-- Make our own rocks that are shootable with bows cause its hilarious -->
 		<item name="Pebbles">
@@ -45,11 +75,14 @@
 		</item>
 
 	</append>
+
 	<append xpath="//item[contains(@name,'Bow')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,Pebbles</append>
+
+	<!-- #endregion -->
 
 	<!-- Let's add Rocket Boots at some point -->
 	
-	<!-- Makes Mod slots scale with item level  
+	<!-- Makes Mod slots scale with item level , unsure why but this didn't actually work correctly
 	<set xpath="//item[not(contains(@name,'vehicle'))]/effect_group/passive_effect[@name='ModSlots']/@value">2,3,4,5,6</set>-->
 
 	<!-- This was to try to eliminate the "moving" of the camera when using the Auger as I thought it was kicback, it was not and this doesn't work :/  -->
@@ -65,30 +98,20 @@
 	<set xpath="//item[@name='gunRifleT3SniperRifle']/property[@class='Action1']/property[@name='Zoom_max_out']/@value">35</set>
 	<set xpath="//item[@name='gunRifleT3SniperRifle']/property[@class='Action1']/property[@name='Zoom_max_in']/@value">35</set>
 
-	<!-- sell any item ecept for the coins haha to trader 
+	<!-- sell any item ecept for the coins haha to trader, will have to come back to this and try again later
 	<append xpath="//item[not(contains(@name, 'Coin') or contains(@name, 'vehicle'))]">
        <property name="SellableToTrader" value="true"/>
 	</append>-->
 
-	<!--
-	<append xpath="//item[contains(@name, 'melee')]/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">values here</append>-->
-
-	<!-- 255, 0, 79 -->
+	<!-- setting the checkmark to green for schemtics weve read 255, 0, 79 -->
 	<set xpath="//item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
     <insertAfter xpath="//item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
 		<property name="AltItemTypeIconColor" value="0,194,12" />
     </insertAfter>
 
 
-	<!--repair amount by default is: 32000 so we'll see
+	<!--repair amount by default is: 32000 so we'll see, this makes it use more repair kits but I took it out because it was annoying 
 	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>-->
-
-	<!-- Sam's AutoShotgun Unnerfing v20.0.0 by saminal -->
-	<set xpath="//item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">650</set>
-	<set xpath="//item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">650</set>
-    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
-    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
-    <set xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">5.5</set>
 
 	<!-- Disabling spread on any weapon/tool that has it by RobbieW-->
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">0</set>
@@ -99,24 +122,16 @@
 	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
 	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
 	
-	
+	<!-- Sets more head damage to all ammo types -->
 	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan' and @name!='Pebbles']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="50" tags="head"/>
 	</append>
 
-
+	<!-- Sets headshots with my Pebbles to a nice amount-->
 	<append xpath="//effect_group[@name='Pebbles']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="head"/>
 	</append>
 
-	<!-- Forge limit set to 1 million -->
-	<!-- DOUGH: It appears the other stacks extend from unit_iron -->
-	<!--DOES THIS BREAK THE GAME???
-	<set xpath="//item[@name='unit_iron']/property[@name='Stacknumber']/@value">49999</set>-->
-
-	<!-- <set xpath=""></set> -->
-	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='MaxRange']/@value">5</set>
-	<set xpath="//item[@name='meleeHandPlayer']/effect_group[@name='meleeHandPlayer']/passive_effect[@name='BlockRange']/@value">5</set>
 
 	<!--Working Sink Mod -->
 		<remove xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
@@ -151,10 +166,7 @@
 	<!--Begin Item Stack size changes and change shooting for the players benefit -->
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.1</set>
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Repair_amount']/@value">20000</set>
-
-	
 	<set xpath="//item[not(contains(@name,'vehicle'))]/property[@name='Stacknumber']/@value">25000</set>
-	
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='-.15,.15')]/@value">.15</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='.1,.5')]/@value">.5</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='BlockDamage') and (@value='-.15,.15')]/@value">.15</set>
@@ -167,12 +179,12 @@
 	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set>
 	<!--End Item Stack Changes -->
 	
-	<!-- Add: "better auger mod" idk if this actually works but here it is -->
-	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">150</set>
+	<!-- Amp ther auger to make it stronger -->
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">200</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">62.1</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
 	
-	<!-- Faster scrap for all items -->		
+	<!-- Instant craft and scrap for all items (except the water jars for some reason) -->		
 	<set xpath="//item/property[@name='CraftingIngredientTime']/@value">0</set>		
 	
 	</configs>

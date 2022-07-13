@@ -1,9 +1,13 @@
 <configs>
 
-
-<!-- Want this right after they pull impactSpeed from _fallSpeed 
-<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@value='@_fallSpeed']">
-    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".impactSpeed" operation="add" value=".05656"/>  DOUGH add 4m! 
+<!-- Set the Health/Stamina to max for God Mode WHAT IS WRONG WITH THIS WTF
+<insertAfter xpath="//buff[@name='god']/effect_group/passive_effect[@name='ElementalDamageResist']">
+	<passive_effect name="HealthMaxModifierOT" operation="base_add" value="10000"/>
+	<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="10000"/>
+	<passive_effect name="StaminaChangeOT" operation="perc_add" value="10000"/>
+	<passive_effect name="HealthChangeOT" operation="perc_set" value="10000"/>
+	<passive_effect name="FoodChangeOT" operation="perc_set" value="10000"/>
+	<passive_effect name="WaterChangeOT" operation="perc_set" value="10000"/>
 </insertAfter>-->
 
 <!-- <set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group/triggered_effect[@action='RemoveBuff']/requirement[@name='PlayerLevel']/@value">0</set> -->
