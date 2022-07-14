@@ -105,7 +105,6 @@ This section is for people who have read this multiple times and want the new st
 + Swim speed drastically reduced.
 + Zombies now also target animals. (Aggro animals will fight back)
 + Zombie loot bags drop more often.
-<<<<<<< HEAD
 + Zombies can now turn into a Gore Block on death 20% of the time, not 100 for FPS.
 </details>
 
@@ -119,9 +118,6 @@ This section is for people who have read this multiple times and want the new st
   
 + Can now sell items to Vending Machines.
 + Changed Starter Items.
-=======
-+ Zombies can now turn into a Gore Block on death 20% of the time. (Not 100% for FPS)
-### Player
 + Jumping no longer requires stamina.
 + Walk and Run speeds about 20% faster.
 + Terrain based movement speed re-added.
@@ -137,7 +133,6 @@ This section is for people who have read this multiple times and want the new st
 + The Brawler now does more damage than before.
 + Level Gates added back, still only requires 1 skill point to buy skills.
 + Can now craft level 6 items.
-<<<<<<< HEAD
 + Living off the land now significantly increases crop yeilds.
 + ExpPenalty for dying set to 0.
 + Added Recipes for: Dumpsters, Toilets, Fridges, Grills, Washers, School Desks, and Many More!!
@@ -154,13 +149,10 @@ This section is for people who have read this multiple times and want the new st
 + Chainsaw cuts very quickly now.
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
 + With any wepaon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
-=======
 + Living off the land now significantly increases crop yeilds. (Punching plants is highly recommended, don't press E on them)
 + ExpPenalty for dying set to 0. (Basically there is no consequence for dying)
-### Items
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, Cloth, Solar Cells, ect)
 + With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)
->>>>>>> 9ffd74c3a5f22edf3e2e82cee650bbca90a09140
 + All guns now have no spread, where you aim is where you shoot.
 + Books that have already been read now have a green checkmark.
 + Empty jars and buckets can now be filled at Sinks, just use secondary action with the jar in hand when standing at a sink.
@@ -210,8 +202,7 @@ This section is for people who have read this multiple times and want the new st
   
 + Non Sub Pimp Points max: Increased to 5000
 + Sub Pimp Points max: Increased to 25000
-<<<<<<< HEAD
-+ Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code.
++ Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code. (If you would like this changed please lmk)
 </details>
 
 ##
@@ -221,11 +212,7 @@ This section is for people who have read this multiple times and want the new st
   <summary>
     <h3>Vehicles</h3>
   </summary>
-  
-=======
-+ Degrade, Spoil, NoMelee, NoVehicle, NoRanged, and NoRobo have all been manually disabled via code. (If you would like this changed please lmk)
-### Vehicles
->>>>>>> 9ffd74c3a5f22edf3e2e82cee650bbca90a09140
+
 Vehicles have a Minimum and Maximum speed, [min,max].
 + Gyrocopter: Speed increased from [7,10] to [12,28].
 + Bicycle:  Speed increased from [5,10] to [10,20].
