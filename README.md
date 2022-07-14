@@ -1,7 +1,7 @@
 # 7 Days to Die Alpha 20 Mods
 
 ## Info (07-13-2022)
-This is a combination of many mods I've found/made over the last 6 years, I just wanted to share it with everyone, these are all server side XML mods, meaning only the host/server needs to have them. This mod does quite a few different things with only XML, I do plan on making it better by making a .DLL mod along with it. This mod makes the game easier by making things easier to obtain early on, I did this as I work with other adults and we don't normally get a large amount of time to grind the game like necessary in order to get far in game, so things like killing zombies and gaining XP and getting skill points are much easier, alot of other little quality of life changes as well. If you like it or hate it or want a change please let me know. This [discord](https://discord.gg/fUcCmAJsBZ) I made particularly for users of the mod, I can be found there if you need me, Enjoy!!   
+This mod does quite a few different things with only XML, I do plan on making it better by making a .DLL mod along with it. This mod makes the game easier by making things easier to obtain early on, I did this as I work with other adults and we don't normally get a large amount of time to grind the game like necessary in order to get far in game, so things like killing zombies and gaining XP and getting skill points are much easier, alot of other little quality of life changes as well. If you like it or hate it or want a change please let me know. This [discord](https://discord.gg/fUcCmAJsBZ) I made particularly for users of the mod, I can be found there if you need me, Enjoy!!   
 
 ___IMPORTANT: Mods for 7 Days to Die will never come in .exe form, Do not trust random applications.___ 
 
@@ -123,7 +123,7 @@ This section is for people who have read this multiple times and want the new st
 + Terrain based movement speed re-added.
 + All cars now have a chance to drop Wheels when harvesting.
 + Many items previously unable to pick up are now able to be picked up with E.
-+ Player does more headshot damage with any wepaon, but all Ammo types have been updated to do about 300% more headshot damage.
++ Player does more headshot damage with any weapon, but all Ammo types have been updated to do about 300% more headshot damage.
 + All skill perks now only cost 1 point.
 + You gain 5 skill points per level.
 + Rule One Cardio now increased values even more.
@@ -133,8 +133,12 @@ This section is for people who have read this multiple times and want the new st
 + The Brawler now does more damage than before.
 + Level Gates added back, still only requires 1 skill point to buy skills.
 + Can now craft level 6 items.
-+ Living off the land now significantly increases crop yeilds.
-+ ExpPenalty for dying set to 0.
++ With any weapon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
++ Living off the land now significantly increases crop yeilds. (Punching plants is highly recommended, don't press E on them)
++ ExpPenalty for dying set to 0. (Basically there is no consequence for dying)
++ Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, Cloth, Solar Cells, ect)
++ With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)
++ All guns now have no spread, where you aim is where you shoot.
 + Added Recipes for: Dumpsters, Toilets, Fridges, Grills, Washers, School Desks, and Many More!!
 </details>
 
@@ -148,12 +152,6 @@ This section is for people who have read this multiple times and want the new st
   
 + Chainsaw cuts very quickly now.
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
-+ With any wepaon you can go to a workbench with paper and make a schematic for that weapon. (it eats the weapon like Rust)
-+ Living off the land now significantly increases crop yeilds. (Punching plants is highly recommended, don't press E on them)
-+ ExpPenalty for dying set to 0. (Basically there is no consequence for dying)
-+ Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, Cloth, Solar Cells, ect)
-+ With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)
-+ All guns now have no spread, where you aim is where you shoot.
 + Books that have already been read now have a green checkmark.
 + Empty jars and buckets can now be filled at Sinks, just use secondary action with the jar in hand when standing at a sink.
 + Stack sizes increased to 25k.
