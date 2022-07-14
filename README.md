@@ -34,7 +34,9 @@ This section is for people who have read this multiple times and want the new st
 + Wooden storage crates and other storage containers can now be picked up by destroying.
 + 10% Chance to get a Yucca Juice from cactus.
 + Roll up doors can be picked up by destroying.
-+ Lots more Birdsnests. 
++ Lots more Bird nests.
++ Item modifier slots now scale with level.
++ Battery's can now be crafted to level 6 (need Heavy Armor Perk, temp will fix later)
 </details>
 
 ##
