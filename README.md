@@ -122,8 +122,6 @@ This section is for people who have read this multiple times and want the new st
 =======
 + Zombies can now turn into a Gore Block on death 20% of the time. (Not 100% for FPS)
 ### Player
-+ Reach extended a little.
->>>>>>> 9ffd74c3a5f22edf3e2e82cee650bbca90a09140
 + Jumping no longer requires stamina.
 + Walk and Run speeds about 20% faster.
 + Terrain based movement speed re-added.
