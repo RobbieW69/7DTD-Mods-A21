@@ -23,7 +23,7 @@ steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 
 
 
-<details>
+<details open>
   <summary>
     <h3>Updates</h3>
   </summary>
