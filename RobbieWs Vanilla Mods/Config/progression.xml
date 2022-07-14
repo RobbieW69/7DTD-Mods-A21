@@ -42,23 +42,9 @@
 <!--#region Regions work in comment blocks on VS Code :OOOO -->
 
 
-<!-- Craft level 6 weapons and tools, thanks to  AlGo88-->
-<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,5</set>
-<!---->
+<!-- Craft level 6 -->
+<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier']/@value">1,5</set>
+
 
 
 <!--#endregion-->

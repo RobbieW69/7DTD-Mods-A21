@@ -8,6 +8,8 @@
 	<!--Add ammo conversion recipes (ie. Scrap 1 Bullet into Resources to make bullet)-->
 	<!-- Make sure mods can be blueprinted-->
 
+	<set xpath="//recipe[@name='resourceOil']/ingredient[@name='resourceOilShale']/@count">5</set>
+
 	<!--Subtract amount of resources required for master chef recipes -->
     <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[@name='CraftingIngredientCount']/@level">2,5</set>
     <set xpath="//recipe[contains(@tags,'perkMasterChef')]/effect_group/passive_effect[contains(@tags, 'food') or contains(@tags, 'Bone')]/@value">-1,-3</set>
@@ -414,21 +416,26 @@
 			<ingredient count="3" name="resourceScrapPolymers"/>
 		</recipe>
 		<!-- smallEngine -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="smallEngine">
+		<recipe craft_area="workbench" tags="perkHeavyArmor" count="1" name="smallEngine">
 			<ingredient count="25" name="resourceForgedIron"/>
 			<ingredient count="8" name="resourceMetalPipe"/>
 			<ingredient count="6" name="resourceElectricParts"/>
 			<ingredient count="6" name="resourceMechanicalParts"/>
 			<ingredient count="1" name="resourceRadiator"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5"/>
+			</effect_group>
 		</recipe>
 		<!-- carBattery -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="carBattery">
+		<recipe craft_area="workbench" tags="perkHeavyArmor" count="1" name="carBattery">
 			<ingredient count="25" name="resourceElectricParts"/>
 			<ingredient count="8" name="resourceScrapPolymers"/>
 			<ingredient count="25" name="resourceScrapLead"/>
 			<ingredient count="1" name="resourceScrapIron"/>
 			<ingredient count="2" name="resourceGlue"/>
-			<ingredient count="1" name="drinkJarRiverWater"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5"/>
+			</effect_group>
 		</recipe>
 		<!-- solarCell -->
 		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarCell">

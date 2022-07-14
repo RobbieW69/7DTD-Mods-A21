@@ -82,8 +82,8 @@
 
 	<!-- Let's add Rocket Boots at some point -->
 	
-	<!-- Makes Mod slots scale with item level , unsure why but this didn't actually work correctly
-	<set xpath="//item[not(contains(@name,'vehicle'))]/effect_group/passive_effect[@name='ModSlots']/@value">2,3,4,5,6</set>-->
+	<!-- Makes Mod slots scale with item level , unsure why but this didn't actually work correctly-->
+	<set xpath="//item[not(contains(@name,'vehicle'))]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
 
 	<!-- This was to try to eliminate the "moving" of the camera when using the Auger as I thought it was kicback, it was not and this doesn't work :/  -->
 	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
@@ -179,7 +179,7 @@
 	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set>
 	<!--End Item Stack Changes -->
 	
-	<!-- Amp ther auger to make it stronger -->
+	<!-- Amp the auger to make it stronger -->
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">200</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">62.1</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
