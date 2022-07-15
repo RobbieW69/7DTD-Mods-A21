@@ -37,6 +37,8 @@ This section is for people who have read this multiple times and want the new st
 + Lots more Bird nests.
 + Item modifier slots now scale with level.
 + Battery's can now be crafted to level 6 (need Heavy Armor Perk, temp will fix later)
++ Changed and added button to Server info panel.
++ Fixed crafted item levels.
 </details>
 
 ##
