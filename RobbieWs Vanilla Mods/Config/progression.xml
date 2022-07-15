@@ -42,10 +42,9 @@
 <!--#region Regions work in comment blocks on VS Code :OOOO -->
 
 
-<!-- Craft level 6 -->
-<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier']/@value">1,5</set>
-
-
+<!-- Craft level 6, these aren't consistent and don't make sense but oh well -->
+<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']/@value">1,2,3,4,5</set>
+<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier' and @value='1,4']/@value">1,5</set>
 
 <!--#endregion-->
 </configs>
