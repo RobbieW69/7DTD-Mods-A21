@@ -29,16 +29,9 @@ steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
   </summary>
   
 This section is for people who have read this multiple times and want the new stuff presented first.   
-+ Zombie reach has been nerfed.
-+ Added my own ammo to bows called Pebbles, made with rocks, doesn't do alot of damage unless headshots.
-+ Wooden storage crates and other storage containers can now be picked up by destroying.
-+ 10% Chance to get a Yucca Juice from cactus.
-+ Roll up doors can be picked up by destroying.
-+ Lots more Bird nests.
-+ Item modifier slots now scale with level.
-+ Battery's can now be crafted to level 6 (need Heavy Armor Perk, temp will fix later)
-+ Changed and added button to Server info panel.
 + Fixed crafted item levels.
++ Changed and added button to Server info panel.
+
 </details>
 
 ##
@@ -110,6 +103,7 @@ This section is for people who have read this multiple times and want the new st
 + Zombies now also target animals. (Aggro animals will fight back)
 + Zombie loot bags drop more often.
 + Zombies can now turn into a Gore Block on death 20% of the time, not 100 for FPS.
++ Zombie reach has been nerfed.
 </details>
 
 ##
@@ -155,6 +149,9 @@ This section is for people who have read this multiple times and want the new st
   </summary>
   
 + Chainsaw cuts very quickly now.
++ Added my own ammo to bows called Pebbles, made with rocks, doesn't do alot of damage unless headshots.
++ Item modifier slots now scale with level.
++ Battery's can now be crafted to level 6 (need Heavy Armor Perk, temp will fix later)
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, ect)
 + Books that have already been read now have a green checkmark.
 + Empty jars and buckets can now be filled at Sinks, just use secondary action with the jar in hand when standing at a sink.
@@ -166,6 +163,10 @@ This section is for people who have read this multiple times and want the new st
 + All ammo crafted actually produces 3x times the amount.
 + Sniper rifle FOV when ADS is more now, feels smoother.
 + Added Anvil Schematic.
++ 10% Chance to get a Yucca Juice from cactus.
++ Roll up doors can be picked up by destroying.
++ Lots more Bird nests.
++ Wooden storage crates and other storage containers can now be picked up by destroying.
 </details>
 
 ##
