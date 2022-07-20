@@ -15,7 +15,7 @@ ___IMPORTANT: Mods for 7 Days to Die will never come in .exe form, Do not trust 
 steamapps\common\7 Days To Die\Mods\RobbieWs Vanilla Mods
 ```   
 Click GIF below to watch:
-![](https://i.imgur.com/AtiVuaZ.gif)
+![](https://i.imgur.com/SfZL85K.gif)
 
 *Note: Due to the The Fun Pimps changing how mods are loaded, these installation instructions will change soon*       
 
