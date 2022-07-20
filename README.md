@@ -7,7 +7,13 @@
 
 *(Disclaimer: Some GIFs/Images may take a bit to load)*   
 
-This mod does quite a few different things with only XML, I do plan on making it better by making a .DLL mod along with it. This mod makes the game easier by making things easier to obtain early on, I did this as I work with other adults and we don't normally get a large amount of time to grind the game like necessary in order to get far in game, so things like killing zombies and gaining XP and getting skill points are much easier, alot of other little quality of life changes as well. If you like it or hate it or want a change please let me know. This [discord](https://discord.gg/fUcCmAJsBZ) I made particularly for users of the mod, I can be found there if you need me, Enjoy!!   
+This mod does quite a few different things with only XML, this mod makes the game easier by making things easier to obtain early on, I did this as I work with other adults and we don't normally get a large amount of time after work to grind the game like necessary in order to get far in game.    
+
+So things like killing zombies and gaining XP and getting skill points are much easier, alot of other little quality of life changes as well. If you like it or hate it or want a change please let me know.      
+
+This [discord](https://discord.gg/fUcCmAJsBZ) I made particularly for users of the mod, I can be found there if you need me, Enjoy!!    
+
+    
 
 ___IMPORTANT: Mods for 7 Days to Die will never come in .exe form, Do not trust random applications.___     
   
