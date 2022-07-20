@@ -1,14 +1,25 @@
-*(Disclaimer: Some GIFs/Images may take a bit to load)*    
+# 7 Days to Die Alpha 20 Mods (07-13-2022)
 
-# 7 Days to Die Alpha 20 Mods
+<details>
+  <summary>
+    <h3>Information</h3>
+  </summary>
 
-## Info (07-13-2022)
+*(Disclaimer: Some GIFs/Images may take a bit to load)*   
+
 This mod does quite a few different things with only XML, I do plan on making it better by making a .DLL mod along with it. This mod makes the game easier by making things easier to obtain early on, I did this as I work with other adults and we don't normally get a large amount of time to grind the game like necessary in order to get far in game, so things like killing zombies and gaining XP and getting skill points are much easier, alot of other little quality of life changes as well. If you like it or hate it or want a change please let me know. This [discord](https://discord.gg/fUcCmAJsBZ) I made particularly for users of the mod, I can be found there if you need me, Enjoy!!   
 
-___IMPORTANT: Mods for 7 Days to Die will never come in .exe form, Do not trust random applications.___ 
+___IMPORTANT: Mods for 7 Days to Die will never come in .exe form, Do not trust random applications.___     
+  
+</details>
 
-## Installation Instructions
+#
 
+<details>
+  <summary>
+    <h3>Installation Instructions</h3>
+  </summary>
+  
 + To install the mod, click the green <img src="https://i.imgur.com/UggsYwz.png" alt="drawing" width="50" height="20"/> button top right, then click   <img src="https://i.imgur.com/PM4liVg.png" alt="drawing" width="150" height="20"/> , open the file you downloaded with an extraction tool such as [WinRAR](https://www.win-rar.com/fileadmin/winrar-versions/winrar/th/winrar-x64-602.exe) or [7 Zip](https://www.7-zip.org/a/7z2106-x64.exe). 
   + The folder you extracted should be called `7DTD-Mods-A20-main`, now open that folder, there should be a folder inside named `RobbieWs Vanilla Mods`. 
   + Now move that folder to your `Mods` folder in your 7 Days to Die directory, if you do not have one, make one.        
@@ -28,7 +39,7 @@ Click GIF below to watch:
 
 
 
-<details open>
+<details>
   <summary>
     <h3>Updates</h3>
   </summary>
@@ -39,23 +50,6 @@ This section is for people who have read this multiple times and want the new st
 
 </details>
 
-##
-
-
-<details>
-  <summary>
-    <h3>What I'm Working On</h3>
-  </summary>
-  
-+ Updating the Server Information Panel that opens when you press Escape, it will be alot cleaner and have openable links to both GitHub and my Discord channel for my mods.  
-+ Adding an icon for backpack where you died with distance on screen.
-+ Adding more zombie variations.
-+ Adding the Behemoth back and having it spawn with like 20 or 30 Dogs every 4 hordes.
-+ Balance changes due to mod being extremely easy. (still deciding)
-+ Making the Rolling Toolbox into a 'work table' where you craft all the Schematics since it clutters the Workbench.    
-+ Fixing the vehicle booster mod to add to the speed of the modded vehicles.   
-+ Making a .DLL mod that will do anything I can imagine, starting with bringing back the action skills properly as we had them years ago.   
-</details>
 
 ##
 
@@ -311,6 +305,23 @@ Note that the speed mod for vehicles doesn't add to the speed since these surpas
 ##
 
 
+<details>
+  <summary>
+    <h3>What I'm Working On</h3>
+  </summary>
+  
++ Updating the Server Information Panel that opens when you press Escape, it will be alot cleaner and have openable links to both GitHub and my Discord channel for my mods.  
++ Adding an icon for backpack where you died with distance on screen.
++ Adding more zombie variations.
++ Adding the Behemoth back and having it spawn with like 20 or 30 Dogs every 4 hordes.
++ Balance changes due to mod being extremely easy. (still deciding)
++ Making the Rolling Toolbox into a 'work table' where you craft all the Schematics since it clutters the Workbench.    
++ Fixing the vehicle booster mod to add to the speed of the modded vehicles.   
++ Making a .DLL mod that will do anything I can imagine, starting with bringing back the action skills properly as we had them years ago.   
+</details>
+
+#
+    
 <details>
   <summary>
     <h3>How to Edit</h3>
