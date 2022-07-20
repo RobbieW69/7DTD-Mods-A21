@@ -65,7 +65,9 @@ This section is for people who have read this multiple times and want the new st
   
 + Crops now grow fully every two hours IRL.
 + Crops can now be harvested with E once again, however I would recommend punching them for more yield.
-+ Cutting down a tree will turn into a tree stump instead of instantly diappearing.
++ Cutting down a tree will turn into a tree stump instead of instantly diappearing.   
+Click GIF below to watch:
+![](https://github.com/RobbieW69/PrivateRepo/blob/main/Stuff/0iPJxF4VwA.gif)
 + Trees now have a chance to drop feathers and eggs and honey while harvesting.
 + All crop seeds now cost 1 plant to make each.
 </details>
@@ -103,7 +105,9 @@ This section is for people who have read this multiple times and want the new st
 + Zombies can no longer climb ladders.
 + Head explodes with headshots more often.
 + Swim speed drastically reduced.
-+ Zombies now also target animals. (Aggro animals will fight back)
++ Zombies now also target animals. (Aggro animals will fight back)     
+Click the GIF below to watch:    
+![](https://github.com/RobbieW69/PrivateRepo/blob/main/Stuff/1owrfrCi9a.gif)
 + Zombie loot bags drop more often.
 + Zombies can now turn into a Gore Block on death 20% of the time, not 100 for FPS.
 + Zombie reach has been nerfed.
@@ -138,9 +142,10 @@ This section is for people who have read this multiple times and want the new st
 + Living off the land now significantly increases crop yeilds. (Punching plants is highly recommended, don't press E on them)
 + ExpPenalty for dying set to 0. (Basically there is no consequence for dying)
 + Added tons of recipes and recipe changes to make more sense.(Beaker, Coal, Acid, Cloth, Solar Cells, ect)
-+ With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)
 + All guns now have no spread, where you aim is where you shoot.
 + Added Recipes for: Dumpsters, Toilets, Fridges, Grills, Washers, School Desks, and Many More!!
++ With just about any Item you can go to a Workbench with a piece of paper and make the Schematic for that item. (This is like Blueprints in Rust and eats the item)   
+![](https://i.imgur.com/WfcJE8C.png)
 </details>
 
 ##
@@ -240,7 +245,8 @@ Note that the speed mod for vehicles doesn't add to the speed since these surpas
 + Fixed Vehicle Mod slots not showing.   
 + Fixed Storage Capacities.
 + Food, Hunger, and Exp bars now brighter colors.
-+ When you press Escape a server information panel will pop up.
++ When you press Escape a server information panel will pop up.   
+![](https://i.imgur.com/9K4qtiH.png)
 + Alot of colored text just about everywhere now.
 + Updated Compass UI with more info.
 + Lockable item slots.
@@ -285,8 +291,8 @@ Note that the speed mod for vehicles doesn't add to the speed since these surpas
   <summary>
     <h3>Misc</h3>
   </summary>
-  
-***If you decide you want to change the Loading Screen or Main Menu images, make sure to have the format as .PNG.***  
+   
+     
 + Dumpsters have bigger storage capacity.
 + Drone has bigger storage capacity.
 + LOTS of recipes to craft items added, however the recipe ingredients are in a test mode, will change.
@@ -295,6 +301,8 @@ Note that the speed mod for vehicles doesn't add to the speed since these surpas
 + More colored text. 
 + Vehicles should no longer consume food and thirst while using.( Yes, they did.)
 + Added the ability to change Loading Screen and Main Menu Images.   
+***If you decide you want to change the Loading Screen or Main Menu images, make sure to have the format as .PNG and leave the names as is.***    
+![](https://i.imgur.com/oWrwEYZ.png)
 </details>
 
 
