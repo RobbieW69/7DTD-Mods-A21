@@ -1,3 +1,5 @@
+*(Disclaimer: Some GIFs/Images may take a bit to load)*    
+
 # 7 Days to Die Alpha 20 Mods
 
 ## Info (07-13-2022)
