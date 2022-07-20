@@ -307,10 +307,12 @@ Okay if you would like to edit the mod, you will need some experience with XML. 
 + Navigate to the mod folder, open the Config folder, now edit the XML files to your liking.   
 + If you want to know how to edit a SPECIFIC thing about the mod, let me know and I'll leave how in the next update.   
 + Example Pt 1: How to edit how many skill points you gain per level. Open the Progression.xml file.   
-+ Example P2 2: On line 52 there should be the following code;     
++ Example Pt 2: On line 52 there should be the following code;     
 ```xml
 <set xpath="//level/@skill_points_per_level">5</set>
 ```   
 + Example Pt 3: Edit the number 5 to whatever you would like it to be, this will change the amount of skill points gained per level.   
+  
+  
 + Bonus Info: `<!--- --->` is a comment and is not read by the game, furthermore if you are using Visual Studio Code you can do `<!--- #region --->` then adding your code and then doing `<!--- #endregion --->` below and it will be collapsable in the editor.  
 </details>
