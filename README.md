@@ -1,4 +1,4 @@
-# 7 Days to Die Alpha 20 Mods (07-13-2022)
+# 7 Days to Die Alpha 20 Mods (07-29-2022)
 ![](https://i.imgur.com/qh750V0.png)
 
 <details>
