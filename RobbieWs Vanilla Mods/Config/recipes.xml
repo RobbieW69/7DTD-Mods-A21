@@ -8,6 +8,9 @@
 	<!--Add ammo conversion recipes (ie. Scrap 1 Bullet into Resources to make bullet)-->
 	<!-- Make sure mods can be blueprinted-->
 
+	<!-- Fix bundle amounts for recipe -->
+	<set xpath="//recipe[contains(@name, 'Bundle')]/ingredient/@count">20000</set>
+
 	<set xpath="//recipe[@name='resourceOil']/ingredient[@name='resourceOilShale']/@count">5</set>
 
 	<!--Subtract amount of resources required for master chef recipes -->
@@ -55,6 +58,7 @@
 	<set xpath="//recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">1</set>
 	<set xpath="//recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">1</set>
 	
+
 <!-- Recipe changes/adiddionts-->
 	<append xpath="/recipes">
 		<!-- toolAnvil -->
@@ -65,15 +69,14 @@
 		<!-- foodSpaghetti -->
 		<recipe craft_area="campfire" count="1" name="foodSpaghetti" tags="perkMasterChef,learnable">
 			<ingredient count="1" name="foodRawMeat"/>
-			<ingredient count="1" name="drinkJarEmpty"/>
 			<ingredient count="1" name="resourceAnimalFat"/>
 			<ingredient count="1" name="foodCanBeef"/>
 			<ingredient count="1" name="foodCanPasta"/>
 		</recipe>
 		<!-- foodCanPasta -->
 		<recipe craft_area="campfire" count="1" tags="workbenchCrafting" name="foodCanPasta">
-			<ingredient count="1" name="foodCropCorn"/>
-			<ingredient count="1" name="drinkCanEmpty"/>
+			<ingredient count="1" name="foodCornMeal"/>
+			<ingredient count="1" name="drinkJarBoiledWater"/>
 		</recipe>
 		<!-- farmPlotBlockPlayer -->
 		<recipe craft_area="workbench" count="1" tags="workbenchCrafting" name="farmPlotBlockPlayer">
@@ -210,18 +213,6 @@
 			<ingredient count="15" name="ammoGasCan"/>
 			<ingredient count="15" name="resourceScrapPolymers"/>
 			<ingredient count="1" name="toolBeaker"/>
-		</recipe>
-		<!-- solarCell -->
-		<recipe craft_area="forge" count="3" name="solarCell">
-			<ingredient count="25" name="resourceMechanicalParts"/>
-			<ingredient count="25" name="resourceElectricParts"/>
-			<ingredient count="10" name="resourceForgedIron"/>
-		</recipe>
-		<!-- solarbank -->
-		<recipe craft_area="forge" count="3" name="solarbank">
-			<ingredient count="25" name="resourceMechanicalParts"/>
-			<ingredient count="25" name="resourceElectricParts"/>
-			<ingredient count="10" name="resourceForgedIron"/>
 		</recipe>
 		<!-- Spring -->
 		<recipe craft_area="forge" count="1" name="resourceSpring">
@@ -427,7 +418,7 @@
 			</effect_group>
 		</recipe>
 		<!-- carBattery -->
-		<recipe craft_area="workbench" tags="perkHeavyArmor" count="1" name="carBattery">
+		<recipe craft_area="workbench" tags="perkGreaseMonkey" count="1" name="carBattery">
 			<ingredient count="25" name="resourceElectricParts"/>
 			<ingredient count="8" name="resourceScrapPolymers"/>
 			<ingredient count="25" name="resourceScrapLead"/>
@@ -438,16 +429,22 @@
 			</effect_group>
 		</recipe>
 		<!-- solarCell -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarCell">
+		<recipe craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering" count="1" name="solarCell">
 			<ingredient count="5" name="resourceElectricParts"/>
 			<ingredient count="1" name="glassBulletproofBlockVariantHelper"/>
 			<ingredient count="1" name="resourceForgedSteel"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,3,4,5,6" operation="perc_add" value=".5,2.5"/>
+			</effect_group>
 		</recipe>
 		<!-- solarbank -->
-		<recipe craft_area="workbench" tags="workbenchCrafting" count="1" name="solarbank">
+		<recipe craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering" count="1" name="solarbank">
 			<ingredient count="30" name="resourceElectricParts"/>
 			<ingredient count="6" name="glassBulletproofBlockVariantHelper"/>
 			<ingredient count="6" name="resourceForgedSteel"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,3,4,5,6" operation="perc_add" value=".5,2.5"/>
+			</effect_group>
 		</recipe>
 		<!-- drinkCanMegaCrush -->
 		<recipe craft_area="campfire" count="1" name="drinkCanMegaCrush">

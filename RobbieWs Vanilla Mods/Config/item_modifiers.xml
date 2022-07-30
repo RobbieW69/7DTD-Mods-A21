@@ -3,4 +3,317 @@
     <!-- Disable ADS Crosshair on all item mods as well cause apprently they override -->
     <set xpath="//item_modifier/item_property_overrides/property[@name='CrosshairOnAim']/@value">false</set>
 
+    <!-- After attempting, it seems changing 'ScopeOffset' and 'ScopeScale' does nothing -->
+    <!--<set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunHandgunT1Pistol']/property[@name='ScopeCameraOffset']/@value">0,-.013,-.3</set> 0,-.013,-.2 -->
+    <!-- It would be better to just make new mods with the proposed changes so people have the option!-->
+
+    <!--
+PUMPY: 2X
+AUTO SHOTTY: 4X
+HUNTING RIFLE: 4+
+M4: 2X?
+M60: 2X
+PIPE MACHINE: 0
+AK: 2X?
+ROCKET: 2X [OFF CENTER STILL?]
+        -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modGunReflexSight2x" installable_tags="smallTopAttachments" modifier_tags="scope" blocked_tags="noMods,bow" type="attachment">
+                <property name="Extends" value="modGeneralMaster"/>
+                <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+                <property name="CustomIcon" value="modGunReflexSight"/>
+                <property name="CustomIconTint" value="68,170,0"/>
+
+                <item_property_overrides name="*">
+                    <!--<property name="CrosshairOnAim" value="true"/>-->
+                    <property name="Zoom_max_out" value="55"/>
+                    <property name="Zoom_max_in" value="55"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunHandgunT1Pistol">
+                    <property name="ScopeOffset" value="0,.072,.11"/>
+                    <property name="ScopeScale" value=".7,.7,.7"/>
+                    <property name="ScopeCameraOffset" value="0,-.013,-.25"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunHandgunT2Magnum44">
+                    <property name="ScopeOffset" value="0,.11,.12"/>
+                    <property name="ScopeScale" value=".5,.5,.5"/>
+                    <property name="ScopeCameraOffset" value="0,-.015,-.20"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunHandgunT3SMG5">
+                    <property name="ScopeOffset" value=".0001,.1,-.15"/>
+                    <property name="ScopeScale" value=".55,.55,.55"/>
+                    <property name="ScopeCameraOffset" value="0,-.015,-0.12"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunShotgunT0Blunderbuss">
+                    <property name="ScopeOffset" value="0,.056,.05"/>
+                    <property name="ScopeScale" value=".7,.7,.7"/>
+                    <property name="ScopeCameraOffset" value="0,-.0297,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunShotgunT1DoubleBarrel">
+                    <property name="ScopeOffset" value="0,.0816,.2104"/>
+                    <property name="ScopeScale" value=".25,.3,.3"/>
+                    <property name="ScopeCameraOffset" value="-.0004,-.034,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunShotgunT2PumpShotgun">
+                    <property name="ScopeOffset" value="0,.056,.05"/>
+                    <property name="ScopeScale" value=".7,.7,.7"/>
+                    <property name="ScopeCameraOffset" value="0,-.0255,-0.1"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunHandgunT0PipePistol">
+                    <property name="ScopeOffset" value="0,0,0"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value="0,-.003,.08"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunShotgunT0PipeShotgun">
+                    <property name="ScopeOffset" value="0,0,0"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value=".0002,-0.0185,-.08"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunMGT0PipeMachineGun">
+                    <property name="ScopeOffset" value="0,0,0"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value="0,-.018,-.075"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunMGT3M60">
+                    <property name="ScopeOffset" value="0,0,0"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value="0,-0.01,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunMGT1AK47">
+                    <property name="ScopeOffset" value="0,.08,-.2035"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value="0.0005,-.019,.3"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunMGT2TacticalAR">
+                    <property name="ScopeOffset" value="-.00099,0.0972,-0.098"/>
+                    <property name="ScopeScale" value=".63,.63,.63"/>
+                    <property name="ScopeCameraOffset" value="0,-.018,-0.12"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunRifleT0PipeRifle">
+                    <property name="ScopeOffset" value="0,0,0"/>
+                    <property name="ScopeScale" value="1,1,1"/>
+                    <property name="ScopeCameraOffset" value="0,0,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunRifleT1HuntingRifle">
+                    <property name="ScopeOffset" value="-.0006,.06,.08"/>
+                    <property name="ScopeScale" value=".7,.7,.7"/>
+                    <property name="ScopeCameraOffset" value="0,-.012,-.15"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunRifleT2LeverActionRifle">
+                    <property name="ScopeOffset" value="0,.073,-.13"/>
+                    <property name="ScopeScale" value=".7,.7,.7"/>
+                    <property name="ScopeCameraOffset" value="-0.0011,-0.014,-.025"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunExplosivesT3RocketLauncher">
+                    <property name="ScopeOffset" value="-.08,.011,.186"/>
+                    <property name="ScopeScale" value=".9,.9,.9"/>
+                    <property name="ScopeRotation" value="0,0,80"/>
+                    <property name="ScopeCameraOffset" value=".0495,.0715,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunBowT1IronCrossbow">
+                    <property name="ScopeOffset" value="0,.052,-.05"/>
+                    <property name="ScopeScale" value=".6,.6,.6"/>
+                    <property name="ScopeCameraOffset" value=".00008,0.0025,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunBowT3CompoundCrossbow">
+                    <property name="ScopeOffset" value="0,0,-.2"/>
+                    <property name="ScopeScale" value=".6,.6,.6"/>
+                    <property name="ScopeCameraOffset" value="0,-.007,-.025"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunHandgunT3DesertVulture">
+                    <property name="ScopeCameraOffset" value="0,-.01,-.2"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunShotgunT3AutoShotgun">
+                    <property name="ScopeCameraOffset" value=".00095,-.019,0"/>
+                </item_property_overrides>
+
+                <item_property_overrides name="gunRifleT3SniperRifle">
+                    <property name="ScopeCameraOffset" value="0,-.0055,-0.1"/>
+                </item_property_overrides>
+
+                <!-- visible attachment: holosight -->
+                <effect_group tiered="false" name="external attachment prefab (old way)">
+                    <requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+                        <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#Other/Items?Mods/Scopes/scope_laser_reflexPrefab.prefab" parent_transform="Attachments/Scope"/>
+                </effect_group>
+                <effect_group tiered="false" name="internal attachment prefab (A19)">
+                    <requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+                        <triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="holosight"/>
+                </effect_group>
+
+                <effect_group tiered="false" name="mod effects">
+                    <passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+                </effect_group>
+            </item_modifier>
+
+
+        <item_modifier name="modGunReflexSight4x" installable_tags="smallTopAttachments" modifier_tags="scope" blocked_tags="noMods,bow" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="UnlockedBy" value="modGunReflexSightSchematic"/>
+            <property name="CustomIcon" value="modGunReflexSight"/>
+            <property name="CustomIconTint" value="68,170,0"/>
+
+            <item_property_overrides name="*">
+                <!--<property name="CrosshairOnAim" value="true"/>-->
+                <property name="Zoom_max_out" value="55"/>
+                <property name="Zoom_max_in" value="55"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunHandgunT1Pistol">
+                <property name="ScopeOffset" value="0,.072,.11"/>
+                <property name="ScopeScale" value=".7,.7,.7"/>
+                <property name="ScopeCameraOffset" value="0,-.013,-.3"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunHandgunT2Magnum44">
+                <property name="ScopeOffset" value="0,.11,.12"/>
+                <property name="ScopeScale" value=".5,.5,.5"/>
+                <property name="ScopeCameraOffset" value="0,-.015,-.03"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunHandgunT3SMG5">
+                <property name="ScopeOffset" value=".0001,.1,-.15"/>
+                <property name="ScopeScale" value=".55,.55,.55"/>
+                <property name="ScopeCameraOffset" value="0,-.015,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunShotgunT0Blunderbuss">
+                <property name="ScopeOffset" value="0,.056,.05"/>
+                <property name="ScopeScale" value=".7,.7,.7"/>
+                <property name="ScopeCameraOffset" value="0,-.0297,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunShotgunT1DoubleBarrel">
+                <property name="ScopeOffset" value="0,.0816,.2104"/>
+                <property name="ScopeScale" value=".25,.3,.3"/>
+                <property name="ScopeCameraOffset" value="-.0004,-.034,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunShotgunT2PumpShotgun">
+                <property name="ScopeOffset" value="0,.056,.05"/>
+                <property name="ScopeScale" value=".7,.7,.7"/>
+                <property name="ScopeCameraOffset" value="0,-.0255,-0.2"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunHandgunT0PipePistol">
+                <property name="ScopeOffset" value="0,0,0"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value="0,-.003,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunShotgunT0PipeShotgun">
+                <property name="ScopeOffset" value="0,0,0"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value=".0002,-0.0185,-.3"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunMGT0PipeMachineGun">
+                <property name="ScopeOffset" value="0,0,0"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value="0,-.018,-.075"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunMGT3M60">
+                <property name="ScopeOffset" value="0,0,0"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value="0,-0.01,-0.10"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunMGT1AK47">
+                <property name="ScopeOffset" value="0,.08,-.2035"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value="0.0005,-.019,.35"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunMGT2TacticalAR">
+                <property name="ScopeOffset" value="-.00099,0.0972,-0.098"/>
+                <property name="ScopeScale" value=".63,.63,.63"/>
+                <property name="ScopeCameraOffset" value="0,-.018,-0.20"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunRifleT0PipeRifle">
+                <property name="ScopeOffset" value="0,0,0"/>
+                <property name="ScopeScale" value="1,1,1"/>
+                <property name="ScopeCameraOffset" value="0,0,-0.12"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunRifleT1HuntingRifle">
+                <property name="ScopeOffset" value="-.0006,.06,.08"/>
+                <property name="ScopeScale" value=".7,.7,.7"/>
+                <property name="ScopeCameraOffset" value="0,-.012,-.22"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunRifleT2LeverActionRifle">
+                <property name="ScopeOffset" value="0,.073,-.13"/>
+                <property name="ScopeScale" value=".7,.7,.7"/>
+                <property name="ScopeCameraOffset" value="-0.0011,-0.014,-.025"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunExplosivesT3RocketLauncher">
+                <property name="ScopeOffset" value="-.08,.011,.186"/>
+                <property name="ScopeScale" value=".9,.9,.9"/>
+                <property name="ScopeRotation" value="0,0,80"/>
+                <property name="ScopeCameraOffset" value=".0495,.0715,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunBowT1IronCrossbow">
+                <property name="ScopeOffset" value="0,.052,-.05"/>
+                <property name="ScopeScale" value=".6,.6,.6"/>
+                <property name="ScopeCameraOffset" value=".00008,0.0025,0"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunBowT3CompoundCrossbow">
+                <property name="ScopeOffset" value="0,0,-.2"/>
+                <property name="ScopeScale" value=".6,.6,.6"/>
+                <property name="ScopeCameraOffset" value="0,-.007,-.025"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunHandgunT3DesertVulture">
+                <property name="ScopeCameraOffset" value="0,-.01,-0.25"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunShotgunT3AutoShotgun">
+                <property name="ScopeCameraOffset" value=".00095,-.019,-0.2"/>
+            </item_property_overrides>
+
+            <item_property_overrides name="gunRifleT3SniperRifle">
+                <property name="ScopeCameraOffset" value="0,-.0055,-0.2"/>
+            </item_property_overrides>
+
+            <!-- visible attachment: holosight -->
+            <effect_group tiered="false" name="external attachment prefab (old way)">
+                <requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+                    <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#Other/Items?Mods/Scopes/scope_laser_reflexPrefab.prefab" parent_transform="Attachments/Scope"/>
+            </effect_group>
+            <effect_group tiered="false" name="internal attachment prefab (A19)">
+                <requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+                    <triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="holosight"/>
+            </effect_group>
+
+            <effect_group tiered="false" name="mod effects">
+                <passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
+            </effect_group>
+        </item_modifier>
+    </append>
+
 </configs>

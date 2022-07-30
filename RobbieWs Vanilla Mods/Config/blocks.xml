@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+
+	<!-- Blocks that can drop Steel while destroying 
+	
+	giveself ItemName Quality Count InInv? Mods?
+
+	cntMunitionsBoxArmy - 50%
+	giveself cntMunitionsBoxArmy 1 1 true false
+
+
+	cntMunitionsBox - 50%
+	giveself cntMunitionsBox 1 1 true false
+
+	cntGunSafeInsecure
+	giveself cntGunSafeInsecure 1 1 true false
+
+	cntVendingMachine2Broken
+	giveself cntVendingMachine2Broken 1 1 true false
+
+	cntATMInsecure
+	giveself cntATMInsecure 1 1 true false
+
+	utilityTransformer
+	giveself utilityTransformer 1 1 true false
+
+	cntHardenedChestInsecure
+	giveself cntHardenedChestInsecure 1 1 true false
+
+	chandelierLight
+	giveself chandelierLight 1 1 true false
+
+	streetLight01
+	giveself streetLight01 1 1 true false
+
+
+	
+	-->
 	<!--FIX treePlainsTree AND treeAzalea TO NOT STUMP!-->
 
 	<!-- #region Trees: Changed Amount of Wood, Changed Size -->

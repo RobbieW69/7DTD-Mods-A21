@@ -24,5 +24,10 @@
 	<set xpath="//trader_info[@id='4']/@min_items_swapped">10</set>
 	<set xpath="//trader_info[@id='4']/@max_items_swapped">20</set>
 
+	<!-- add to the Ammo group test -->
+	<append xpath="//trader_item_group[@name='ammo']">
+		<item name="Pebbles" count="20,60"/>
+	</append>
+
 
 </configs>

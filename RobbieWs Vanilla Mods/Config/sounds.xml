@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 
+	<!-- Make Auger less hot -->
+	<set xpath="//Noise[@heat_map_strength='1.0']/@heat_map_strength">0.10</set>
+	<set xpath="//Noise[@heat_map_time='90']/@heat_map_time">30</set>
+
 	<!-- Make everything quieter -->
 	<set xpath="//SoundDataNode/MaxVoices/@value">1</set>
 
@@ -17,7 +21,7 @@
 	<remove	xpath="//SoundDataNode[@name='bullethitmetal']"/>
 
 	<remove	xpath="//SoundDataNode[@name='wooddestroy']"/>
-	<!-- <remove	xpath="//SoundDataNode[@name='wooddestroy1']"/>
+	<!-- <remove xpath="//SoundDataNode[@name='wooddestroy1']"/>
 	<remove	xpath="//SoundDataNode[@name='wooddestroy2']"/>
 	<remove	xpath="//SoundDataNode[@name='wooddestroy3']"/> -->
 	

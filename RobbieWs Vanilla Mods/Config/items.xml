@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!--
+
+		ADD ADMIN BLOCKS, 
+
+		MORE TURETTS, EDIT SUPER DIGGER TO GIVE STUFF, SEE ABOUT ELEVATOR
+
+	-->
+
+	<!-- ammoJunkTurretRegular, 300 = 700 -->
+	<set xpath="//effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">250</set>
+
+	<!-- Change auger range to 5 blocks -->
+	<set xpath="//effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='MaxRange']/@value">5</set>
+
+	<!-- Change food to not get you sick -->
+	<remove xpath="//item/effect_group/triggered_effect[@cvar='.DiseaseRoll']"/>
+	<remove xpath="//item/effect_group/triggered_effect[@buff='buffDysenteryCatchFood']"/>
+	<set xpath="//item/effect_group/display_value[@name='dDysenteryRisk']/@value">0</set>
+
+	<!-- Set custom bullets to do 1 damage but hella knockback? -->
+	<append xpath="/items">
+		<item name="ammoBlowBack">
+			<property name="Extends" value="ammo9mmBulletBall"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="EconomicValue" value="14"/>
+			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+			<property name="UnlockedBy" value="perkPistolPeteAPAmmo"/>
+			<effect_group name="ammoBlowBack" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="1" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.5"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0" force="9001"/><!-- just knockback -->
+			</effect_group>
+
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger,9mmGun">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+			</effect_group>
+		</item>
+	</append>
+
+	<append xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoBlowBack</append>
+
+	<!--Fix Bundle sizes to our new 25k stacks-->
+	<set xpath="//item[contains(@name, 'Bundle')]/property[@class='Action0']/property[@name='Create_item_count']/@value">25000</set>
+
 	<!-- #region Fix the zombie reach. -->
 
 	<!-- Okay first we're going to make another "meleehandmaster" for the zombies to inherit from where the range is set lower-->
@@ -73,6 +128,56 @@
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="30" tags="perkArchery"/>
 			</effect_group>
 		</item>
+
+		<!--Comment out for now 
+		<item name="grasscutter">
+			<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="HoldType" value="47"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab"/>
+			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/> <property name="CustomIconTint" value="68,170,0"/>
+			<property name="TintColor" value="68,170,0"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceScrapIron"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="Weight" value="50"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Blade Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property name="RepairExpMultiplier" value="5"/>
+			<property name="ShowQuality" value="true"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.2"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ActionExp" value="0"/>
+			</property>
+
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.2"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			</property>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="120"/>
+				<passive_effect name="BlockRange" operation="base_set" value="20"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="-1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.33" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="600"/>
+			</effect_group>
+		</item> -->
 
 	</append>
 
@@ -183,6 +288,9 @@
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">200</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">62.1</set>
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
+	<!-- Make auger have longer range -->
+	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockRange' and @operation='base_set']/@value">15</set>
+
 	
 	<!-- Instant craft and scrap for all items (except the water jars for some reason) -->		
 	<set xpath="//item/property[@name='CraftingIngredientTime']/@value">0</set>		

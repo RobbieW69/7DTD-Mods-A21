@@ -1,10 +1,7 @@
 <configs>
-
-
-
 	<remove xpath="//vehicle[@name='vehicleMotorcycle']"/>
 	<append xpath="/vehicles">
-			<vehicle name="vehicleMotorcycle">
+		<vehicle name="vehicleMotorcycle">
 			<property name="cameraDistance" value="4, 5"/> <!-- 4, 5-->
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="3000"/>
@@ -133,8 +130,8 @@
 				<property name="mesh" value="basket"/>
 				<property name="transform" value="basket"/>
 			</property>
-
 		</vehicle>
+
 	</append>
 
 	<!-- Makes changes to all vehicles's velocityMax to our desired value -->

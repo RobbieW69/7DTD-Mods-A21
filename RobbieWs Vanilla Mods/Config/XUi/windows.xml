@@ -1,5 +1,8 @@
 <windows>
 
+    <!--
+    <setattribute xpath="//window[@name='itemInfoPanel']" name="id">69</setattribute>-->
+
     <!-- #region 1-->
 
     <set xpath="//window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">0,0,0,255</set>
@@ -42,7 +45,8 @@
 		</rect>
     </append>
 
-    <!-- Crafting xui group
+
+    <!-- Crafting xui group 
 
         <window_group name="crafting" controller="XUiC_CraftingWindowGroup" open_backpack_on_open="true">
 			<window name="windowCraftingList"/>
@@ -65,57 +69,47 @@
 			<window name="windowQuestTracker" anchor="RightTop" />
 			<window name="windowGroupBars" anchor="LeftTop" />
 		</window_group>
-        -->
+       
 
-    <!--Lets try to edit the backpack size
     <setattribute xpath="//window[@name='windowBackpack']/panel[@name='header']" name="pos">0,54</setattribute>
 
     <set xpath="//window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">7</set>
-    <set xpath="//window[@name='windowBackpack']/panel[@name='content']/@pos">0,10</set>-->
+    <set xpath="//window[@name='windowBackpack']/panel[@name='content']/@pos">0,10</set>
 
-    <!--Rais emptyinfopanel small-->
+    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/@height">200</set>
+    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/sprite[@name='backgroundMain']/@height">200</set>
+    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/label[@name='descriptionText']/@pos">0,-100</set>
 
-    <!-- Background gray bar
-    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/@height">200</set>-->
-    <!-- Actual border 
-    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/sprite[@name='backgroundMain']/@height">200</set>-->
-    <!--Label
-    <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/label[@name='descriptionText']/@pos">0,-100</set>-->
 
-    <!-- dsfgsdf -->
-
-    <!-- Make the iteminfopanl small too
     <set xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']/@height">200</set>
     <set xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']/sprite[@name='backgroundMain']/@height">200</set>
-    <setattribute xpath="//window[@name='itemInfoPanel']/rect" name="pos">0,0</setattribute>-->
+    <setattribute xpath="//window[@name='itemInfoPanel']/rect" name="pos">0,0</setattribute>
 
-    <!--NANI    0,-46
-    <set xpath="//window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/@pos">0,0</set>-->
+    <set xpath="//window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/@pos">0,0</set>
 
-
-   <!--Removing label bars and moving up to make inventory space
     <set xpath="//window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/@pos">0,0</set>
     <set xpath="//window[@name='itemInfoPanel']/rect[@name='contentInfo']/@pos">0,-46</set>
 
     <remove xpath="//window[@name='itemInfoPanel']/panel[@name='header']"/>
     <remove xpath="//window[@name='emptyInfoPanel']/panel[@name='header']"/>
 
-    <set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@rows">6</set>-->
+    <set xpath="//window[@name='windowCraftingList']/panel[@name='content']/grid[@name='recipes']/@rows">6</set>
 
-    <!--78
     <set xpath="//window[@name='windowCraftingQueue']/rect[@controller='CraftingQueue']/@pos">18,288</set>
     <set xpath="//window[@name='windowCraftingQueue']/rect[@controller='CraftingQueue']/grid[@name='queue']/@cols">5</set>
     <set xpath="//window[@name='windowCraftingQueue']/rect[@controller='CraftingQueue']/grid[@name='queue']/@pos">-15,-13</set>
-    <set xpath="//window[@name='windowCraftingQueue']/rect[@controller='CraftingQueue']/grid[@name='queue']/@cell_width">79</set>-->
+    <set xpath="//window[@name='windowCraftingQueue']/rect[@controller='CraftingQueue']/grid[@name='queue']/@cell_width">79</set>
 
-    <!--378
     <set xpath="//window[@name='windowLooting']/@height">278</set>
     <set xpath="//window[@name='windowCreative']/@height">530</set>
     <set xpath="//window[@name='windowToolbelt']/@pos">-388,86</set>-->
 
-    <!-- Move the clear inventory button to the right so the combo box doesnt overlap-->
-    <set xpath="//window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/button[@name='btnClearInventory']/@pos">233,-22</set>
 
+    <!-- Make it so the Clear Inventory button is always available 
+    <removeattribute xpath="//button[@name='btnClearInventory']/@visible"/>-->
+
+
+    <set xpath="//window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/button[@name='btnClearInventory']/@pos">233,-22</set>
     <!-- Hunger bar under hotbar, we changed to a brighter green-->
     <set xpath="//window[@name='windowToolbelt']/rect/rect[@stat_type='Food']/filledsprite[@type='filled']/@color">124,252,0,255</set>
     <!-- Thirst bar under hotbar, we changed to a brighter blue-->
@@ -175,11 +169,11 @@
                     <label text="- [bcbcbc]Re-added [00D12A]terrain based movement speed."/>
                     <label text="- [bcbcbc]Hay Bales are 0 fall damage again."/>
                     <label text="- [bcbcbc]Gain 5 skill points per level, all skills cost 1 points."/>
-                    <label text="- Tons of recipes added and tons of recipes changed."/>
-                    <label text="- You should be able to make a schematic of a weapon you find at a workbench."/>
-                    <label text="- You gain 3x the amount of ammo when crafting it."/>
-                    <label text="- Traders now open from 04:00 - 22:00."/>
-                    <label text="- 'Wooden signs' is now just 'Signs' and now can be changed to any sign."/>
+                    <label text="- [bcbcbc]Tons of recipes added and tons of recipes changed."/>
+                    <label text="- [bcbcbc]You should be able to make a schematic of a weapon you find at a workbench."/>
+                    <label text="- [bcbcbc]You gain 3x the amount of ammo when crafting it."/>
+                    <label text="- [bcbcbc]Traders now open from 04:00 - 22:00."/>
+                    <label text="- [bcbcbc]'Wooden signs' is now just 'Signs' and now can be changed to any sign by holding R."/>
                     <label text=" "/>
                     <label text="[bcbcbc]For the [FFA500]full[-] list of features, click the [00FF00]LinkTree[-] button below and go to the [7998ae]Github[-]!"/>
                     <label text="[bcbcbc]Thankyou and please enjoy. -[ce7e00]RobbieW[-] " />

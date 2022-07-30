@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!-- Idk what this is honestly -->
+	<set xpath="//entity_class/property[@name='HideInSpawnMenu']/@value">false</set>
+
+	<!-- Change TRUCK?? 
+	<set xpath="//entity_class[@name='vehicle4x4Truck']/property[@name='Prefab']/@value">#Entities/Vehicles?Truck/ambulanceTruck01Prefab.prefab</set>-->
 
 	<!-- Change starting Items for players -->
 	<set xpath="//entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnter')]/@value">drinkJarBoiledWater,foodCanChili,foodCanPears,medicalFirstAidBandage,medicalFirstAidBandage,candle</set>
 
-	<append xpath="//entity_class[@name='playerMale']">
-		<property name="Mesh" value="opaque2"/>
-	</append>
-
+	<!-- Change max distance for sledge -->
 	<set xpath="//entity_class[@name='junkTurretSledge']/property[@name='MaxDistance']/@value">5</set>
 
-	<!-- <property name="YawRange" value="170"/> horizontal swivel range. Keep under 180. 
-	<property name="PitchRange" value="75"/>
-	<property name="TurnSpeed" value="27"/>
-	<property name="MaxDistance" value="2.2"/>-->
 
 	<!-- This effectively disables the xp deficit -->
 	<set xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value='.25']/@value">0</set>
@@ -28,7 +26,7 @@
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='HeadExplosionDamageMultiplier']/@value">1.25</set>
 	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">1</set>
 
-	<!-- Different zombie walk types
+	<!-- #region Different zombie walk types
 		1= the fat guy belly out walk, Moe
 		2= kind of heavier lumber jack walk, Mutated
 		3= hands up shambling forward a lil quick, Arlene
@@ -87,6 +85,8 @@
 	<set xpath="//entity_class/property[@name='WalkType' and @value='6']/@value">5</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='7']/@value">7</set>
 	<set xpath="//entity_class/property[@name='WalkType' and @value='8']/@value">6</set>-->
+
+	<!-- #endregion -->
 
 	<!-- turn dead zombies into the gore blocks 20% of the time, not 100 for FPS-->
 	<append xpath="//entity_class[@name='zombieTemplateMale']">
@@ -176,21 +176,14 @@
 	</append>
 	<!-- End Change sizes of animals -->
 	
-	<!-- sheeeesh <setattribute xpath="//entity_class[@name='playerMale'/effect_group/requirement[@name='PlayerLevel']/passive_effect[@name='ExpDeficitPerDeathPercentage]" name="value">0</setattribute>
-	<setattribute xpath="//entity_class[@name='playerMale'/effect_group/requirement[@name='PlayerLevel']/passive_effect[@name='ExpDeficitMaxPercentage]" name="value">0</setattribute> -->
-	
 	<!-- Set zombies to target animals as well -->
 	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='AITarget-4']" name="data">class=EntityPlayer,0,0,EntityNPC,0,0,EntityEnemyAnimal,0,0</setattribute>
 	
 	<!-- Set Yellow Boss loot bags spawn more often -->
 	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']" name="value">0.25</setattribute>
 	
-	<!-- Set all loot bags to not despawn for 6 IRL days -->
-	<setattribute xpath="//entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
-	<setattribute xpath="//entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
-	<setattribute xpath="//entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
-	<setattribute xpath="//entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
-	<setattribute xpath="//entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']" name="value">9600</setattribute>
+	<!-- Sets all bags that drop to not despawn until 7 Days IRL pass -->
+	<set xpath="//entity_class[contains(@name, 'Loot') or contains(@name, 'pack')]/property[@name='TimeStayAfterDeath']/@value">10080</set>
 	
 	<!-- Make jumpoing not use stamina -->
 	<setattribute xpath="//entity_class[@name='playerMale']//passive_effect[@name='StaminaLoss' and @tags='jumping']" name="value">0</setattribute>

@@ -1,5 +1,11 @@
 <configs>
 
+<!-- Change how many turrets we can have active? -->
+<set xpath="//passive_effect[@name='JunkTurretActiveCount' and @operation='base_set']/@value">9</set>
+
+<!-- Temporarily change Rule 1 Cardio to 100% to test -->
+<set xpath="//perk[@name='perkRuleOneCardio']/effect_group/passive_effect[@name='StaminaChangeOT']/@value">1.0,1.0</set> <!-- Default values: 0.1,0.3-->
+
 <!-- Set it where you can buy the books for SKill Points? 
 <set xpath="//perk[@base_skill_point_cost='0']/@base_skill_point_cost">1</set>
 
@@ -43,8 +49,9 @@
 
 
 <!-- Craft level 6, these aren't consistent and don't make sense but oh well -->
-<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']/@value">1,2,3,4,5</set>
-<set xpath="//perk/effect_group/passive_effect[@name='CraftingTier' and @value='1,4']/@value">1,5</set>
+<set xpath="//passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']/@value">1,2,3,4,5</set>
+<set xpath="//passive_effect[@name='CraftingTier' and @value='0,5']/@value">1,6</set>
+<set xpath="//passive_effect[@name='CraftingTier' and @value='1,4']/@value">1,5</set>
 
 <!--#endregion-->
 </configs>

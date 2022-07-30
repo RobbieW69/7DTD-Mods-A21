@@ -1,40 +1,44 @@
 <configs>
 
 	<!-- 0.01 sets it to hella trees wtf,0.001 not alot but more normal amounts,  0.0001 barely any trees, -->
-	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname,'Juniper') or contains(@blockname,'Mountain') or contains(@blockname, 'Oak') or contains(@blockname,'Fir')]/@prob">0.003</set>
-	<set xpath="//biome/decorations/decoration[contains(@blockname,'Juniper') or contains(@blockname,'Mountain') or contains(@blockname, 'Oak') or contains(@blockname,'Fir')]/@prob">0.003</set>
+	<set xpath="//decoration[contains(@blockname,'Juniper') or contains(@blockname,'Mountain') or contains(@blockname, 'Oak') or contains(@blockname,'Fir')]/@prob">0.001</set>
+	<set xpath="//decoration[contains(@blockname,'Juniper') or contains(@blockname,'Mountain') or contains(@blockname, 'Oak') or contains(@blockname,'Fir')]/@prob">0.001</set>
 
-	<set xpath="//biome/subbiome/decorations/decoration[contains(@blockname,'Pine') or contains(@blockname,'Dead') or contains(@blockname,'Maple') or contains(@blockname,'Winter')]/@prob">0.001</set>
-	<set xpath="//biome/decorations/decoration[contains(@blockname,'Pine') or contains(@blockname,'Dead') or contains(@blockname,'Maple') or contains(@blockname,'Winter')]/@prob">0.001</set>
+	<set xpath="//decoration[contains(@blockname,'Pine') or contains(@blockname,'Dead') or contains(@blockname,'Maple') or contains(@blockname,'Winter')]/@prob">0.001</set>
+	<set xpath="//decoration[contains(@blockname,'Pine') or contains(@blockname,'Dead') or contains(@blockname,'Maple') or contains(@blockname,'Winter')]/@prob">0.001</set>
 
 	<!-- Hopefully turn down the grass spawning for FPS boost-->
-	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass']/@prob">0.0000001</set>
+	<set xpath="//decoration[@blockname='treeShortGrass']/@prob">0.02</set>
+	<set xpath="//decoration[@blockname='treeTallGrassDiagonal']/@prob">0.00</set>
 
-	<!-- Pine Forest -->
+	<!-- Nerf amounts of wild plants -->
+	<set xpath="//decoration[@blockname='plantedGoldenrod3Harvest']/@prob">0.001</set>
+	<set xpath="//decoration[@blockname='plantedCotton3Harvest']/@prob">0.001</set>
+	<set xpath="//decoration[@blockname='plantedChrysanthemum3Harvest']/@prob">0.001</set>
+
+	<!-- Pine Forest 
     <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.27']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
 	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
     <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
     <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
 	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.442']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations/decoration[@type='block' and @blockname='treeTallGrassDiagonal']/@prob">0.08</set>-->
 
-	<!-- Snow -->	
+	<!-- Snow 	
 	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.3']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
 	<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.3']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
     <set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.392']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
     <set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.412']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
     <set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.442']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
-	<set xpath="/worldgeneration/biomes/biome[@name='snow']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/decorations/decoration[@type='block' and @blockname='treeSnowyGrassDiagonal']/@prob">0.08</set>-->
 
 	<!-- War3zuk's remove some biome debris -->
-	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='scrapMetalPile']"/>
-	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks01']"/>
-	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks02']"/>
-	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cinderBlocks03']"/>
-	<remove xpath="worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='hubcapNoMine']"/>
+	<remove xpath="//decoration[@blockname='scrapMetalPile']"/>
+	<remove xpath="//decoration[@blockname='cinderBlocks01']"/>
+	<remove xpath="//decoration[@blockname='cinderBlocks02']"/>
+	<remove xpath="//decoration[@blockname='cinderBlocks03']"/>
 
 	<!-- Increase birdnest spawn chance 10 times. -->
-	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='cntBirdnest']/@prob">0.008</set>
-	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='cntBirdnest']/@prob">0.008</set>
+	<set xpath="//decoration[@blockname='cntBirdnest']/@prob">0.008</set>
 
 </configs>
