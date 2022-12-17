@@ -1,7 +1,7 @@
 <configs>
 
-	<!-- Remove the new Updates window on main menu 
-	<remove xpath="//window[@name='newsWindow']"/>-->
+	<!-- Remove the new Updates window on main menu -->
+	<remove xpath="//window[@name='newsWindow']"/>
 
 	<!-- The Walking Dead main menu -->
 	<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@modfolder:Images/MainMenu.png</set>

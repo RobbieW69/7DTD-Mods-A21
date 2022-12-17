@@ -34,10 +34,12 @@
 	streetLight01
 	giveself streetLight01 1 1 true false
 
-
-	
 	-->
 	<!--FIX treePlainsTree AND treeAzalea TO NOT STUMP!-->
+
+	<set xpath="//block[@name='autoTurret']/property[@name='RequiredPower']/@value">0</set>
+
+	<set xpath="//block[@name='solarbank']/property[@name='OutputPerStack']/@value">40</set>
 
 	<!-- #region Trees: Changed Amount of Wood, Changed Size -->
 	
@@ -53,11 +55,10 @@
 	<!-- The Highest Trees, def: 150-->
 	<set xpath="//block[contains(@name, 'tree')]/drop[@count='150']/@count">600</set>
 
-	<!--Change all trees to bigger -->
-	<set xpath="//block[contains(@name, 'tree')]/property[@name='MultiBlockDim']/@value">1,47,1</set>
+	<!--Change all trees to bigger 
+	<set xpath="//block[contains(@name, 'tree')]/property[@name='MultiBlockDim']/@value">1,47,1</set>-->
 
 	<!-- #endregion-->
-
 
 	<remove xpath="//block[@name='cntLootChestHero']/drop[@event='Harvest']"/>
 

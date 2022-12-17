@@ -8,14 +8,14 @@
     <!-- It would be better to just make new mods with the proposed changes so people have the option!-->
 
     <!--
-PUMPY: 2X
-AUTO SHOTTY: 4X
-HUNTING RIFLE: 4+
-M4: 2X?
-M60: 2X
-PIPE MACHINE: 0
-AK: 2X?
-ROCKET: 2X [OFF CENTER STILL?]
+    PUMPY: 2X
+    AUTO SHOTTY: 4X
+    HUNTING RIFLE: 4+
+    M4: 2X?
+    M60: 2X
+    PIPE MACHINE: 0
+    AK: 2X?
+    ROCKET: 2X [OFF CENTER STILL?]
         -->
     <append xpath="/item_modifiers">
         <item_modifier name="modGunReflexSight2x" installable_tags="smallTopAttachments" modifier_tags="scope" blocked_tags="noMods,bow" type="attachment">

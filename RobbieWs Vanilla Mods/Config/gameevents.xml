@@ -6,9 +6,9 @@
 			text_key - Localization key to show.
 			sound - Sound that can play with the toolbelt message. ??????????????? -->
     <!-- <set xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddQuest']/property[@name='quest']/@value">quest_BetterQuest1</set> 
-	<remove xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddQuest']"/>
-    <remove xpath="//action_sequence[@name='game_on_death']/action[@class='AddXPDeficit']"/> 
-
+	<remove xpath="//action_sequence[@name='game_first_spawn']/action[@class='AddQuest']"/>-->
+   <!-- <remove xpath="//action_sequence[@name='game_on_death']"/> -->
+	<!--
     <append xpath="//action_sequence[@name='game_first_spawn']">
         <action class="AddItems">
 			<property name="added_items" value="NSGPG1"/>

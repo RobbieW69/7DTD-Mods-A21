@@ -7,7 +7,25 @@
 
 		MORE TURETTS, EDIT SUPER DIGGER TO GIVE STUFF, SEE ABOUT ELEVATOR
 
+		UPDATE SOLAR BANK WIDTH 3 BLOCKS
+
 	-->
+
+	<!-- Timed charges do 25k block dmg ?-->
+	<remove xpath="//item[@name='thrownTimedCharge']/property[@name='Explosion.BlockTags']"/>
+	<set xpath="//item[@name='thrownTimedCharge']/property[@name='Explosion.RadiusBlocks']/@value">20</set>
+	<set xpath="//item[@name='thrownTimedCharge']//passive_effect[@name='BlockDamage']/@value">25000</set>
+	<set xpath="//item[@name='thrownTimedCharge']//display_value[@name='dExDamageBlock']/@value">25000</set>
+
+	<!-- Make SMG's silent -->
+	<set xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Sound_start']/@value">smg_s_fire</set>
+	<set xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Sound_loop']/@value">smg_s_fire</set>
+	<set xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Sound_end']/@value">silencefiller</set>
+
+	<set xpath="//property[@name='CrosshairUpAfterShot']/@value">false</set>
+
+	<set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">100,100</set>
+	<set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set><!-- def: 70 -->
 
 	<!-- ammoJunkTurretRegular, 300 = 700 -->
 	<set xpath="//effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">250</set>
@@ -53,8 +71,8 @@
 
 	<append xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoBlowBack</append>
 
-	<!--Fix Bundle sizes to our new 25k stacks-->
-	<set xpath="//item[contains(@name, 'Bundle')]/property[@class='Action0']/property[@name='Create_item_count']/@value">25000</set>
+
+	
 
 	<!-- #region Fix the zombie reach. -->
 
@@ -190,12 +208,6 @@
 	<!-- Makes Mod slots scale with item level , unsure why but this didn't actually work correctly-->
 	<set xpath="//item[not(contains(@name,'vehicle'))]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
 
-	<!-- This was to try to eliminate the "moving" of the camera when using the Auger as I thought it was kicback, it was not and this doesn't work :/  -->
-	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
-
 	<!-- Turn off crosshair when aiming down sights on any weapon that supports it and exclude bows by RobbieW -->
 	<set xpath="//item[contains(@name,'gun') and not(@name='gunBowT0PrimitiveBow' or @name='gunBowT1WoodenBow')]/property[@name='CrosshairOnAim']/@value">false</set>
 	
@@ -219,13 +231,15 @@
 	<set xpath="//item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">100</set>-->
 
 	<!-- Disabling spread on any weapon/tool that has it by RobbieW-->
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierCrouching']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
-	<set xpath="//item/effect_group/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">10</set>
+	<set xpath="//passive_effect[@name='SpreadDegreesVertical']/@value">0</set>
+	<set xpath="//passive_effect[@name='SpreadDegreesHorizontal']/@value">0</set>
+	<set xpath="//passive_effect[@name='SpreadMultiplierAiming']/@value">0</set>
+	<set xpath="//passive_effect[@name='SpreadMultiplierCrouching']/@value">0</set>
+	<set xpath="//passive_effect[@name='SpreadMultiplierWalking']/@value">0</set>
+	<set xpath="//passive_effect[@name='SpreadMultiplierRunning']/@value">0</set>
+	<set xpath="//passive_effect[@name='WeaponHandling' and @operation='perc_add']/@value">0,0</set>
+	<set xpath="//passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">20</set>
+	<set xpath="//passive_effect[@name='IncrementalSpreadMultiplier']/@value">0</set>
 	
 	<!-- Sets more head damage to all ammo types -->
 	<append xpath="//effect_group[contains(@name, 'ammo') and @name != 'ammoGasCan' and @name!='Pebbles']">
@@ -238,7 +252,7 @@
 	</append>
 
 
-	<!--Working Sink Mod -->
+	<!-- Working Sink Mod -->
 		<remove xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
 		<append xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']">
 			<property value="cntGraniteSink" name="Focused_blockname_6"/>
@@ -272,6 +286,12 @@
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.1</set>
 	<set xpath="//item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Repair_amount']/@value">20000</set>
 	<set xpath="//item[not(contains(@name,'vehicle'))]/property[@name='Stacknumber']/@value">25000</set>
+	<set xpath="//item[@name='resourceGunPowderBundle' or @name='resourceCoalBundle' or @name='resourceLeadBundle' or @name='resourceLockPickBundle' or @name='resourceOilShaleBundle' or @name='resourcePotassiumNitratePowderBundle' or @name='resourceRockSmallBundle' or @name='resourceScrapIronBundle' or @name='resourceWoodBundle' or @name='ammoGasCanBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">25000</set>
+	<set xpath="//item[contains(@name,'ammoBundle')]/property[@class='Action0']/property[@name='Create_item_count']/@value">25000</set>
+	<!--Fix Bundle sizes to our new 25k stacks, this breaks and causes some items to be LEVEL 25K WTF?? hot fix incoming
+	<set xpath="//item[contains(@name, 'Bundle')]/property[@class='Action0']/property[@name='Create_item_count']/@value">25000</set>-->
+
+	<!--
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='-.15,.15')]/@value">.15</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='EntityDamage') and (@value='.1,.5')]/@value">.5</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='BlockDamage') and (@value='-.15,.15')]/@value">.15</set>
@@ -281,7 +301,7 @@
 	<set xpath="//item/effect_group/passive_effect[(@name='AttacksPerMinute') and (@value='-.05,.05')]/@value">.05</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='WeaponHandling') and (@value='-.08,.08')]/@value">.08</set>
 	<set xpath="//item/effect_group/passive_effect[(@name='MagazineSize') and (@value='-.122,.122')]/@value">.122</set>
-	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set>
+	<set xpath="//item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]/@value">.2</set> -->
 	<!--End Item Stack Changes -->
 	
 	<!-- Amp the auger to make it stronger -->
@@ -290,7 +310,6 @@
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
 	<!-- Make auger have longer range -->
 	<set xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockRange' and @operation='base_set']/@value">15</set>
-
 	
 	<!-- Instant craft and scrap for all items (except the water jars for some reason) -->		
 	<set xpath="//item/property[@name='CraftingIngredientTime']/@value">0</set>		

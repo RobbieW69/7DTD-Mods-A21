@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+
+	<!-- Backpack mod stuff -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">120</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">45</set>
+
 	<!-- Idk what this is honestly -->
 	<set xpath="//entity_class/property[@name='HideInSpawnMenu']/@value">false</set>
 

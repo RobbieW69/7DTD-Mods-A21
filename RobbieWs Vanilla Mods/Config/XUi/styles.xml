@@ -1,0 +1,11 @@
+<configs>
+  <append xpath="/styles/global">
+	<!--NEW NAMED COLORS-->
+	<style_entry name="Gold" 		value="255,215,0"/>
+	<style_entry name="DarkGreen" 		value="0,100,0"/>
+	<style_entry name="DarkSlateGray" 		value="47,79,79"/>
+	<style_entry name="Aqua" 		value="0,255,255"/>
+	<style_entry name="DodgerBlue" 		value="30,144,255"/>
+	<style_entry name="Navy" 		value="0,0,128"/>
+  </append>
+</configs>

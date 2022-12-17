@@ -1,12 +1,12 @@
 <configs>
 
-	<!-- traders sell seeds-->
+	<!-- traders sell seeds -->
 	<!-- Disassemble alot of things -->
-	<!-- Get acid from old lead car batteries-->
-	<!-- ADD BOLT ARROW CONVERSION RECIPES-->
+	<!-- Get acid from old lead car batteries -->
+	<!-- ADD BOLT ARROW CONVERSION RECIPES -->
 	<!-- Render meat to give animal fat -->
-	<!--Add ammo conversion recipes (ie. Scrap 1 Bullet into Resources to make bullet)-->
-	<!-- Make sure mods can be blueprinted-->
+	<!-- Add ammo conversion recipes (ie. Scrap 1 Bullet into Resources to make bullet) -->
+	<!-- Make sure mods can be blueprinted -->
 
 	<!-- Fix bundle amounts for recipe -->
 	<set xpath="//recipe[contains(@name, 'Bundle')]/ingredient/@count">20000</set>
@@ -32,11 +32,14 @@
 
 	<set xpath="//recipe[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
 	<set xpath="//recipe[@name='meleeWpnBladeT0BoneKnife']/ingredient[@name='resourceBone']/@count">2</set>
+
+	<!-- Fix the amounts with the chef skill?
 	<set xpath="//recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">1</set>
 	<set xpath="//recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
 	<set xpath="//recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
 	<set xpath="//recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">3</set>
-	<set xpath="//recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+	<set xpath="//recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>-->
+
 	<set xpath="//recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">2</set>
 	<set xpath="//recipe[@name='ammo9mmBulletBall']/@count">3</set>
 	<set xpath="//recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
@@ -858,6 +861,11 @@
 		<recipe craft_area="workbench" count="1" name="modGunForegripSchematic">
 			<ingredient count="1" name="resourcePaper"/>
 			<ingredient count="1" name="modGunForegrip"/>
+		</recipe>
+		<!--modGunDrumMagazineExtender SChem-->
+		<recipe craft_area="workbench" count="1" name="bookAutoWeaponsDrumMag">
+			<ingredient count="1" name="resourcePaper"/>
+			<ingredient count="1" name="modGunDrumMagazineExtender"/>
 		</recipe>
 		<!-- modGunRetractingStock schem -->
 		<recipe craft_area="workbench" count="1" name="modGunRetractingStockSchematic">

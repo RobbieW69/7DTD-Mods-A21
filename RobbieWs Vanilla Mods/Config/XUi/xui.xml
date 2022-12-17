@@ -10,4 +10,8 @@
 			<window name="btnLinkTree" />
 	</append>
 
+  <!-- Main scale of UI -->
+	<set xpath="/xui/ruleset[@name='default']/@scale">1.25</set>
+	<set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">0.95</set>
+
 </xui>
