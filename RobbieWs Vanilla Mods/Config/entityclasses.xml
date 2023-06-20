@@ -2,6 +2,12 @@
 <configs>
 
 
+	<!-- #region Begin: Add Junk Turret and Drone to map by RobbieW
+
+	<set xapth="//entity_class[@name='junkTurretSledge']/property[@name='MapIcon']/@value">ui_game_symbol_junk_sledge</set> -->
+
+	<!-- #endregion End: Add Junk Turret and Drone to map by RobbieW -->
+
 	<!-- Backpack mod stuff -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">120</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">45</set>
@@ -144,6 +150,7 @@
 		<property value="1.50" name="SizeScale"/>
 	</append>
 	
+	<!-- Change the bear size to 1.5x normal,  -->
 	<append xpath="//entity_class[@name='animalBear']">
 		<property value="1.50" name="SizeScale"/>
 	</append>

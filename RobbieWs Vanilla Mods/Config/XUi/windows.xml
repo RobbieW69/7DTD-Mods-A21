@@ -1,5 +1,9 @@
 <windows>
 
+
+    
+    <!-- <append xpath=""> </append> -->
+    
     <!--
     <setattribute xpath="//window[@name='itemInfoPanel']" name="id">69</setattribute>-->
 
@@ -61,6 +65,8 @@
     <set xpath="//window[@name='windowToolbelt']/rect/sprite[@depth='4']/@color">255,0,255,255</set>
 
     <!-- Updated Compass UI to include more info by RELXIX-->
+    <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png -->
+
     <!-- Modify existing window -->
 	<remove xpath="/windows/window[@name='windowCompass']/sprite[@sprite=''][@color='255,255,255,255']" />
 	<insertAfter xpath="/windows/window[@name='windowCompass']/texture[@name='compassTexture3']" >
