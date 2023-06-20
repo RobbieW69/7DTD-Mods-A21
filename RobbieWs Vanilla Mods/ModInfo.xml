@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
-		<Name value = "RobbieW's Vanilla Mods A20"/>
-		<Description value = "Simple vanilla mods to make life better."/>
-		<Author value = "RobbieW69"/>
-		<Version value = "1.2"/>
-	</ModInfo>
+    <Name value="RobbieWsMods" /> <!-- (Required) Internal name, like an ID, of the mod. Should be globally unique, like an author prefix + name. Only allowed chars: Numbers, latin letters, underscores, dash -->
+    <DisplayName value="RobbieWs Vanilla Mods" /> <!-- (Required) Name used for display purposes, like shown in the mods UI at some point. Could be the same as you would later on use on workshop or wherever mods get distributed -->
+    <Version value="1.0.1.1" /> <!-- (Required) SemVer version of the mod. Has to be in the format major.minor[.build[.revision]] (i.e. build and revision can be left out, recommend using them though as typically done with Semantic Versioning -->
+    <Description value="This mod changes the vanilla gameplay by adding many recipes and changing the game to be easier for those of us without alot of time to grind." /> <!-- (Optional) More text to show on UIs -->
+    <Author value="RobbieW" /> <!-- (Optional) Name(s) of the author(s) -->
+    <Website value="https://github.com/RobbieW69/7DTD-Mods-A20" /> <!-- (Optional) URL of a website of the mod -->
 </xml>

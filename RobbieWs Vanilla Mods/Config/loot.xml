@@ -6,57 +6,57 @@
     <!-- 96 NOT_USED -->
 
     <!--Set Dumpsters to be as big as possible-->
-    <set xpath="//lootcontainer[@id='66']/@size">9,10</set>
+    <set xpath="//lootcontainer[@name='dumpster']/@size">9,10</set>
 
     <!--Set Junk Drone storage to be bigger, def 8,2, also note that the Cargo mod adds one more row of 8 slots-->
-    <set xpath="//lootcontainer[@id='139']/@size">8,4</set>
+    <set xpath="//lootcontainer[@name='roboticDrone']/@size">8,4</set>
 
     <!--Set storages to be bigger-->
     <set xpath="//lootcontainer[@name='playerStorage']/@size">10,9</set>
 	<set xpath="//lootcontainer[@name='storageCrate']/@size">10,9</set>
     <set xpath="//lootcontainer[@name='playerDrawer']/@size">10,9</set>
-    <set xpath="//lootcontainer[@name='apacheArtifactChest']/@size">10,9</set>
+    <set xpath="//lootcontainer[@name='oldWestChest']/@size">10,9</set>
 
     <!--More effecient way to set the vehicle storage capacites-->
 
     <!--Set the vehicleBicycle to bigger, def: 9,1 -->
-    <set xpath="//lootcontainer[@id='76']/@size">9,3</set>
+    <set xpath="//lootcontainer[@name='vehicleBicycle']/@size">9,3</set>
 
     <!--Set the vehicleMinibike to bigger, def: 9,3 -->
-    <set xpath="//lootcontainer[@id='77']/@size">9,5</set>
+    <set xpath="//lootcontainer[@name='vehicleMinibike']/@size">9,5</set>
 
     <!--Set the vehicleMotorcycle to bigger, def: 9,4 -->
-    <set xpath="//lootcontainer[@id='78']/@size">9,8</set>
+    <set xpath="//lootcontainer[@name='vehicleMotorcycle']/@size">9,8</set>
 
     <!--Set the vehicle4x4Truck to bigger, def: 9,9 -->
-    <set xpath="//lootcontainer[@id='79']/@size">9,10</set>
+    <set xpath="//lootcontainer[@name='vehicle4x4Truck']/@size">9,10</set>
 
     <!--Set the vehicleGyrocopter to bigger, def: 9,5 -->
-    <set xpath="//lootcontainer[@id='80']/@size">9,10</set>
+    <set xpath="//lootcontainer[@name='vehicleGyrocopter']/@size">9,10</set>
  
     <!--We have to fix it to where the Dumpsters/trash cans dont get destroyed on lootoinng-->
-    <set xpath="//lootcontainer[@id='10']/item[@group='groupJunk']/@group">groupGarbage</set>
+    <set xpath="//lootcontainer[@name='dumpster']/item[@group='groupJunk']/@group">groupGarbage</set>
 
     <!-- Destroy garbage on loot--> <!-- bags --> <!-- garbage --> <!-- birdnest --> <!-- purse -->
-    <setattribute xpath="//lootcontainer[@id='9' or @id='10' or @id='25' or @id='48']" name="destroy_on_close">true</setattribute>
+    <setattribute xpath="//lootcontainer[@name='birdNest' or @name='purse' or @name='junk' or @name='garbage']" name="destroy_on_close">true</setattribute>
 
     <!--Silence the sound of Birdnests when being opened-->
-    <set xpath="//lootcontainer[@id='25']/@sound_close">silencefiller</set>  <!-- birdnest sound -->
+    <set xpath="//lootcontainer[@name='birdNest']/@sound_close">silencefiller</set>  <!-- birdnest sound -->
 
 
     <!-- Backpack mod stuff -->
     <!-- Large storage containers that the player can craft, cntSecureStorageChest, 96 slots -->
-	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">8,12</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='playerStorage']/@size">8,12</set>
 
 	<!-- Bigger dropped player backpack so you won't lose to many items when you die. From 7,10(70) to 10,12(120)! -->
-	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">10,12</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,12</set>
 	
-	<!-- Vehicles storage to 90 slots + New drone storage to 96 + 8 from the carry mod available for drone -->
+	<!-- Vehicles storage to 90 slots + New drone storage to 96 + 8 from the carry mod available for drone 
 	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,12</set>
 	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,12</set>
 	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,12</set>
 	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,12</set>
 	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,12</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='139']/@size">8,12</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='139']/@size">8,12</set>-->
 
 </configs>

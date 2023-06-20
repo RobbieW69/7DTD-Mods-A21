@@ -188,8 +188,8 @@
 	</append>
 	<!-- End Change sizes of animals -->
 	
-	<!-- Set zombies to target animals as well -->
-	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='AITarget-4']" name="data">class=EntityPlayer,0,0,EntityNPC,0,0,EntityEnemyAnimal,0,0</setattribute>
+	<!-- Set zombies to target animals as well  PLS FIX FOR A21
+	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='AITarget-4']" name="data">class=EntityPlayer,0,0,EntityNPC,0,0,EntityEnemyAnimal,0,0</setattribute> -->
 	
 	<!-- Set Yellow Boss loot bags spawn more often -->
 	<setattribute xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']" name="value">0.25</setattribute>

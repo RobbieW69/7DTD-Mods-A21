@@ -55,20 +55,17 @@
 	<!-- The Highest Trees, def: 150-->
 	<set xpath="//block[contains(@name, 'tree')]/drop[@count='150']/@count">600</set>
 
-	<!--Change all trees to bigger 
-	<set xpath="//block[contains(@name, 'tree')]/property[@name='MultiBlockDim']/@value">1,47,1</set>-->
 
 	<!-- #endregion-->
 
 	<remove xpath="//block[@name='cntLootChestHero']/drop[@event='Harvest']"/>
 
-	<append xpath="//block[@name='tableLampLight']">
+	<!-- <append xpath="//block[@name='tableLampLight']">
 		<property value="4.50" name="SizeScale"/>
-	</append>
+	</append> -->
 
 	<remove xpath="//block[@name='cntRetroFridgeVer1Closed']/drop"/>
 
-	<!--change it where Tilt trucks dont die-->
 	<set xpath="//block[contains(@name,'cntTilt') or @name='cntBin' or @name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">garbage</set>
 
 	<!-- Add a chance to get water/yucca juice from cactus, going with Yucca juice but water would also make sense-->
@@ -78,46 +75,41 @@
 
 	<!-- #region Chests -->
 
-	<!--Wood chest-->
+	<!-- fix for A21 PLS
 	<set xpath="//block[@name='cntStorageChest']/drop[@event='Destroy']/@name">cntSecureStorageChest</set>
 	<set xpath="//block[@name='cntStorageChest']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntStorageGenericInsecure']/drop[@event='Destroy']/@name">cntStorageGenericInsecure</set>
 	<set xpath="//block[@name='cntStorageGenericInsecure']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntChest01']/drop[@event='Destroy']/@name">cntChest01</set>
 	<set xpath="//block[@name='cntChest01']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntStorageGenericPOI']/drop[@event='Destroy']/@name">cntStorageGenericPOI</set>
 	<set xpath="//block[@name='cntStorageGenericPOI']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntLootChestHeroInsecureT1']/drop[@event='Destroy']/@name">cntLootChestHeroInsecureT1</set>
 	<set xpath="//block[@name='cntLootChestHeroInsecureT1']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy']/@name">cntLootChestHeroInsecureT2</set>
 	<set xpath="//block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntLootChestHeroInsecure']/drop[@event='Destroy']/@name">cntLootChestHero</set>
 	<set xpath="//block[@name='cntLootChestHeroInsecure']/drop[@event='Destroy']/@count">1</set>
 
-	<!--Wood chest-->
 	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@name">cntHardenedChestInsecure</set>
 	<set xpath="//block[@name='cntHardenedChestInsecure']/drop[@event='Destroy']/@count">1</set>
 
 	<remove xpath="//block[@name='cntChest01']/drop[@event='Destroy']"/>
 
+	-->
+
 	
 
-	<!--Wood chest-->
+	<!--Wood chest
 	<append xpath="//block[@name='cntApacheArtifactChest']">
 		<drop event="Destroy" name="cntApacheArtifactChest" count="1"/>
-	</append>
+	</append> -->
 
 	<!-- #endregion -->
 	
@@ -153,7 +145,7 @@
 	<append xpath="//block[@name='woodSignBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,signRoadArrowheadApache,signRoadAZ260eastSpeed65,signRoadAZ260west,signRoadAZ260westSpeed65,signRoadAZ73north,signRoadAZ73northSpeed65,signRoadAZ73south,signRoadAZ73southSpeed65,signRoadApacheAZ260,signRoadBellLake,signRoadCoronado,signRoadCoronadoCourtland,signRoadCourtlandApache,signRoadCourtlandAZ260Left,signRoadCourtlandAZ260Right,signRoadCourtlandBell,signRoadCourtlandHuenink,signRoadCourtlandMaple,signRoadCourtlandTran,signRoadDavis,signRoadEssig,signRoadLangTran,signRoadTran,signRoadMaple,signRoadDestinationsEast,signRoadDestinationsWest,signCamping,signSpillwayLake,signAnselAdamsRiver,signNationalPark,signCampFish,signInfoCenter,signNoHazardousWaste,signRoadWork,signRoadRoughSurface,signSchoolZone,signRoadSlow,signRoadSpeed25,signRoadSpeed25noTrucks,signRoadSpeed35,signRoadSpeed45,signRoadSpeed55,signRoadSpeed65,signRoadStop,signRoadStop4way,signRoadPrivate,signYardSign01,signCrossWalkYellow,signDoNotEnter,signHandicapParking,signNoParking,signTowAway,signShopColdBeer,signShopTraderJoel2x5Wall,signShopTraderJoel1x3Wall,signShopGas,signShopGasLit,signShopGasWall,signShopGasWallLit,signShopGasLarge,signShopGasLargeLit,signShopGasLargeWall,signShopGasLargeWallLit,signShopGunStore,signShopGunStoreLit,signShopGunStoreWall,signShopGunStoreWallLit,signShopGunStoreLarge,signShopGunStoreLargeLit,signShopGunStoreLargeWall,signShopGunStoreLargeWallLit,signShopBookStore,signShopBookStoreLit,signShopBookStoreWall,signShopBookStoreWallLit,signShopBookStoreLarge,signShopBookStoreLargeLit,signShopBookStoreLargeWall,signShopBookStoreLargeWallLit,signShopPharmacy,signShopPharmacyLit,signShopPharmacyWall,signShopPharmacyWallLit,signShopPharmacyLarge,signShopPharmacyLargeLit,signShopPharmacyLargeWall,signShopPharmacyLargeWallLit,signShopToolStore,signShopToolStoreLit,signShopToolStoreWall,signShopToolStoreWallLit,signShopToolStoreLarge,signShopToolStoreLargeLit,signShopToolStoreLargeWall,signShopToolStoreLargeWallLit,signShopGrocery,signShopGroceryLit,signShopGroceryWall,signShopGroceryWallLit,signShopGroceryLarge,signShopGroceryLargeLit,signShopGroceryLargeWall,signShopGroceryLargeWallLit,signShopSavageCountry,signShopSavageCountryLit,signShopSavageCountryWall,signShopSavageCountryWallLit,signShopSavageCountryLarge,signShopSavageCountryLargeLit,signShopSavageCountryLargeWall,signShopSavageCountryLargeWallLit,signShopMoPowerElectronics,signShopMoPowerElectronicsLit,signShopMoPowerElectronicsWall,signShopMoPowerElectronicsWallLit,signShopMoPowerElectronicsLarge,signShopMoPowerElectronicsLargeLit,signShopMoPowerElectronicsLargeWall,signShopMoPowerElectronicsLargeWallLit,signShopPostOfficeSign,signShopPostOfficeSignLit,signShopPostOfficeSignWall,signShopPostOfficeSignWallLit,signShopPostOfficeSignLarge,signShopPostOfficeSignLargeLit,signShopPostOfficeSignLargeWall,signShopPostOfficeSignLargeWallLit,signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signBulletinBoard01,signBulletinBoard02,signBookSaleAd,signBread01,signBread02,signCigaretteAd,signDinersMenu,signDinersMenu2m,signDinersMenu2mCentered,signLaborDaySaleAd,signMegaCrushAd,signNotice01,signNotice02,signNotice03,signNotice04,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,signExitLight,signPillsLogo,signPillsLogoSmall,signShopOpen,signTrafficLight,signTrafficLightOffset,signCrosswalk</append>
 
 
-	<!-- Add helper blocks to craft alot of items -->
+	<!-- Add helper blocks to craft alot of items 
 	<append xpath="/blocks">
 		<block name="Beer Coolers">
 			<property name="Extends" value="cntCoolerClosed"/>
@@ -204,7 +196,7 @@
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 		</block>
-	</append>
+	</append> -->
 
 	<!--Claymores boulders drop stuff editied-->
 	<append xpath="//block[@name='rockResource']">
@@ -256,44 +248,35 @@
 	<append xpath="//block[@name='cntBusSchool']">
 		<drop event="Harvest" name="vehicleWheels" count="1,4" prob="0.2" tag="salvageHarvest"/>
 	</append>
-	<!-- Change Movement speed based on terrain -->
-	<!--Sand -->
+
 		<append xpath="//block[@name='terrSand']">
 			<property name="MovementFactor" value=".8"/>
 		</append>
-	<!--Snow -->
 		<append xpath="//block[@name='terrSnow']">
 			<property name="MovementFactor" value=".8"/>
 		</append>
-	<!--Bedrock -->
 		<append xpath="//block[@name='terrBedrock']">
 			<property name="MovementFactor" value="1.5"/>
 		</append>
-	<!--Desert .9-->
 		<append xpath="//block[@name='terrDesertGround']">
 			<property name="MovementFactor" value=".9"/>
 		</append>
-	<!--Asphalt 1.35-->
 		<append xpath="//block[@name='terrAsphalt']">
 			<property name="MovementFactor" value="1.35"/>
 		</append>
-	<!--Gravel -->
 		<append xpath="//block[@name='terrGravel']">
 			<property name="MovementFactor" value="1.15"/>
 		</append>
-	<!--Ice-->
-		<append xpath="//block[@name='terrIce']"><!--Ice-->
+		<!--
+		<append xpath="//block[@name='terrIce']">
 			<property name="MovementFactor" value=".75"/>
-		</append>
-	<!--Burnt Forest -->
+		</append>-->
 		<append xpath="//block[@name='terrBurntForestGround']">
 			<property name="MovementFactor" value=".95"/>
 		</append>
-	<!--Destroyed Stone -->
 		<append xpath="//block[@name='terrDestroyedStone']">
 			<property name="MovementFactor" value=".92"/>
 		</append>
-	<!--Concrete -->
 		<append xpath="//block[@name='terrConcrete']">
 			<property name="MovementFactor" value="1.25"/>
 		</append>
@@ -312,7 +295,6 @@
 		<drop count="4,12" prob="0.1" tag="allToolsHarvest" name="resourceFeather" event="Harvest"/>
 	</append>
 	
-	<!-- Add: get Brass when harvesting iron -->
 	<append xpath="//block [@name='terrOreIron']">
 		<drop count="50,100" prob="0.2" tag="allToolsHarvest" name="resourceScrapBrass" event="Harvest"/>
 	</append>
@@ -350,8 +332,6 @@
 	<append xpath="//block[@name='cementMixer']">
 		<property name="CanPickup" value="true"/>
 	</append>
-
-	<!-- harvest plants with E (you can get at least 2 from any plant, however punching gives you more as its level based) -->
 
 	<append xpath="//block[@name='plantedPotato3Harvest']">
 		<property name="DowngradeBlock" value="plantedPotato1"/>
@@ -421,8 +401,6 @@
 		<property name="DowngradeBlock" value="plantedCoffee1"/>
 		<property name="Class" value="CropsGrown"/>
 	</append>
-
-	<!-- Remove the destroying part of getting the plants-->
 	<remove xpath="//block[contains(@name, 'planted') and contains(@name, 'HarvestPlayer')]/drop[@event='Destroy']"/>
 	
 	<append xpath="//block[@name='trapSpikesWoodDmg2']">
@@ -460,7 +438,7 @@
 		<drop tool_category="Disassemble" count="1" name="resourceScrapIron" event="Destroy"/>
 		<drop count="0" event="Destroy"/>
 	</append>
-
+	<!--
 	<append xpath="//block[@name='trapSpikesDamage1']">
 		<drop tool_category="Disassemble" count="0" name="" event="Harvest"/>
 		<drop tool_category="Disassemble" count="1" name="resourceWood" event="Destroy" prob="0.6"/>
@@ -496,11 +474,8 @@
 		<drop tool_category="Disassemble" count="1" name="resourceWood" event="Destroy" prob="0.6"/>
 		<drop count="0" event="Destroy"/>
 	</append>
-		
-	<!-- Make cars fixable with matierals and turn them into working cars -->
-		
+		-->
 	<append xpath="//block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntFileCabinetShortOpen,cntFileCabinetShortClosed,cntFileCabinetTallOpen,cntFileCabinetTallClosed,cntToolBoxOpen,cntToolBoxClosed,cntRollingToolBoxOpen,cntRollingToolBoxClosed</append>
-	<!-- APPLIANCES -->
 	<append xpath="//block[@name='cntMicrowaveOvenVer1Open']" >
 			<property name="CanPickup" value="true" param1="cntMicrowaveOvenVer1Closed"/>
 			<property name="Weight" value="60"/>
@@ -510,32 +485,30 @@
 			<property name="Weight" value="40"/>
 	</append>
 
-	<!--  BLINDS & CURTAINS -->
 		<append xpath="//block[@name='commercialBlindsTop']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="10"/>
 			<property name="Material" value="MresourceScrapPolymers"/>
 		</append> 
+		<!--
 		<append xpath="//block[@name='curtain_top1Sheet3']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="10"/>
 		</append> 
+		-->
 		<append xpath="//block[@name='miniblindTopSheet']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="10"/>
 			<property name="Material" value="MresourceScrapPolymers"/>
 		</append>
-	<!-- CASH REGISTER EMPTY -->
 		<append xpath="//block[@name='cntCashRegisterEmpty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/> 
 		</append>
-	<!-- COOLER -->
 		<append xpath="//block[@name='cntCoolerOpen']" >
 			<property name="CanPickup" value="true" param1="cntCoolerClosed"/>
 			<property name="Weight" value="60"/> 
 		</append>
-	<!-- EXERCISE EQUIPMENT -->
 		<append xpath="//block[@name='decoBenchPress']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
@@ -564,7 +537,6 @@
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="50"/>
 		</append>
-	<!-- ELECTRONICS -->
 		<append xpath="//block[@name='decoComputerDeskTopPC']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="50"/>
@@ -573,10 +545,11 @@
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="20"/> 
 		</append>
+		<!--
 		<append xpath="//block[@name='tv']" >
 			<property name="CanPickup" value="true"/>
 		</append>
-	<!--  FURNITURE -->
+		-->
 		<append xpath="//block[contains(@name,'Bed') and not(contains(@name,'terr'))]">
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
@@ -596,15 +569,18 @@
 		<append xpath="//block[contains(@name,'cntLockers') and not(contains(@name,'Closed'))]">
 			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
 		</append>
-		<append xpath="//block[@name='cntMetalDesk02Open']">
-			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
-		</append>
+		
 		<append xpath="//block[@name='cntNightstandOpen']">
 			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
+		</append>
+		<!--
+		<append xpath="//block[@name='cntMetalDesk02Open']">
+			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
 		</append>
 		<append xpath="//block[@name='cntWoodDesk01Open']">
 			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
 		</append>
+		-->
 		<append xpath="//block[@name='decoClassicDogHouse']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
@@ -637,9 +613,9 @@
 			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
 			<property name="Weight" value="60"/>
 		</append>
-		<append xpath="//block[@name='pew_segment01']" >
+		<!--<append xpath="//block[@name='pew_segment01']" >
 			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
-		</append>
+		</append>-->
 		<append xpath="//block[contains(@name, 'Sofa')]">	
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="20"/> 
@@ -648,16 +624,15 @@
 			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
 			<property name="Weight" value="60"/>
 		</append>
+		<!--
 		<append xpath="//block[@name='schoolDesk']">
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
-		</append>
-	<!-- LAUNDRY BASKET -->
-		<append xpath="//block[@name='cntLaundryBasketVer1Empty']" >
+		</append> -->
+		<!-- <append xpath="//block[@name='cntLaundryBasketVer1Empty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="30"/>
-		</append>
-	<!-- LUGGAGE -->
+		</append> -->
 		<append xpath="//block[@name='cntLuggageMediumOpen']" >
 			<property name="CanPickup" value="true" param1="cntLuggageMediumClosed"/>
 			<property name="Weight" value="60"/>
@@ -674,35 +649,30 @@
 			<property name="CanPickup" value="true" param1="cntLuggagePileAClosed"/>
 			<property name="Weight" value="160"/>
 		</append>
-	<!-- PAINTINGS -->
 		<append xpath="//block[contains(@name, 'painting')]">
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="10"/>
 		</append>
-	<!-- SHOPPING CART -->
-		<append xpath="//block[@name='cntShoppingCartEmpty']" >
+		<!-- <append xpath="//block[@name='cntShoppingCartEmpty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="20"/> 
-		</append>
-		<append xpath="//block[@name='cntShoppingBasketEmpty']" >
+		</append> -->
+		<!-- <append xpath="//block[@name='cntShoppingBasketEmpty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="20"/> 
-		</append>	
-	<!-- SIGNS -->
+		</append>	 -->
 		<append xpath="//block[starts-with(@name,'sign')]">
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
-	<!-- TOOL BOXES -->
-		<append xpath="//block[@name='cntToolBoxOpen']" >
+		<!-- <append xpath="//block[@name='cntToolBoxOpen']" >
 			<property name="CanPickup" value="true" param1="cntToolBoxClosed"/>
 			<property name="Weight" value="60"/>
-		</append>
-		<append xpath="//block[@name='cntRollingToolBoxOpen']" >
+		</append> -->
+		<!-- <append xpath="//block[@name='cntRollingToolBoxOpen']" >
 			<property name="CanPickup" value="true" param1="cntRollingToolBoxClosed"/>
 			<property name="Weight" value="120"/>
-		</append>
-	<!-- TRASH CAN-->
+		</append> -->
 		<append xpath="//block[@name='cntDomedTrashCanEmpty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
@@ -711,12 +681,10 @@
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
-	<!-- UTILITY CART -->
 		<append xpath="//block[@name='cntUtilityCartEmpty']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
-	<!-- WINE BARREL -->
 		<append xpath="//block[@name='wineBarrel']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>

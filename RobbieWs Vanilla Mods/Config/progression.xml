@@ -50,13 +50,13 @@
 <!-- Craft level 6  -->
 <set xpath="//passive_effect[@name='CraftingTier' and @value='1,2,3,4,4']/@value">1,2,3,4,5</set>
 <set xpath="//passive_effect[@name='CraftingTier' and @value='0,5']/@value">1,6</set>
-<set xpath="//passive_effect[@name='CraftingTier' and @value='1,4']/@value">1,5</set>
+<!-- DOESNT WORK IN A21 IDK YET <set xpath="//passive_effect[@name='CraftingTier' and @value='1,4']/@value">1,5</set> -->
 
 <!--#endregion-->
 
 <!-- Backpack mod stuff -->
 <!-- Change Pack Mule Perk to unlock all the 120 slots at level 5 -->
 <set xpath="progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">15,30,45,60,75</set>
-<set xpath="progression/perks/perk[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">120</set>
-<set xpath="progression/perks/perk[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">120</set>
+<!-- DOESNT WORK IN A21 IDK YET<set xpath="progression/perks/perk[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">120</set>
+<set xpath="progression/perks/perk[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">120</set> -->
 </configs>

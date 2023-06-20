@@ -24,8 +24,8 @@
 
 	<set xpath="//property[@name='CrosshairUpAfterShot']/@value">false</set>
 
-	<set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">100,100</set>
-	<set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set><!-- def: 70 -->
+	<!-- BROKE IN A21 IDK YET <set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">100,100</set>
+	<set xpath="//effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set> -->
 
 	<!-- ammoJunkTurretRegular, 300 = 700 -->
 	<set xpath="//effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">250</set>
@@ -252,7 +252,7 @@
 	</append>
 
 
-	<!-- Working Sink Mod -->
+	<!-- Working Sink Mod 
 		<remove xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Do_block_action']"/>
 		<append xpath="//item[@name='drinkJarEmpty']/property[@class='Action1']">
 			<property value="cntGraniteSink" name="Focused_blockname_6"/>
@@ -279,7 +279,7 @@
 			<property value="wallHungSink" name="Focused_blockname_15"/>
 			<property value="cntToilet02" name="Focused_blockname_16"/>
 			<property value="cntToilet03" name="Focused_blockname_17"/>
-		</append>
+		</append> -->
 	
 
 	<!--Begin Item Stack size changes and change shooting for the players benefit -->
