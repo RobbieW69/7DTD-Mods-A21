@@ -1,4 +1,4 @@
-# 7 Days to Die Alpha 20 Mods (07-29-2022) (OUTDATED NOT READY FOR A21)
+# 7 Days to Die Alpha 21 Mods (06-22-2023)
 ![](https://i.imgur.com/qh750V0.png)
 
 <details>
