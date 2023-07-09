@@ -66,7 +66,7 @@
 
 	<remove xpath="//block[@name='cntRetroFridgeVer1Closed']/drop"/>
 
-	<set xpath="//block[contains(@name,'cntTilt') or @name='cntBin' or @name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">garbage</set>
+	<set xpath="//block[contains(@name,'cntTiltTruckFull') or @name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">garbage</set>
 
 	<!-- Add a chance to get water/yucca juice from cactus, going with Yucca juice but water would also make sense-->
 	<append xpath="//block[@name='treeCactus01']">
@@ -113,7 +113,7 @@
 
 	<!-- #endregion -->
 	
-	<append xpath="//block[@name='forge' or @name='cntCollapsedForge']">
+	<append xpath="//block[@name='forge']">
   		<property name="TintColor" value="facf39"/>
 	</append>
 
@@ -475,7 +475,7 @@
 		<drop count="0" event="Destroy"/>
 	</append>
 		-->
-	<append xpath="//block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntFileCabinetShortOpen,cntFileCabinetShortClosed,cntFileCabinetTallOpen,cntFileCabinetTallClosed,cntToolBoxOpen,cntToolBoxClosed,cntRollingToolBoxOpen,cntRollingToolBoxClosed</append>
+	<!-- <append xpath="//block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntFileCabinetShortOpen,cntFileCabinetShortClosed,cntFileCabinetTallOpen,cntFileCabinetTallClosed,cntToolBoxOpen,cntToolBoxClosed,cntRollingToolBoxOpen,cntRollingToolBoxClosed</append> -->
 	<append xpath="//block[@name='cntMicrowaveOvenVer1Open']" >
 			<property name="CanPickup" value="true" param1="cntMicrowaveOvenVer1Closed"/>
 			<property name="Weight" value="60"/>
@@ -550,25 +550,27 @@
 			<property name="CanPickup" value="true"/>
 		</append>
 		-->
-		<append xpath="//block[contains(@name,'Bed') and not(contains(@name,'terr'))]">
+		<!--<append xpath="//block[contains(@name,'Bed') and not(contains(@name,'terr'))]">
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
-		</append>
+		</append> -->
 		<append xpath="//block[@name='barStool']" >
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
 		<append xpath="//block[@name='cntBookcaseEmpty']">
-			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
+			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
+
+		<!--
 		<append xpath="//block[contains(@name,'cntFileCabinet') and not(contains(@name,'Open'))]">
-			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
+			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
 		</append>
 		<append xpath="//block[contains(@name,'cntLockers') and not(contains(@name,'Closed'))]">
-			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
-		</append>
+			<property name="CanPickup" value="true"/>
+		</append> -->
 		
 		<append xpath="//block[@name='cntNightstandOpen']">
 			<property name="CanPickup" value="true" param1="woodFurnitureBlockVariantHelper"/>
@@ -620,10 +622,12 @@
 			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="20"/> 
 		</append>
+
+		<!--
 		<append xpath="//block[@name='rustyIronTable']">
-			<property name="CanPickup" value="true" param1="metalFurnitureBlockVariantHelper"/>
+			<property name="CanPickup" value="true"/>
 			<property name="Weight" value="60"/>
-		</append>
+		</append> -->
 		<!--
 		<append xpath="//block[@name='schoolDesk']">
 			<property name="CanPickup" value="true"/>

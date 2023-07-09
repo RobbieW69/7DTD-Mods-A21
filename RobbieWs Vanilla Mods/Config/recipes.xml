@@ -1,5 +1,10 @@
 <configs>
 
+
+	<set xpath="//recipe[@name='foodCornOnTheCob']/ingredient[@name='foodCropCorn']/@count">10</set>
+
+	
+
 	<!-- traders sell seeds -->
 	<!-- Disassemble alot of things -->
 	<!-- Get acid from old lead car batteries -->

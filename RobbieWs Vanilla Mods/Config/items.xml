@@ -38,7 +38,7 @@
 	<remove xpath="//item/effect_group/triggered_effect[@buff='buffDysenteryCatchFood']"/>
 	<set xpath="//item/effect_group/display_value[@name='dDysenteryRisk']/@value">0</set>
 
-	<!-- Set custom bullets to do 1 damage but hella knockback? -->
+	<!-- Set custom bullets to do 1 damage but hella knockback? 
 	<append xpath="/items">
 		<item name="ammoBlowBack">
 			<property name="Extends" value="ammo9mmBulletBall"/>
@@ -53,7 +53,7 @@
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-				<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0" force="9001"/><!-- just knockback -->
+				<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0" force="9001"/>
 			</effect_group>
 
 			<effect_group name="perkPenetrator" tiered="false">
@@ -67,7 +67,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 			</effect_group>
 		</item>
-	</append>
+	</append>-->
 
 	<append xpath="//item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoBlowBack</append>
 
